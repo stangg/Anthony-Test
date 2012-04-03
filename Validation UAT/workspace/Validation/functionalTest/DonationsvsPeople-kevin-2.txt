@@ -1,0 +1,4 @@
+﻿"GiftKey"	"DonationKey"	"DonorKey"	"Amount"	"PaidFlag"	"GiftAidFlag"	"Date"	"Reason"	"Sub reason"	"In memory - title"	"memory_forename"	"In memory - surname"	"In memory - relationship"	"Donate description"	"Referring site where knowm"
+"50564"	"Donation|"	"50559"	"50.00"	"1"	"1"	"2008-07-04 18:01:25"	"1"	"68"	""	""	""	""	""	"special1 (Google PPC)"
+"50668"	"Donation|"	"50663"	"5.00"	"0"	"1"	"2008-07-17 10:12:32"	"12"	"119"	""	""	""	""	""	""
+"50825"	"Donation|"	"50820"	"30.00"	"1"	"1"	"2008-08-07 09:05:06"	"9"	""	""	""	""	""	"Carol Turners 60th Birthday"	""

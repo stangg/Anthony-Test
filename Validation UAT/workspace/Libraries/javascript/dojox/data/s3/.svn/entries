@@ -1,0 +1,52 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Libraries/javascript/dojox/data/s3
+svn://goshcc-devsvr1
+
+
+
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+README
+file
+
+
+
+
+2012-01-18T12:23:37.945000Z
+acdf81bd745454e0a7893f61ac8df3c8
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+proxy.example-php
+file
+
+
+
+
+2012-01-18T12:23:37.945000Z
+8e20404b769321ef9c14fd1c6674a0ea
+2008-10-07T14:00:18.863231Z
+821
+maria
+

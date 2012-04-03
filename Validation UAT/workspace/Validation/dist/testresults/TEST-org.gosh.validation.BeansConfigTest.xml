@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="GOSHCC-ASDEV" name="org.gosh.validation.BeansConfigTest" tests="1" time="1.656" timestamp="2012-02-01T15:22:27">
+  <properties>
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="ivy.retrieve.pattern.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/lib/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="java.vendor.url.ivy.instance" value="http://java.sun.com/" />
+    <property name="ivy.project.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ivy.resolve.default.type.filter" value="*" />
+    <property name="java.home" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre" />
+    <property name="ivy.configurations.ivy.instance" value="*" />
+    <property name="major" value="4" />
+    <property name="ivy.basedir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ivy.dep.file.ivy.instance" value="ivy.xml" />
+    <property name="ant.file.buildCommon" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\AntBuilds\commonBuild.xml" />
+    <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\endorsed" />
+    <property name="java.class.path.ivy.instance" value="C:\Apache\apache-ant-1.8.2\bin\..\lib\ant-launcher.jar;C:\Apache\apache-ant-1.8.2\lib\ant-antlr.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-bcel.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-bsf.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-log4j.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-oro.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-regexp.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-resolver.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-xalan2.jar;C:\Apache\apache-ant-1.8.2\lib\ant-commons-logging.jar;C:\Apache\apache-ant-1.8.2\lib\ant-commons-net.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jai.jar;C:\Apache\apache-ant-1.8.2\lib\ant-javamail.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jdepend.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jmf.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jsch.jar;C:\Apache\apache-ant-1.8.2\lib\ant-junit.jar;C:\Apache\apache-ant-1.8.2\lib\ant-junit4.jar;C:\Apache\apache-ant-1.8.2\lib\ant-launcher.jar;C:\Apache\apache-ant-1.8.2\lib\ant-netrexx.jar;C:\Apache\apache-ant-1.8.2\lib\ant-swing.jar;C:\Apache\apache-ant-1.8.2\lib\ant-testutil.jar;C:\Apache\apache-ant-1.8.2\lib\ant.jar;C:\Apache\apache-ant-1.8.2\lib\ivy-2.2.0.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\lib\tools.jar" />
+    <property name="ivy.home" value="C:\.ivy2" />
+    <property name="java.vm.specification.vendor.ivy.instance" value="Sun Microsystems Inc." />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="ivy.dep.file" value="ivy.xml" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="ant.file.Root" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\AntBuilds\build.xml" />
+    <property name="ivy.lib.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/lib" />
+    <property name="java.version" value="1.6.0_24" />
+    <property name="ivy.conf.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="sun.boot.library.path.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\bin" />
+    <property name="ivy.report.output.pattern.ivy.instance" value="[organisation]-[module]-[conf].[ext]" />
+    <property name="ivy.module" value="Validation" />
+    <property name="ivy.publish.src.artifacts.pattern.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="sun.management.compiler.ivy.instance" value="HotSpot Client Compiler" />
+    <property name="ant.project.invoked-targets" value="Deploy on UAT env" />
+    <property name="service" value="Tomcat6" />
+    <property name="ant.file.type.buildCommon" value="file" />
+    <property name="os.name.ivy.instance" value="Windows Server 2008 R2" />
+    <property name="ivy.default.ivy.user.dir.ivy.instance" value="C:\.ivy2" />
+    <property name="ivy.default.always.check.exact.revision" value="false" />
+    <property name="ivy.default.settings.dir.ivy.instance" value="jar:file:/C:/Apache/apache-ant-1.8.2/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings" />
+    <property name="user.name" value="GOSHCC-ASDEV$" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="cxf.dir" value="C:/Apache/CXF/apache-cxf-2.2.6" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="jsp-folder-exists" value="true" />
+    <property name="ant.home.ivy.instance" value="C:\Apache\apache-ant-1.8.2\bin\.." />
+    <property name="file.encoding.ivy.instance" value="Cp1252" />
+    <property name="ivy.cache.ttl.default.ivy.instance" value="10s" />
+    <property name="ivy.conf.file.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\ivysettings.xml" />
+    <property name="java.specification.vendor.ivy.instance" value="Sun Microsystems Inc." />
+    <property name="java.vendor.ivy.instance" value="Sun Microsystems Inc." />
+    <property name="lib.dir" value="dist/validation/WEB-INF/lib" />
+    <property name="sun.cpu.isalist.ivy.instance" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="user.timezone" value="" />
+    <property name="java.endorsed.dirs.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\endorsed" />
+    <property name="path.separator" value=";" />
+    <property name="urldevsvr2" value="http://goshcc-devsvr2:8080/manager" />
+    <property name="java.class.version.ivy.instance" value="50.0" />
+    <property name="ivy.default.conf.dir" value="jar:file:/C:/Apache/apache-ant-1.8.2/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="java.runtime.name.ivy.instance" value="Java(TM) SE Runtime Environment" />
+    <property name="svn.home" value="C:/Program Files/CollabNet/Subversion Client" />
+    <property name="ivy.resolve.default.type.filter.ivy.instance" value="*" />
+    <property name="ant.project.default-target" value="Validation" />
+    <property name="build" value="0" />
+    <property name="ivy.targets.copied" value="true" />
+    <property name="ant.file" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\build.xml" />
+    <property name="ivy.distrib.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib" />
+    <property name="ivy.checksums.ivy.instance" value="sha1,md5" />
+    <property name="sun.arch.data.model.ivy.instance" value="32" />
+    <property name="ivy.build.artifacts.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/build/artifacts" />
+    <property name="instrumented.dir" value="cobertura/instr" />
+    <property name="user.variant.ivy.instance" value="" />
+    <property name="ivy.settings.file" value="ivysettings.xml" />
+    <property name="java.io.tmpdir" value="P:\TEMP\" />
+    <property name="cxf.home" value="C:\Apache\CXF\apache-cxf-2.2.6" />
+    <property name="ivy.buildlist.ivyfilepath.ivy.instance" value="ivy.xml" />
+    <property name="TODAY" value="February 1 2012" />
+    <property name="ivy.cache.ttl.default" value="10s" />
+    <property name="user.language" value="en" />
+    <property name="user.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ivy.home.ivy.instance" value="C:\.ivy2" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.specification.version.ivy.instance" value="1.6" />
+    <property name="ant.file.type" value="file" />
+    <property name="ivy.build.artifacts.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/build/artifacts" />
+    <property name="ant.file.type.Root" value="file" />
+    <property name="sun.io.unicode.encoding.ivy.instance" value="UnicodeLittle" />
+    <property name="ivy.status" value="integration" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="ivy.lib.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/lib" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ivy.default.conf.dir.ivy.instance" value="jar:file:/C:/Apache/apache-ant-1.8.2/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings" />
+    <property name="java.vm.version.ivy.instance" value="19.1-b02" />
+    <property name="ivy.file.present" value="true" />
+    <property name="cobertura.dir" value="C:/Cobertura/cobertura-1.9" />
+    <property name="projectVersion" value="" />
+    <property name="user.name.ivy.instance" value="GOSHCC-ASDEV$" />
+    <property name="ivy.cache.dir" value="C:\.ivy2\cache" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="java.io.tmpdir.ivy.instance" value="P:\TEMP\" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
+    <property name="java.home.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre" />
+    <property name="java.vm.vendor.ivy.instance" value="Sun Microsystems Inc." />
+    <property name="password" value="s3cret" />
+    <property name="ivy.default.settings.dir" value="jar:file:/C:/Apache/apache-ant-1.8.2/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings" />
+    <property name="ivy.configurations" value="*" />
+    <property name="springSourceDistDir" value="springSourceDistDir" />
+    <property name="ivy.settings.url" value="file:/C:/jenkinsbuilds/jobs/Validation%20-%20UAT/workspace/Validation/ivysettings.xml" />
+    <property name="os.name" value="Windows Server 2008 R2" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="sun.jnu.encoding.ivy.instance" value="Cp1252" />
+    <property name="ivy.deliver.ivy.pattern.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="urllocal" value="http://localhost:8080/manager" />
+    <property name="ivy.checksums" value="sha1,md5" />
+    <property name="ant.file.Validation" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\build.xml" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="ivy.log.modules.in.use" value="false" />
+    <property name="java.runtime.version.ivy.instance" value="1.6.0_24-b07" />
+    <property name="ivy.report.output.pattern" value="[organisation]-[module]-[conf].[ext]" />
+    <property name="ivy.version" value="2.2.0" />
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.6.0_24\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Java\jdk1.6.0_24\/bin;C:\Program Files (x86)\CollabNet\Subversion Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\NetApp\Windows Host Utilities\;C:\Program Files\NetApp\SnapDrive\;C:\Apache\apache-ant-1.8.2\bin;" />
+    <property name="ivy.conf.url" value="file:/C:/jenkinsbuilds/jobs/Validation%20-%20UAT/workspace/Validation/ivysettings.xml" />
+    <property name="java.vm.name.ivy.instance" value="Java HotSpot(TM) Client VM" />
+    <property name="os.version.ivy.instance" value="6.1" />
+    <property name="line.separator.ivy.instance" value="&#xd;&#xa;" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="sun.desktop.ivy.instance" value="windows" />
+    <property name="sun.cpu.endian.ivy.instance" value="little" />
+    <property name="java.vm.specification.name.ivy.instance" value="Java Virtual Machine Specification" />
+    <property name="basedir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="java.class.version" value="50.0" />
+    <property name="ivy.settings.url.ivy.instance" value="file:/C:/jenkinsbuilds/jobs/Validation%20-%20UAT/workspace/Validation/ivysettings.xml" />
+    <property name="path.separator.ivy.instance" value=";" />
+    <property name="sun.boot.class.path.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\modules\jdk.boot.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\classes" />
+    <property name="ant.home" value="C:\Apache\apache-ant-1.8.2\bin\.." />
+    <property name="distribution" value="validation" />
+    <property name="ivy.resolved.configurations" value="default" />
+    <property name="ivy.deliver.ivy.pattern" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="isFail" value="on" />
+    <property name="dependents" value="SchemaBindings" />
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\bin" />
+    <property name="ivy.default.always.check.exact.revision.ivy.instance" value="false" />
+    <property name="java.library.path.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Java\jdk1.6.0_24\/bin;C:\Program Files (x86)\CollabNet\Subversion Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\NetApp\Windows Host Utilities\;C:\Program Files\NetApp\SnapDrive\;C:\Apache\apache-ant-1.8.2\bin;" />
+    <property name="awt.toolkit.ivy.instance" value="sun.awt.windows.WToolkit" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="ivy.basedir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="user.variant" value="" />
+    <property name="ivy.log.modules.in.use.ivy.instance" value="false" />
+    <property name="sun.os.patch.level.ivy.instance" value="Service Pack 1" />
+    <property name="file.encoding.pkg.ivy.instance" value="sun.io" />
+    <property name="ivy.resolver.default.check.modified" value="false" />
+    <property name="ivy.settings.file.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\ivysettings.xml" />
+    <property name="ivy.nb.targets.copied" value="57" />
+    <property name="ant.project.name" value="Validation" />
+    <property name="ivy.cache.dir.ivy.instance" value="C:\.ivy2\cache" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="ivy.status.ivy.instance" value="integration" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="minor" value="0" />
+    <property name="file.separator.ivy.instance" value="\" />
+    <property name="ivy.deps.changed" value="true" />
+    <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="os.version" value="6.1" />
+    <property name="cobertura.home" value="C:/Cobertura/cobertura-1.9" />
+    <property name="user.home" value="C:\" />
+    <property name="sun.java.launcher.ivy.instance" value="SUN_STANDARD" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="ivy.organisation" value="gosh" />
+    <property name="user.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ant.library.dir.ivy.instance" value="C:\Apache\apache-ant-1.8.2\lib" />
+    <property name="ivy.publish.src.artifacts.pattern" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="java.vm.info.ivy.instance" value="mixed mode, sharing" />
+    <property name="ivy.distrib.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="project" value="Validation" />
+    <property name="ivy.revision" value="working@GOSHCC-ASDEV" />
+    <property name="user.timezone.ivy.instance" value="Europe/London" />
+    <property name="java.vm.version" value="19.1-b02" />
+    <property name="java.class.path" value="C:\Apache\apache-ant-1.8.2\bin\..\lib\ant-launcher.jar;C:\Apache\apache-ant-1.8.2\lib\ant-antlr.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-bcel.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-bsf.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-log4j.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-oro.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-regexp.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-resolver.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-xalan2.jar;C:\Apache\apache-ant-1.8.2\lib\ant-commons-logging.jar;C:\Apache\apache-ant-1.8.2\lib\ant-commons-net.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jai.jar;C:\Apache\apache-ant-1.8.2\lib\ant-javamail.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jdepend.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jmf.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jsch.jar;C:\Apache\apache-ant-1.8.2\lib\ant-junit.jar;C:\Apache\apache-ant-1.8.2\lib\ant-junit4.jar;C:\Apache\apache-ant-1.8.2\lib\ant-launcher.jar;C:\Apache\apache-ant-1.8.2\lib\ant-netrexx.jar;C:\Apache\apache-ant-1.8.2\lib\ant-swing.jar;C:\Apache\apache-ant-1.8.2\lib\ant-testutil.jar;C:\Apache\apache-ant-1.8.2\lib\ant.jar;C:\Apache\apache-ant-1.8.2\lib\ivy-2.2.0.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\lib\tools.jar" />
+    <property name="ivy.default.ivy.user.dir" value="C:\.ivy2" />
+    <property name="DSTAMP" value="20120201" />
+    <property name="user.home.ivy.instance" value="C:\" />
+    <property name="basedir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ant.library.dir" value="C:\Apache\apache-ant-1.8.2\lib" />
+    <property name="os.arch" value="x86" />
+    <property name="ivy.conf.file" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\ivysettings.xml" />
+    <property name="java.awt.graphicsenv.ivy.instance" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.vendor.url.bug.ivy.instance" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="java.vm.specification.version.ivy.instance" value="1.0" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="java.awt.printerjob.ivy.instance" value="sun.awt.windows.WPrinterJob" />
+    <property name="ivy.settings.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="username" value="tomcat" />
+    <property name="ant.core.lib" value="C:\Apache\apache-ant-1.8.2\lib\ant.jar" />
+    <property name="ivy.resolver.default.check.modified.ivy.instance" value="false" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ivy.settings.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="TSTAMP" value="1522" />
+    <property name="file.separator" value="\" />
+    <property name="user.language.ivy.instance" value="en" />
+    <property name="user.country.ivy.instance" value="GB" />
+    <property name="ivy.conf.url.ivy.instance" value="file:/C:/jenkinsbuilds/jobs/Validation%20-%20UAT/workspace/Validation/ivysettings.xml" />
+    <property name="java.runtime.version" value="1.6.0_24-b07" />
+    <property name="java.specification.name.ivy.instance" value="Java Platform API Specification" />
+    <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\modules\jdk.boot.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\classes" />
+    <property name="ivy.conf.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ant.file.type.Validation" value="file" />
+    <property name="ivy.retrieve.pattern" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/lib/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="release" value=".RELEASE" />
+    <property name="user.country" value="GB" />
+    <property name="java.version.ivy.instance" value="1.6.0_24" />
+    <property name="ivy.resolved.file" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\ivy.xml" />
+    <property name="os.arch.ivy.instance" value="x86" />
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="ivy.project.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="ivy.buildlist.ivyfilepath" value="ivy.xml" />
+  </properties>
+  <testcase classname="org.gosh.validation.BeansConfigTest" name="test" time="1.656" />
+  <system-out><![CDATA[2012-02-01 15:22:27,336 INFO [org.gosh.validation.BeansConfigTest] - <Loading context for locations: classpath:beans.xml>
+2012-02-01 15:22:27,414 DEBUG [org.springframework.core.CollectionFactory] - <Creating [java.util.concurrent.ConcurrentHashMap]>
+2012-02-01 15:22:27,414 DEBUG [org.springframework.core.CollectionFactory] - <Creating [java.util.concurrent.ConcurrentHashMap]>
+2012-02-01 15:22:27,414 DEBUG [org.springframework.core.CollectionFactory] - <Creating [java.util.concurrent.ConcurrentHashMap]>
+2012-02-01 15:22:27,414 DEBUG [org.springframework.core.CollectionFactory] - <Creating [java.util.concurrent.ConcurrentHashMap]>
+2012-02-01 15:22:27,414 DEBUG [org.springframework.core.CollectionFactory] - <Creating [java.util.concurrent.ConcurrentHashMap]>
+2012-02-01 15:22:27,414 DEBUG [org.springframework.core.CollectionFactory] - <Creating [java.util.concurrent.ConcurrentHashMap]>
+2012-02-01 15:22:27,414 DEBUG [org.springframework.core.CollectionFactory] - <Creating [java.util.concurrent.ConcurrentHashMap]>
+2012-02-01 15:22:27,430 DEBUG [org.springframework.core.CollectionFactory] - <Creating [java.util.concurrent.ConcurrentHashMap]>
+2012-02-01 15:22:27,461 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [beans.xml]>
+2012-02-01 15:22:27,477 DEBUG [org.springframework.beans.factory.xml.DefaultDocumentLoader] - <Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]>
+2012-02-01 15:22:27,899 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - <Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/beans/spring-beans-2.5.xsd]>
+2012-02-01 15:22:27,899 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - <Loading schema mappings from [META-INF/spring.schemas]>
+2012-02-01 15:22:27,914 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - <Loaded schema mappings: {http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/integration/xml/spring-integration-xml-1.0.xsd=org/springframework/integration/xml/config/spring-integration-xml-1.0.xsd, http://www.springframework.org/schema/jms/spring-jms-2.5.xsd=org/springframework/jms/config/spring-jms-2.5.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/integration/file/spring-integration-file-1.0.xsd=org/springframework/integration/file/config/spring-integration-file-1.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/integration/mail/spring-integration-mail-1.0.xsd=org/springframework/integration/mail/config/spring-integration-mail-1.0.xsd, http://www.springframework.org/schema/jms/spring-jms.xsd=org/springframework/jms/config/spring-jms-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/integration/spring-integration-1.0.xsd=org/springframework/integration/config/xml/spring-integration-1.0.xsd}>
+2012-02-01 15:22:27,914 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - <Found XML schema [http://www.springframework.org/schema/beans/spring-beans-2.5.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.5.xsd>
+2012-02-01 15:22:28,039 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - <Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/lang/spring-lang-2.5.xsd]>
+2012-02-01 15:22:28,039 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - <Found XML schema [http://www.springframework.org/schema/lang/spring-lang-2.5.xsd] in classpath: org/springframework/scripting/config/spring-lang-2.5.xsd>
+2012-02-01 15:22:28,055 DEBUG [org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader] - <Loading bean definitions>
+2012-02-01 15:22:28,086 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [config.xml]>
+2012-02-01 15:22:28,086 DEBUG [org.springframework.beans.factory.xml.DefaultDocumentLoader] - <Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]>
+2012-02-01 15:22:28,086 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - <Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/beans/spring-beans-2.5.xsd]>
+2012-02-01 15:22:28,086 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - <Found XML schema [http://www.springframework.org/schema/beans/spring-beans-2.5.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.5.xsd>
+2012-02-01 15:22:28,117 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - <Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/util/spring-util-2.5.xsd]>
+2012-02-01 15:22:28,117 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - <Found XML schema [http://www.springframework.org/schema/util/spring-util-2.5.xsd] in classpath: org/springframework/beans/factory/xml/spring-util-2.5.xsd>
+2012-02-01 15:22:28,117 DEBUG [org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader] - <Loading bean definitions>
+2012-02-01 15:22:28,133 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - <Neither XML 'id' nor 'name' specified - using generated bean name [org.gosh.validation.general.deduplication.FieldWeighting#c52af8]>
+2012-02-01 15:22:28,133 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - <Neither XML 'id' nor 'name' specified - using generated bean name [org.gosh.validation.general.deduplication.FieldWeighting#882100]>
+2012-02-01 15:22:28,133 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - <Neither XML 'id' nor 'name' specified - using generated bean name [org.gosh.validation.general.deduplication.FieldWeighting#12eb04e]>
+2012-02-01 15:22:28,133 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - <Neither XML 'id' nor 'name' specified - using generated bean name [org.gosh.validation.general.deduplication.FieldWeighting#38ddcc]>
+2012-02-01 15:22:28,133 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - <Neither XML 'id' nor 'name' specified - using generated bean name [org.gosh.validation.general.deduplication.FieldWeighting#169a11f]>
+2012-02-01 15:22:28,149 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - <Neither XML 'id' nor 'name' specified - using generated bean name [org.gosh.validation.general.deduplication.FieldWeighting#1d1011a]>
+2012-02-01 15:22:28,149 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - <Neither XML 'id' nor 'name' specified - using generated bean name [org.gosh.validation.general.deduplication.FieldWeighting#9f5b19]>
+2012-02-01 15:22:28,149 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - <Neither XML 'id' nor 'name' specified - using generated bean name [org.gosh.validation.general.deduplication.FieldWeighting#15df3f]>
+2012-02-01 15:22:28,149 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - <Neither XML 'id' nor 'name' specified - using generated bean name [org.gosh.validation.general.deduplication.FieldWeighting#1f3b8bc]>
+2012-02-01 15:22:28,149 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - <Neither XML 'id' nor 'name' specified - using generated bean name [org.gosh.validation.general.deduplication.FieldWeighting#1e54e00]>
+2012-02-01 15:22:28,149 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - <Neither XML 'id' nor 'name' specified - using generated bean name [org.gosh.validation.general.deduplication.FieldWeighting#1641957]>
+2012-02-01 15:22:28,149 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - <Neither XML 'id' nor 'name' specified - using generated bean name [org.gosh.validation.general.deduplication.FieldWeighting#bbaccd]>
+2012-02-01 15:22:28,149 DEBUG [org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver] - <Loaded mappings [{http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/integration/xml=org.springframework.integration.xml.config.IntegrationXmlNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/integration=org.springframework.integration.config.xml.IntegrationNamespaceHandler, http://www.springframework.org/schema/integration/file=org.springframework.integration.file.config.FileNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/jms=org.springframework.jms.config.JmsNamespaceHandler, http://www.springframework.org/schema/integration/mail=org.springframework.integration.mail.config.MailNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}]>
+2012-02-01 15:22:28,195 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - <Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0]>
+2012-02-01 15:22:28,195 DEBUG [org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader] - <Imported 10 bean definitions from relative location [config.xml]>
+2012-02-01 15:22:28,195 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - <Neither XML 'id' nor 'name' specified - using generated bean name [org.gosh.validation.convertion.DatabaseBatchNumberGenerator#660b27]>
+2012-02-01 15:22:28,195 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - <Neither XML 'id' nor 'name' specified - using generated bean name [org.gosh.validation.webcash.LegacyDatabaseDAO#16655a7]>
+2012-02-01 15:22:28,195 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - <Neither XML 'id' nor 'name' specified - using generated bean name [org.gosh.validation.convertion.DatabaseBatchNumberGenerator#1814dd0]>
+2012-02-01 15:22:28,195 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - <Neither XML 'id' nor 'name' specified - using generated bean name [org.gosh.validation.general.deduplication.ExtendedDatasetDAO#1bb02e]>
+2012-02-01 15:22:28,227 DEBUG [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loaded 49 bean definitions from location pattern [classpath:beans.xml]>
+2012-02-01 15:22:28,227 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@b19f4e: display name [org.springframework.context.support.GenericApplicationContext@b19f4e]; startup date [Wed Feb 01 15:22:28 GMT 2012]; root of context hierarchy>
+2012-02-01 15:22:28,227 INFO [org.springframework.context.support.GenericApplicationContext] - <Bean factory for application context [org.springframework.context.support.GenericApplicationContext@b19f4e]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1792d2c>
+2012-02-01 15:22:28,227 DEBUG [org.springframework.context.support.GenericApplicationContext] - <49 beans defined in org.springframework.context.support.GenericApplicationContext@b19f4e: display name [org.springframework.context.support.GenericApplicationContext@b19f4e]; startup date [Wed Feb 01 15:22:28 GMT 2012]; root of context hierarchy>
+2012-02-01 15:22:28,274 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'>
+2012-02-01 15:22:28,274 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'>
+2012-02-01 15:22:28,320 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0' to allow for resolving potential circular references>
+2012-02-01 15:22:28,320 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'beanName' of type [java.lang.String]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'fileEncoding' of type [java.lang.String]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'ignoreResourceNotFound' of type [boolean]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'ignoreUnresolvablePlaceholders' of type [boolean]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'localOverride' of type [boolean]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'location' of type [org.springframework.core.io.Resource]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'locations' of type [[Lorg.springframework.core.io.Resource;]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'nullValue' of type [java.lang.String]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'order' of type [int]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'placeholderPrefix' of type [java.lang.String]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'placeholderSuffix' of type [java.lang.String]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'properties' of type [java.util.Properties]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'propertiesArray' of type [[Ljava.util.Properties;]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'propertiesPersister' of type [org.springframework.util.PropertiesPersister]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'searchSystemEnvironment' of type [boolean]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'systemPropertiesMode' of type [int]>
+2012-02-01 15:22:28,336 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'systemPropertiesModeName' of type [java.lang.String]>
+2012-02-01 15:22:28,352 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'properties'>
+2012-02-01 15:22:28,352 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'properties'>
+2012-02-01 15:22:28,352 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'properties' to allow for resolving potential circular references>
+2012-02-01 15:22:28,352 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.springframework.beans.factory.config.PropertiesFactoryBean]>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.springframework.beans.factory.config.PropertiesFactoryBean]>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'fileEncoding' of type [java.lang.String]>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'ignoreResourceNotFound' of type [boolean]>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'localOverride' of type [boolean]>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'location' of type [org.springframework.core.io.Resource]>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'locations' of type [[Lorg.springframework.core.io.Resource;]>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'object' of type [java.lang.Object]>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'objectType' of type [java.lang.Class]>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'properties' of type [java.util.Properties]>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'propertiesArray' of type [[Ljava.util.Properties;]>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'propertiesPersister' of type [org.springframework.util.PropertiesPersister]>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'singleton' of type [boolean]>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [interface org.springframework.core.io.Resource] using property editor [org.springframework.core.io.ResourceEditor@f946f9]>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Invoking afterPropertiesSet() on bean with name 'properties'>
+2012-02-01 15:22:28,367 INFO [org.springframework.beans.factory.config.PropertiesFactoryBean] - <Loading properties file from class path resource [org/gosh/validation/application/test.properties]>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'properties'>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Resolved placeholder 'reDataSource.dbname'>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Resolved placeholder 'reDataSource.svrname'>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Resolved placeholder 'reDataSource.port'>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Resolved placeholder 'reDataSource.username'>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Resolved placeholder 'reDataSource.password'>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Resolved placeholder 'legacyDataSource.dbname'>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Resolved placeholder 'legacyDataSource.svrname'>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Resolved placeholder 'legacyDataSource.port'>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Resolved placeholder 'legacyDataSource.username'>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Resolved placeholder 'legacyDataSource.password'>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Resolved placeholder 'webDonationsLegacyDataSource.dbname'>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Resolved placeholder 'webDonationsLegacyDataSource.svrname'>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Resolved placeholder 'webDonationsLegacyDataSource.port'>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Resolved placeholder 'webDonationsLegacyDataSource.username'>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Resolved placeholder 'webDonationsLegacyDataSource.password'>
+2012-02-01 15:22:28,367 DEBUG [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Resolved placeholder 'supplierBatchNumberLog.table'>
+2012-02-01 15:22:28,383 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'org.springframework.scripting.config.scriptFactoryPostProcessor'>
+2012-02-01 15:22:28,383 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.springframework.scripting.config.scriptFactoryPostProcessor'>
+2012-02-01 15:22:28,383 DEBUG [org.springframework.core.CollectionFactory] - <Creating [java.util.concurrent.ConcurrentHashMap]>
+2012-02-01 15:22:28,383 DEBUG [org.springframework.core.CollectionFactory] - <Creating [java.util.concurrent.ConcurrentHashMap]>
+2012-02-01 15:22:28,383 DEBUG [org.springframework.core.CollectionFactory] - <Creating [java.util.concurrent.ConcurrentHashMap]>
+2012-02-01 15:22:28,383 DEBUG [org.springframework.core.CollectionFactory] - <Creating [java.util.concurrent.ConcurrentHashMap]>
+2012-02-01 15:22:28,383 DEBUG [org.springframework.core.CollectionFactory] - <Creating [java.util.concurrent.ConcurrentHashMap]>
+2012-02-01 15:22:28,383 DEBUG [org.springframework.core.CollectionFactory] - <Creating [java.util.concurrent.ConcurrentHashMap]>
+2012-02-01 15:22:28,383 DEBUG [org.springframework.core.CollectionFactory] - <Creating [java.util.concurrent.ConcurrentHashMap]>
+2012-02-01 15:22:28,383 DEBUG [org.springframework.core.CollectionFactory] - <Creating [java.util.concurrent.ConcurrentHashMap]>
+2012-02-01 15:22:28,383 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'org.springframework.scripting.config.scriptFactoryPostProcessor' to allow for resolving potential circular references>
+2012-02-01 15:22:28,383 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.springframework.scripting.config.scriptFactoryPostProcessor'>
+2012-02-01 15:22:28,383 DEBUG [org.springframework.context.support.GenericApplicationContext] - <Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@b1a411]>
+2012-02-01 15:22:28,383 DEBUG [org.springframework.context.support.GenericApplicationContext] - <Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@1188439]>
+2012-02-01 15:22:28,399 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,399 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,414 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Ignoring constructor [public org.springframework.scripting.groovy.GroovyScriptFactory(java.lang.String,org.springframework.scripting.groovy.GroovyObjectCustomizer)] of bean 'scriptFactory.adjustCafFileBatchNumbersTransformer': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scriptFactory.adjustCafFileBatchNumbersTransformer': Unsatisfied dependency expressed through constructor argument with index 1 of type [org.springframework.scripting.groovy.GroovyObjectCustomizer]: Ambiguous constructor argument types - did you specify the correct bean references as constructor arguments?>
+2012-02-01 15:22:28,414 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'scriptFactory.adjustCafFileBatchNumbersTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,414 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,414 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,461 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,461 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1792d2c: defining beans [fuzzyLookupTransformer,weightedScoringMatcher,reCodeTableValidationTransformer,relationshipReciprocalGuessingTransformer,reDataSource,legacyDataSource,webDonationsLegacyDataSource,supplierBatchNumberLog,properties,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,fileFormatRouter,webGeneratedDDsTransformer,webDonationsAggregator,webCashFileReprocessingTransformer,weightedMatcherTransformer,existingDDsValidationTransformer,schemaValidationTransformer,unmarshallingTransformer,marshallingTransformer,bankValidationTransformer,bankXindiceDAO,reBatchNumberValidationTransformer,logBatchNumberValidationTransformer,batchLogWriterOutboundChannelAdapter,constituentIdValidationTransformer,miscValidationTransformer,theFourIdsValidationTransformer,tributeValidationTransformer,headerAdditionTransformer,dataCleanUpTransformer,genericBankTransformer,firstPaymentDateTransformer,phoneEmailValidationTransformer,fixedStringCorrelationSetter,bolajisAdditionsTransformer,org.springframework.scripting.config.scriptFactoryPostProcessor,adjustCafFileBatchNumbersTransformer,blankSurnameTransformer,tributeImportIdTransformer,ddUpgradeBankValidationTransformer,bankUpgradeTransformer,giftReferenceNoRecogniserTransformer,bankWS,accountNumberWS,errorHeaderRouter,errorReporter,messageXmlTransformer,fundraiserEmailSplitter,outboundMailTransformer]; root of factory hierarchy>
+2012-02-01 15:22:28,461 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'fuzzyLookupTransformer'>
+2012-02-01 15:22:28,461 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'fuzzyLookupTransformer'>
+2012-02-01 15:22:28,477 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'fuzzyLookupTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,477 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.deduplication.FuzzyLookupTransformer]>
+2012-02-01 15:22:28,477 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.deduplication.FuzzyLookupTransformer]>
+2012-02-01 15:22:28,477 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,477 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dataSource' of type [javax.sql.DataSource]>
+2012-02-01 15:22:28,477 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'fuzzymatchiness' of type [java.lang.String]>
+2012-02-01 15:22:28,477 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,477 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,477 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,477 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'reDataSource'>
+2012-02-01 15:22:28,477 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'reDataSource'>
+2012-02-01 15:22:28,477 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'reDataSource' to allow for resolving potential circular references>
+2012-02-01 15:22:28,477 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [com.microsoft.sqlserver.jdbc.SQLServerDataSource]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [com.microsoft.sqlserver.jdbc.SQLServerDataSource]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'URL' of type [java.lang.String]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'applicationName' of type [java.lang.String]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'connection' of type [java.sql.Connection]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'databaseName' of type [java.lang.String]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'description' of type [java.lang.String]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'encrypt' of type [boolean]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'failoverPartner' of type [java.lang.String]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'hostNameInCertificate' of type [java.lang.String]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'instanceName' of type [java.lang.String]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'integratedSecurity' of type [boolean]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'lastUpdateCount' of type [boolean]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'lockTimeout' of type [int]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'logWriter' of type [java.io.PrintWriter]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'loginTimeout' of type [int]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'packetSize' of type [int]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'password' of type [java.lang.String]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'portNumber' of type [int]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reference' of type [javax.naming.Reference]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'responseBuffering' of type [java.lang.String]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'selectMethod' of type [java.lang.String]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'sendStringParametersAsUnicode' of type [boolean]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'serverName' of type [java.lang.String]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'trustServerCertificate' of type [boolean]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'trustStore' of type [java.lang.String]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'trustStorePassword' of type [java.lang.String]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'user' of type [java.lang.String]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'workstationID' of type [java.lang.String]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'xopenStates' of type [boolean]>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,492 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,508 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@1fa19ca]>
+2012-02-01 15:22:28,508 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'reDataSource'>
+2012-02-01 15:22:28,508 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'fuzzyLookupTransformer' via property 'dataSource' to bean named 'reDataSource'>
+2012-02-01 15:22:28,508 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,508 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,508 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,508 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'errorReporter'>
+2012-02-01 15:22:28,508 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'errorReporter' to allow for resolving potential circular references>
+2012-02-01 15:22:28,508 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.error.ErrorReporter]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.error.ErrorReporter]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'errorReporter'>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'fuzzyLookupTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'fuzzyLookupTransformer'>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'weightedScoringMatcher'>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'weightedScoringMatcher'>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'weightedScoringMatcher' to allow for resolving potential circular references>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.deduplication.WeightedScoringMatcher]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.deduplication.WeightedScoringMatcher]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'fieldWeightings' of type [java.util.List]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'threshold' of type [int]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@699df5]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#c52af8'>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.deduplication.FieldWeighting]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.deduplication.FieldWeighting]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'fieldToCompareTo' of type [java.lang.String]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'schemaLocation' of type [java.lang.String]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'shortMatchWeight' of type [int]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'weight' of type [int]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@1409c28]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#c52af8'>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#882100'>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@cc2061]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@cc2061]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#882100'>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#12eb04e'>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@161eccb]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#12eb04e'>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#38ddcc'>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@13e9b]>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#38ddcc'>
+2012-02-01 15:22:28,524 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#169a11f'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@1b5438d]>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#169a11f'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#1d1011a'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@1661f7b]>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#1d1011a'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#9f5b19'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@19cf00a]>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#9f5b19'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#15df3f'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@5332ca]>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#15df3f'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#1f3b8bc'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@2b7632]>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#1f3b8bc'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#1e54e00'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@15cfef8]>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#1e54e00'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#1641957'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@6755b6]>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#1641957'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#bbaccd'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@16efb90]>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.gosh.validation.general.deduplication.FieldWeighting#bbaccd'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'weightedScoringMatcher'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'reCodeTableValidationTransformer'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'reCodeTableValidationTransformer'>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'reCodeTableValidationTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.businessrules.RECodeTableValidationTransformer]>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.businessrules.RECodeTableValidationTransformer]>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dataSource' of type [javax.sql.DataSource]>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'fieldNameToCodeMapping' of type [java.util.HashMap]>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,539 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'reDataSource'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'reCodeTableValidationTransformer' via property 'dataSource' to bean named 'reDataSource'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'reCodeTableValidationTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'reCodeTableValidationTransformer'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'relationshipReciprocalGuessingTransformer'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'relationshipReciprocalGuessingTransformer'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'relationshipReciprocalGuessingTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.tributes.RelationshipReciprocalGuessingTransformer]>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.tributes.RelationshipReciprocalGuessingTransformer]>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'relationshipToReciprocalMap' of type [java.util.Map]>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'relationshipReciprocalGuessingTransformer'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'reDataSource'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'legacyDataSource'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'legacyDataSource'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'legacyDataSource' to allow for resolving potential circular references>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@7ca9bd]>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'legacyDataSource'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'webDonationsLegacyDataSource'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'webDonationsLegacyDataSource'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'webDonationsLegacyDataSource' to allow for resolving potential circular references>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.TypeConverterDelegate] - <Converting String to [int] using property editor [org.springframework.beans.propertyeditors.CustomNumberEditor@6bb78a]>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'webDonationsLegacyDataSource'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'supplierBatchNumberLog'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'supplierBatchNumberLog'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Ignoring constructor [public java.lang.String(byte[],int,int,int)] of bean 'supplierBatchNumberLog': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'supplierBatchNumberLog' defined in class path resource [config.xml]: Unsatisfied dependency expressed through constructor argument with index 0 of type [byte[]]: Ambiguous constructor argument types - did you specify the correct bean references as constructor arguments?>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Ignoring constructor [public java.lang.String(byte[],int,int,java.lang.String) throws java.io.UnsupportedEncodingException] of bean 'supplierBatchNumberLog': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'supplierBatchNumberLog' defined in class path resource [config.xml]: Unsatisfied dependency expressed through constructor argument with index 0 of type [byte[]]: Ambiguous constructor argument types - did you specify the correct bean references as constructor arguments?>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Ignoring constructor [public java.lang.String(byte[],int,int,java.nio.charset.Charset)] of bean 'supplierBatchNumberLog': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'supplierBatchNumberLog' defined in class path resource [config.xml]: Unsatisfied dependency expressed through constructor argument with index 0 of type [byte[]]: Ambiguous constructor argument types - did you specify the correct bean references as constructor arguments?>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Ignoring constructor [public java.lang.String(char[],int,int)] of bean 'supplierBatchNumberLog': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'supplierBatchNumberLog' defined in class path resource [config.xml]: Unsatisfied dependency expressed through constructor argument with index 0 of type [char[]]: Ambiguous constructor argument types - did you specify the correct bean references as constructor arguments?>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Ignoring constructor [public java.lang.String(int[],int,int)] of bean 'supplierBatchNumberLog': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'supplierBatchNumberLog' defined in class path resource [config.xml]: Unsatisfied dependency expressed through constructor argument with index 0 of type [int[]]: Ambiguous constructor argument types - did you specify the correct bean references as constructor arguments?>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Ignoring constructor [public java.lang.String(byte[],int,int)] of bean 'supplierBatchNumberLog': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'supplierBatchNumberLog' defined in class path resource [config.xml]: Unsatisfied dependency expressed through constructor argument with index 0 of type [byte[]]: Ambiguous constructor argument types - did you specify the correct bean references as constructor arguments?>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Ignoring constructor [public java.lang.String(byte[],int)] of bean 'supplierBatchNumberLog': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'supplierBatchNumberLog' defined in class path resource [config.xml]: Unsatisfied dependency expressed through constructor argument with index 0 of type [byte[]]: Ambiguous constructor argument types - did you specify the correct bean references as constructor arguments?>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Ignoring constructor [public java.lang.String(byte[],java.lang.String) throws java.io.UnsupportedEncodingException] of bean 'supplierBatchNumberLog': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'supplierBatchNumberLog' defined in class path resource [config.xml]: Unsatisfied dependency expressed through constructor argument with index 0 of type [byte[]]: Ambiguous constructor argument types - did you specify the correct bean references as constructor arguments?>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Ignoring constructor [public java.lang.String(byte[],java.nio.charset.Charset)] of bean 'supplierBatchNumberLog': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'supplierBatchNumberLog' defined in class path resource [config.xml]: Unsatisfied dependency expressed through constructor argument with index 0 of type [byte[]]: Ambiguous constructor argument types - did you specify the correct bean references as constructor arguments?>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Ignoring constructor [public java.lang.String(char[])] of bean 'supplierBatchNumberLog': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'supplierBatchNumberLog' defined in class path resource [config.xml]: Unsatisfied dependency expressed through constructor argument with index 0 of type [char[]]: Ambiguous constructor argument types - did you specify the correct bean references as constructor arguments?>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Ignoring constructor [public java.lang.String(java.lang.StringBuilder)] of bean 'supplierBatchNumberLog': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'supplierBatchNumberLog' defined in class path resource [config.xml]: Unsatisfied dependency expressed through constructor argument with index 0 of type [java.lang.StringBuilder]: Ambiguous constructor argument types - did you specify the correct bean references as constructor arguments?>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Ignoring constructor [public java.lang.String(byte[])] of bean 'supplierBatchNumberLog': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'supplierBatchNumberLog' defined in class path resource [config.xml]: Unsatisfied dependency expressed through constructor argument with index 0 of type [byte[]]: Ambiguous constructor argument types - did you specify the correct bean references as constructor arguments?>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Ignoring constructor [public java.lang.String(java.lang.StringBuffer)] of bean 'supplierBatchNumberLog': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'supplierBatchNumberLog' defined in class path resource [config.xml]: Unsatisfied dependency expressed through constructor argument with index 0 of type [java.lang.StringBuffer]: Ambiguous constructor argument types - did you specify the correct bean references as constructor arguments?>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'supplierBatchNumberLog' to allow for resolving potential circular references>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [java.lang.String]>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [java.lang.String]>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'bytes' of type [[B]>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'empty' of type [boolean]>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Not strongly caching class [java.lang.String] because it is not cache-safe>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'supplierBatchNumberLog'>
+2012-02-01 15:22:28,555 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'properties'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'fileFormatRouter'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'fileFormatRouter'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'fileFormatRouter' to allow for resolving potential circular references>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.FileFormatRouter]>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.FileFormatRouter]>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'fileFormatRouter'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'webGeneratedDDsTransformer'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'webGeneratedDDsTransformer'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'webGeneratedDDsTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.webdds.WebGeneratedDDsTransformer]>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.webdds.WebGeneratedDDsTransformer]>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'batchNumberGenerator' of type [org.gosh.validation.convertion.BatchNumberGenerator]>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'supplierID' of type [java.lang.String]>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.gosh.validation.convertion.DatabaseBatchNumberGenerator#660b27'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.convertion.DatabaseBatchNumberGenerator]>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.convertion.DatabaseBatchNumberGenerator]>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'batchNumberFromReAndLog' of type [int]>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dataSource' of type [javax.sql.DataSource]>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'endOfRange' of type [java.lang.String]>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'logDataSource' of type [javax.sql.DataSource]>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'startOfRange' of type [java.lang.String]>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'supplierBatchNumberLog' of type [java.lang.String]>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'reDataSource'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'org.gosh.validation.convertion.DatabaseBatchNumberGenerator#660b27' via property 'dataSource' to bean named 'reDataSource'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'legacyDataSource'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'supplierBatchNumberLog'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.gosh.validation.convertion.DatabaseBatchNumberGenerator#660b27'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'webGeneratedDDsTransformer'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'webDonationsAggregator'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'webDonationsAggregator'>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'webDonationsAggregator' to allow for resolving potential circular references>
+2012-02-01 15:22:28,570 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.webcash.WebDonationsAggregator]>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.webcash.WebDonationsAggregator]>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'batchNumberGenerator' of type [org.gosh.validation.convertion.BatchNumberGenerator]>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'legacyDao' of type [org.gosh.validation.webcash.LegacyDatabaseLookup]>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.ErrorReporter]>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'supplierID' of type [java.lang.String]>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'webDonationsAggregator' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.gosh.validation.webcash.LegacyDatabaseDAO#16655a7'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.webcash.LegacyDatabaseDAO]>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.webcash.LegacyDatabaseDAO]>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dataSource' of type [javax.sql.DataSource]>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'webDonationsLegacyDataSource'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.gosh.validation.webcash.LegacyDatabaseDAO#16655a7'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.gosh.validation.convertion.DatabaseBatchNumberGenerator#1814dd0'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'reDataSource'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'org.gosh.validation.convertion.DatabaseBatchNumberGenerator#1814dd0' via property 'dataSource' to bean named 'reDataSource'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'legacyDataSource'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'supplierBatchNumberLog'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.gosh.validation.convertion.DatabaseBatchNumberGenerator#1814dd0'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'webDonationsAggregator'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'webCashFileReprocessingTransformer'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'webCashFileReprocessingTransformer'>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'webCashFileReprocessingTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.webcash.WebCashFileReprocessingTransformer]>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.webcash.WebCashFileReprocessingTransformer]>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,586 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'webCashFileReprocessingTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'webCashFileReprocessingTransformer'>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'weightedMatcherTransformer'>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'weightedMatcherTransformer'>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'weightedMatcherTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.deduplication.WeightedMatcherTransformer]>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.deduplication.WeightedMatcherTransformer]>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dao' of type [org.gosh.validation.general.deduplication.ExtendedDatasetLookup]>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'matcher' of type [org.gosh.validation.general.deduplication.Matcher]>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'weightedMatcherTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'weightedScoringMatcher'>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'org.gosh.validation.general.deduplication.ExtendedDatasetDAO#1bb02e'>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.deduplication.ExtendedDatasetDAO]>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.deduplication.ExtendedDatasetDAO]>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dataSource' of type [javax.sql.DataSource]>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'emailTypes' of type [java.util.List]>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'phoneNumberTypes' of type [java.util.List]>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,602 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'reDataSource'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'org.gosh.validation.general.deduplication.ExtendedDatasetDAO#1bb02e' via property 'dataSource' to bean named 'reDataSource'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'org.gosh.validation.general.deduplication.ExtendedDatasetDAO#1bb02e'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'weightedMatcherTransformer'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'existingDDsValidationTransformer'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'existingDDsValidationTransformer'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'existingDDsValidationTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.directdebits.ExistingDDsValidationTransformer]>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.directdebits.ExistingDDsValidationTransformer]>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dataSource' of type [javax.sql.DataSource]>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'reDataSource'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'existingDDsValidationTransformer' via property 'dataSource' to bean named 'reDataSource'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'existingDDsValidationTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'existingDDsValidationTransformer'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'schemaValidationTransformer'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'schemaValidationTransformer'>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'schemaValidationTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.xml.SchemaValidationTransformer]>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.xml.SchemaValidationTransformer]>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'schemaFile' of type [java.io.File]>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'schemaLocation' of type [java.lang.String]>
+2012-02-01 15:22:28,617 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'schemaValidationTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'schemaValidationTransformer'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'unmarshallingTransformer'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'unmarshallingTransformer'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'unmarshallingTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.xml.DMCashUnmarshallerTransformer]>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.xml.DMCashUnmarshallerTransformer]>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'unmarshallingTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'unmarshallingTransformer'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'marshallingTransformer'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'marshallingTransformer'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'marshallingTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.xml.DMCashMarshallerTransformer]>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.xml.DMCashMarshallerTransformer]>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'marshallingTransformer'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'bankValidationTransformer'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'bankValidationTransformer'>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'bankValidationTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,633 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.bank.BankValidationTransformer]>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.bank.BankValidationTransformer]>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dao' of type [org.gosh.validation.general.bank.BankDAO]>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'bankValidationTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'bankXindiceDAO'>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'bankXindiceDAO'>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'bankXindiceDAO' to allow for resolving potential circular references>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.bank.BankXindiceDAO]>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.bank.BankXindiceDAO]>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'bankXindiceDAO'>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'bankValidationTransformer'>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'bankXindiceDAO'>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'reBatchNumberValidationTransformer'>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'reBatchNumberValidationTransformer'>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'reBatchNumberValidationTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.batchlog.REBatchNumberValidationTransformer]>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.batchlog.REBatchNumberValidationTransformer]>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dataSource' of type [javax.sql.DataSource]>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'reDataSource'>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'reBatchNumberValidationTransformer' via property 'dataSource' to bean named 'reDataSource'>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,649 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'reBatchNumberValidationTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'reBatchNumberValidationTransformer'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'logBatchNumberValidationTransformer'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'logBatchNumberValidationTransformer'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'logBatchNumberValidationTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.batchlog.LogBatchNumberValidationTransformer]>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.batchlog.LogBatchNumberValidationTransformer]>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dataSource' of type [javax.sql.DataSource]>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'supplierBatchNumberLog' of type [java.lang.String]>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'logBatchNumberValidationTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'legacyDataSource'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'supplierBatchNumberLog'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'logBatchNumberValidationTransformer'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'batchLogWriterOutboundChannelAdapter'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'batchLogWriterOutboundChannelAdapter'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'batchLogWriterOutboundChannelAdapter' to allow for resolving potential circular references>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.batchlog.BatchLogWriterOutboundChannelAdapter]>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.batchlog.BatchLogWriterOutboundChannelAdapter]>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dataSource' of type [javax.sql.DataSource]>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'supplierBatchNumberLog' of type [java.lang.String]>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'legacyDataSource'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'supplierBatchNumberLog'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'batchLogWriterOutboundChannelAdapter'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'constituentIdValidationTransformer'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'constituentIdValidationTransformer'>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'constituentIdValidationTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,664 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.businessrules.ConstituentIdValidationTransformer]>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.businessrules.ConstituentIdValidationTransformer]>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dataSource' of type [javax.sql.DataSource]>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'reDataSource'>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'constituentIdValidationTransformer' via property 'dataSource' to bean named 'reDataSource'>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'constituentIdValidationTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'constituentIdValidationTransformer'>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'miscValidationTransformer'>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'miscValidationTransformer'>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'miscValidationTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.MiscValidationTransformer]>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.MiscValidationTransformer]>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,680 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'miscValidationTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'miscValidationTransformer'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'theFourIdsValidationTransformer'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'theFourIdsValidationTransformer'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'theFourIdsValidationTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.businessrules.TheFourIdsValidationTransformer]>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.businessrules.TheFourIdsValidationTransformer]>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dataSource' of type [javax.sql.DataSource]>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'reDataSource'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'theFourIdsValidationTransformer' via property 'dataSource' to bean named 'reDataSource'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'theFourIdsValidationTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'theFourIdsValidationTransformer'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'tributeValidationTransformer'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'tributeValidationTransformer'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'tributeValidationTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.tributes.TributeValidationTransformer]>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.tributes.TributeValidationTransformer]>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'tributeValidationTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'tributeValidationTransformer'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'headerAdditionTransformer'>
+2012-02-01 15:22:28,695 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'headerAdditionTransformer'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'headerAdditionTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.HeaderAdditionTransformer]>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.HeaderAdditionTransformer]>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'headerAdditionTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'headerAdditionTransformer'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'dataCleanUpTransformer'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'dataCleanUpTransformer'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'dataCleanUpTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.DataCleanUpTransformer]>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.DataCleanUpTransformer]>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'cleanUpMap' of type [java.util.Map]>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'supplierBatchNumberLog'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'dataCleanUpTransformer' via property 'cleanUpMap' to bean named 'supplierBatchNumberLog'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'dataCleanUpTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'dataCleanUpTransformer'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'genericBankTransformer'>
+2012-02-01 15:22:28,711 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'genericBankTransformer'>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'genericBankTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.bank.GenericBankValidationTransformer]>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.bank.GenericBankValidationTransformer]>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dao' of type [org.gosh.validation.general.bank.BankDataAccess]>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dataSource' of type [javax.sql.DataSource]>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'reDataSource'>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'genericBankTransformer' via property 'dataSource' to bean named 'reDataSource'>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'genericBankTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'genericBankTransformer'>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'firstPaymentDateTransformer'>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'firstPaymentDateTransformer'>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'firstPaymentDateTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.directdebits.FirstPaymentDateTransformer]>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.directdebits.FirstPaymentDateTransformer]>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'firstPaymentDateTransformer'>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'phoneEmailValidationTransformer'>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'phoneEmailValidationTransformer'>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'phoneEmailValidationTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,727 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.businessrules.PhoneEmailValidationTransformer]>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.businessrules.PhoneEmailValidationTransformer]>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'errorReporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'phoneEmailValidationTransformer' via property 'errorReporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'phoneEmailValidationTransformer'>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'fixedStringCorrelationSetter'>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'fixedStringCorrelationSetter'>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'fixedStringCorrelationSetter' to allow for resolving potential circular references>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.webcash.FixedStringCorrelationSetter]>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.webcash.FixedStringCorrelationSetter]>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'fixedStringCorrelationSetter'>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'bolajisAdditionsTransformer'>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'bolajisAdditionsTransformer'>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'bolajisAdditionsTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.BolajisAdditionsTransformer]>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.BolajisAdditionsTransformer]>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,742 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'bolajisAdditionsTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'bolajisAdditionsTransformer'>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'org.springframework.scripting.config.scriptFactoryPostProcessor'>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'scriptedObject.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'scriptedObject.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'scriptedObject.adjustCafFileBatchNumbersTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.businessrules.AdjustCafFileBatchNumbersTransformer]>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.businessrules.AdjustCafFileBatchNumbersTransformer]>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'metaClass' of type [groovy.lang.MetaClass]>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Not strongly caching class [org.gosh.validation.general.businessrules.AdjustCafFileBatchNumbersTransformer] because it is not cache-safe>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'scriptedObject.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'blankSurnameTransformer'>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'blankSurnameTransformer'>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'blankSurnameTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.businessrules.BlankSurnameTransformer]>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.businessrules.BlankSurnameTransformer]>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,758 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'blankSurnameTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'blankSurnameTransformer'>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'tributeImportIdTransformer'>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'tributeImportIdTransformer'>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'tributeImportIdTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.tributes.TributeImportIdTransformer]>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.tributes.TributeImportIdTransformer]>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dataSource' of type [javax.sql.DataSource]>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'reDataSource'>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'tributeImportIdTransformer' via property 'dataSource' to bean named 'reDataSource'>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'tributeImportIdTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'tributeImportIdTransformer'>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'ddUpgradeBankValidationTransformer'>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'ddUpgradeBankValidationTransformer'>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'ddUpgradeBankValidationTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.bank.DDUpgradeBankValidationTransformer]>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.bank.DDUpgradeBankValidationTransformer]>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'accNumberWS' of type [org.gosh.validation.general.accountnumber.ws.SvcGetAccountNumber]>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dao' of type [org.gosh.validation.general.bank.BankDataAccess]>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dataSource' of type [javax.sql.DataSource]>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'accountNumberWS'>
+2012-02-01 15:22:28,774 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'accountNumberWS'>
+2012-02-01 15:22:28,914 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'accountNumberWS' to allow for resolving potential circular references>
+2012-02-01 15:22:28,914 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.accountnumber.ws.SvcGetAccountNumber]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.accountnumber.ws.SvcGetAccountNumber]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'WSDLDocumentLocation' of type [java.net.URL]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'executor' of type [java.util.concurrent.Executor]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'handlerResolver' of type [javax.xml.ws.handler.HandlerResolver]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'ports' of type [java.util.Iterator]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'serviceName' of type [javax.xml.namespace.QName]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'svcGetAccountNumberSoap' of type [org.gosh.validation.general.accountnumber.ws.SvcGetAccountNumberSoap]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'svcGetAccountNumberSoap12' of type [org.gosh.validation.general.accountnumber.ws.SvcGetAccountNumberSoap]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'accountNumberWS'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'ddUpgradeBankValidationTransformer' via property 'accNumberWS' to bean named 'accountNumberWS'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'reDataSource'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'ddUpgradeBankValidationTransformer' via property 'dataSource' to bean named 'reDataSource'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'ddUpgradeBankValidationTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'ddUpgradeBankValidationTransformer'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'bankUpgradeTransformer'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'bankUpgradeTransformer'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'bankUpgradeTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.bank.BankUpgradeTransformer]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.bank.BankUpgradeTransformer]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'bankUpgradeTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'bankUpgradeTransformer'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'giftReferenceNoRecogniserTransformer'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'giftReferenceNoRecogniserTransformer'>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'giftReferenceNoRecogniserTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.tributes.GiftReferenceNoRecogniserTransformer]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.tributes.GiftReferenceNoRecogniserTransformer]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dataSource' of type [javax.sql.DataSource]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'reporter' of type [org.gosh.validation.general.error.Reporter]>
+2012-02-01 15:22:28,930 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'reDataSource'>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'giftReferenceNoRecogniserTransformer' via property 'dataSource' to bean named 'reDataSource'>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Autowiring by type from bean name 'giftReferenceNoRecogniserTransformer' via property 'reporter' to bean named 'errorReporter'>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'giftReferenceNoRecogniserTransformer'>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'bankWS'>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'bankWS'>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'bankWS' to allow for resolving potential circular references>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.bank.ws.SvcGetBankDetForPledge]>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.bank.ws.SvcGetBankDetForPledge]>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'WSDLDocumentLocation' of type [java.net.URL]>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'executor' of type [java.util.concurrent.Executor]>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'handlerResolver' of type [javax.xml.ws.handler.HandlerResolver]>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'ports' of type [java.util.Iterator]>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'serviceName' of type [javax.xml.namespace.QName]>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'svcGetBankDetForPledgeSoap' of type [org.gosh.validation.general.bank.ws.SvcGetBankDetForPledgeSoap]>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'svcGetBankDetForPledgeSoap12' of type [org.gosh.validation.general.bank.ws.SvcGetBankDetForPledgeSoap]>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,945 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'bankWS'>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'accountNumberWS'>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'errorHeaderRouter'>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'errorHeaderRouter'>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'errorHeaderRouter' to allow for resolving potential circular references>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.error.ErrorHeaderRouter]>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.error.ErrorHeaderRouter]>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'errorHeaderRouter'>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'errorReporter'>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'messageXmlTransformer'>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'messageXmlTransformer'>
+2012-02-01 15:22:28,961 INFO [org.gosh.validation.application.ValidationPropertyReader] - <Configuration loaded>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'messageXmlTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.error.MessageXmlTransformer]>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.error.MessageXmlTransformer]>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'messageXmlTransformer'>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'fundraiserEmailSplitter'>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'fundraiserEmailSplitter'>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'fundraiserEmailSplitter' to allow for resolving potential circular references>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.webcash.FundraiserEmailSplitter]>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.webcash.FundraiserEmailSplitter]>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'mailSender' of type [org.springframework.mail.javamail.JavaMailSender]>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'properties' of type [java.util.Properties]>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'scriptFactory.adjustCafFileBatchNumbersTransformer'>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Returning cached instance of singleton bean 'properties'>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'fundraiserEmailSplitter'>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating shared instance of singleton bean 'outboundMailTransformer'>
+2012-02-01 15:22:28,961 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Creating instance of bean 'outboundMailTransformer'>
+2012-02-01 15:22:28,977 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Eagerly caching bean 'outboundMailTransformer' to allow for resolving potential circular references>
+2012-02-01 15:22:28,977 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.error.OutboundMailTransformer]>
+2012-02-01 15:22:28,977 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.error.OutboundMailTransformer]>
+2012-02-01 15:22:28,977 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,977 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Finished creating instance of bean 'outboundMailTransformer'>
+2012-02-01 15:22:28,977 DEBUG [org.springframework.context.support.GenericApplicationContext] - <Publishing event in context [org.springframework.context.support.GenericApplicationContext@b19f4e]: org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.support.GenericApplicationContext@b19f4e: display name [org.springframework.context.support.GenericApplicationContext@b19f4e]; startup date [Wed Feb 01 15:22:28 GMT 2012]; root of context hierarchy]>
+2012-02-01 15:22:28,977 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.BeansConfigTest]>
+2012-02-01 15:22:28,992 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.BeansConfigTest]>
+2012-02-01 15:22:28,992 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'applicationContext' of type [org.springframework.context.ConfigurableApplicationContext]>
+2012-02-01 15:22:28,992 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'autowireMode' of type [int]>
+2012-02-01 15:22:28,992 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:28,992 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'dependencyCheck' of type [boolean]>
+2012-02-01 15:22:28,992 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'loadCount' of type [int]>
+2012-02-01 15:22:28,992 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'name' of type [java.lang.String]>
+2012-02-01 15:22:28,992 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'populateProtectedVariables' of type [boolean]>
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

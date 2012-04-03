@@ -1,0 +1,283 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Libraries/javascript/dojox/widget
+svn://goshcc-devsvr1
+
+
+
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+Calendar
+dir
+
+Calendar.js
+file
+
+
+
+
+2012-01-18T12:23:36.180000Z
+8533b2f65fd774a5c5e1cea72bb5af79
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+CalendarFx.js
+file
+
+
+
+
+2012-01-18T12:23:36.148000Z
+361f85eec7f13f7c322d231135c066d5
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+ColorPicker
+dir
+
+ColorPicker.js
+file
+
+
+
+
+2012-01-18T12:23:36.180000Z
+1a20757705c2ba7909970f16f2858b69
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+Dialog
+dir
+
+Dialog.js
+file
+
+
+
+
+2012-01-18T12:23:37.164000Z
+8d51ae37df12320d2de5363d07dd1c99
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+DocTester
+dir
+
+DocTester.js
+file
+
+
+
+
+2012-01-18T12:23:37.117000Z
+a73b8681a8bf95f4e6556722174c83e4
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+FilePicker
+dir
+
+FilePicker.js
+file
+
+
+
+
+2012-01-18T12:23:36.195000Z
+035f38f0e9358f6f067b1a51f2267ea3
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+FisheyeList
+dir
+
+FisheyeList.js
+file
+
+
+
+
+2012-01-18T12:23:37.070000Z
+716f1c9ce2770888046c5854aa6a76f3
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+FisheyeLite.js
+file
+
+
+
+
+2012-01-18T12:23:36.180000Z
+e0c37ee50da2b3029aeef4136eeceecd
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+Iterator.js
+file
+
+
+
+
+2012-01-18T12:23:37.070000Z
+7aefdd11412c6cc81a8cd56af7d153ad
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+Loader
+dir
+
+Loader.js
+file
+
+
+
+
+2012-01-18T12:23:36.133000Z
+82dced81b97f8ea84c538a1ea3838060
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+Pager
+dir
+
+Pager.js
+file
+
+
+
+
+2012-01-18T12:23:37.164000Z
+ea35eaef3e1772a2264f00b25ee58ddf
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+PlaceholderMenuItem.js
+file
+
+
+
+
+2012-01-18T12:23:37.039000Z
+9d29fcb415bcd53b46b90da9463db37c
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+README
+file
+
+
+
+
+2012-01-18T12:23:36.851000Z
+081e235daeb349c8d4f99e2554e485b5
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+Roller.js
+file
+
+
+
+
+2012-01-18T12:23:37.164000Z
+4a5d28fdf2a69bc3acd30bcbabb5f43d
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+RollingList
+dir
+
+RollingList.js
+file
+
+
+
+
+2012-01-18T12:23:37.336000Z
+b74a0188fa1c7cd534a0691c76d2bdc9
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+SortList
+dir
+
+SortList.js
+file
+
+
+
+
+2012-01-18T12:23:36.945000Z
+8a8d234965d2e3bd82bc4e70ba8675f4
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+Toaster
+dir
+
+Toaster.js
+file
+
+
+
+
+2012-01-18T12:23:36.226000Z
+537e9d65af7011050ace9ae4a23754a8
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+Wizard
+dir
+
+Wizard.js
+file
+
+
+
+
+2012-01-18T12:23:37.180000Z
+0f5da47c4c96bfb8f13d43cce2a1f724
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+nls
+dir
+

@@ -1,0 +1,55 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Libraries/javascript/dojox/presentation
+svn://goshcc-devsvr1
+
+
+
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+README
+file
+
+
+
+
+2012-01-18T12:23:35.742000Z
+1820e7d3a2f0a69e350a2bcd516d51aa
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+_base.js
+file
+
+
+
+
+2012-01-18T12:23:35.648000Z
+1126d0c85ecdb9b20e1b544fb3549b7d
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+resources
+dir
+

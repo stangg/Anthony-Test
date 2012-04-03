@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2010 rel. 3 sp1 (http://www.altova.com) by GOSHCC Users (Great Ormond Street Hospital Childrens Charity) -->
+<GOSHCC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Direct%20Debit%20Import%20Schema.xsd">
+	<BatchNo>CR151</BatchNo>
+	<SupplierID>Sitel</SupplierID>
+	<DonorCplxType>
+		<Constituent_ID/>
+		<InternalConstit_ID/>
+		<SupplierDonorID>52678</SupplierDonorID>
+		<Title1>Miss</Title1>
+		<FirstName>Monnie</FirstName>
+		<LastName>Fard</LastName>
+		<ChangeOfName>false</ChangeOfName>
+		<PrimaryAddress>false</PrimaryAddress>
+		<Address>
+			<AddressLine>15 Walker Road</AddressLine>
+		</Address>
+		<City>Portsmouth</City>
+		<County/>
+		<PostCode>PO2 8PQ</PostCode>
+		<Country>United Kingdom</Country>
+		<DateOfBirth>1987-07-11</DateOfBirth>
+		<Gender>Female</Gender>
+		<PhoneEmail>
+			<Type>Email</Type>
+			<Value>monniefard@hotmail.co.uk</Value>
+		</PhoneEmail>
+		<PhoneEmail>
+			<Type>Mobile</Type>
+			<Value>07912 492649</Value>
+		</PhoneEmail>
+		<ConsCodes>
+			<Code>DMGen</Code>
+			<DateFrom>2011-05-22</DateFrom>
+		</ConsCodes>
+		<Attributes>
+			<Source>
+				<Category>Source</Category>
+				<Description>DRTV</Description>
+				<Date>2011-05-22</Date>
+				<Comment>Obtained via Sitel</Comment>
+			</Source>
+			<DirectMarketingType>
+				<Category>Direct Marketing Type</Category>
+				<Description>Bankers Order</Description>
+				<Date>2011-05-22</Date>
+				<Comment>Obtained via Sitel</Comment>
+			</DirectMarketingType>
+		</Attributes>
+		<ConstituentAppeal>
+			<AppealID>DMC0112E</AppealID>
+			<PackageID>GEN</PackageID>
+			<Date>2011-05-22</Date>
+			<Response>Responded</Response>
+			<MarketingSourceCode>52678</MarketingSourceCode>
+		</ConstituentAppeal>
+		<DonationDetails>
+			<DirectDebitDonationCplxType>
+				<Type>Pledge</Type>
+				<SubType>Donations - 1010</SubType>
+				<Date>2011-05-22</Date>
+				<Amount>3.00</Amount>
+				<Fund>UNGEN</Fund>
+				<Campaign>DM01</Campaign>
+				<Appeal>DMC0112E</Appeal>
+				<Package>GEN</Package>
+				<PostStatus>Not Posted</PostStatus>
+				<PaymentType>Direct Debit</PaymentType>
+				<LetterCode/>
+				<PDDUpgradeFlag>
+					<PDDUpgradeFlag>false</PDDUpgradeFlag>
+					<PreviousPaymentMethod>Not Applicable</PreviousPaymentMethod>
+					<GiftimportID/>
+				</PDDUpgradeFlag>
+				<InstallmentFreq>Monthly</InstallmentFreq>
+				<NoOfInstalments>120</NoOfInstalments>
+				<ScheduleMonthlyType>Specific Day</ScheduleMonthlyType>
+				<ScheduleDayOfMonth>5</ScheduleDayOfMonth>
+				<ScheduleSpacing>1</ScheduleSpacing>
+				<ScheduleWeeklyDayOfWeek>0</ScheduleWeeklyDayOfWeek>
+				<Date1stPayment>2011-07-05</Date1stPayment>
+				<RefNo/>
+				<GiftStatus>Active</GiftStatus>
+				<DonorBankCplxType>
+					<BankName>BARCLAYS BANK PLC</BankName>
+					<BranchName> </BranchName>
+					<BankSort>20-69-40</BankSort>
+					<BankAccName>Miss M, L Fard</BankAccName>
+					<BankAccNo>50653217</BankAccNo>
+					<BankAddress>
+						<AddressLine>Leicester</AddressLine>
+					</BankAddress>
+					<BankCity>Leicester</BankCity>
+					<BankCounty/>
+					<BankPost>LE87 2BB</BankPost>
+				</DonorBankCplxType>
+			</DirectDebitDonationCplxType>
+		</DonationDetails>
+	</DonorCplxType>
+	<DonorCplxType>
+		<Constituent_ID/>
+		<InternalConstit_ID/>
+		<SupplierDonorID>52703</SupplierDonorID>
+		<Title1>Mr</Title1>
+		<FirstName>Ragab</FirstName>
+		<LastName>El-Awam</LastName>
+		<ChangeOfName>false</ChangeOfName>
+		<PrimaryAddress>false</PrimaryAddress>
+		<Address>
+			<AddressLine>Flat 4</AddressLine>
+			<AddressLine>Jameson House</AddressLine>
+			<AddressLine>Glasshouse Walk</AddressLine>
+		</Address>
+		<City>London</City>
+		<County/>
+		<PostCode>SE11 5EX</PostCode>
+		<Country>United Kingdom</Country>
+		<DateOfBirth>1948-06-06</DateOfBirth>
+		<Gender>Male</Gender>
+		<PhoneEmail>
+			<Type>Email</Type>
+			<Value>ragabelawam@yahoo.co.uk</Value>
+		</PhoneEmail>
+		<PhoneEmail>
+			<Type>Mobile</Type>
+			<Value>07553 608908</Value>
+		</PhoneEmail>
+		<ConsCodes>
+			<Code>DMGen</Code>
+			<DateFrom>2011-05-23</DateFrom>
+		</ConsCodes>
+		<Attributes>
+			<SolicitCodes>
+				<Category>Solicit Codes</Category>
+				<Description>General Suppressions</Description>
+				<Date>2011-05-23</Date>
+				<Comment>Obtained via Sitel</Comment>
+			</SolicitCodes>
+			<Source>
+				<Category>Source</Category>
+				<Description>DRTV</Description>
+				<Date>2011-05-23</Date>
+				<Comment>Obtained via Sitel</Comment>
+			</Source>
+			<DirectMarketingType>
+				<Category>Direct Marketing Type</Category>
+				<Description>Bankers Order</Description>
+				<Date>2011-05-23</Date>
+				<Comment>Obtained via Sitel</Comment>
+			</DirectMarketingType>
+		</Attributes>
+		<ConstituentAppeal>
+			<AppealID>DMC0112E</AppealID>
+			<PackageID>GEN</PackageID>
+			<Date>2011-05-23</Date>
+			<Response>Responded</Response>
+			<MarketingSourceCode>52703</MarketingSourceCode>
+		</ConstituentAppeal>
+		<DonationDetails>
+			<DirectDebitDonationCplxType>
+				<Type>Pledge</Type>
+				<SubType>Donations - 1010</SubType>
+				<Date>2011-05-23</Date>
+				<Amount>3.00</Amount>
+				<Fund>UNGEN</Fund>
+				<Campaign>DM01</Campaign>
+				<Appeal>DMC0112E</Appeal>
+				<Package>GEN</Package>
+				<PostStatus>Not Posted</PostStatus>
+				<PaymentType>Direct Debit</PaymentType>
+				<LetterCode/>
+				<PDDUpgradeFlag>
+					<PDDUpgradeFlag>false</PDDUpgradeFlag>
+					<PreviousPaymentMethod>Not Applicable</PreviousPaymentMethod>
+					<GiftimportID/>
+				</PDDUpgradeFlag>
+				<InstallmentFreq>Monthly</InstallmentFreq>
+				<NoOfInstalments>120</NoOfInstalments>
+				<ScheduleMonthlyType>Specific Day</ScheduleMonthlyType>
+				<ScheduleDayOfMonth>5</ScheduleDayOfMonth>
+				<ScheduleSpacing>1</ScheduleSpacing>
+				<ScheduleWeeklyDayOfWeek>0</ScheduleWeeklyDayOfWeek>
+				<Date1stPayment>2011-07-05</Date1stPayment>
+				<RefNo/>
+				<GiftStatus>Active</GiftStatus>
+				<DonorBankCplxType>
+					<BankName>BARCLAYS BANK PLC</BankName>
+					<BranchName> </BranchName>
+					<BankSort>20-71-64</BankSort>
+					<BankAccName>Mr R
+					 El-Awam</BankAccName>
+					<BankAccNo>20592021</BankAccNo>
+					<BankAddress>
+						<AddressLine>Leicester</AddressLine>
+					</BankAddress>
+					<BankCity>Leicester</BankCity>
+					<BankCounty/>
+					<BankPost>LE87 2BB</BankPost>
+				</DonorBankCplxType>
+			</DirectDebitDonationCplxType>
+		</DonationDetails>
+	</DonorCplxType>
+	<DonorCplxType>
+		<Constituent_ID/>
+		<InternalConstit_ID/>
+		<SupplierDonorID>52728</SupplierDonorID>
+		<Title1>Mr</Title1>
+		<FirstName>Mark</FirstName>
+		<LastName>Edwards</LastName>
+		<ChangeOfName>false</ChangeOfName>
+		<PrimaryAddress>false</PrimaryAddress>
+		<Address>
+			<AddressLine>82 Swanton Road</AddressLine>
+		</Address>
+		<City>Erith</City>
+		<County/>
+		<PostCode>DA8 1LR</PostCode>
+		<Country>United Kingdom</Country>
+		<DateOfBirth>1967-12-13</DateOfBirth>
+		<Gender>Male</Gender>
+		<PhoneEmail>
+			<Type>Mobile</Type>
+			<Value>07956 445102</Value>
+		</PhoneEmail>
+		<ConsCodes>
+			<Code>DMGen</Code>
+			<DateFrom>2011-05-25</DateFrom>
+		</ConsCodes>
+		<Attributes>
+			<SolicitCodes>
+				<Category>Solicit Codes</Category>
+				<Description>General Suppressions</Description>
+				<Date>2011-05-25</Date>
+				<Comment>Obtained via Sitel</Comment>
+			</SolicitCodes>
+			<Source>
+				<Category>Source</Category>
+				<Description>DRTV</Description>
+				<Date>2011-05-25</Date>
+				<Comment>Obtained via Sitel</Comment>
+			</Source>
+			<DirectMarketingType>
+				<Category>Direct Marketing Type</Category>
+				<Description>Bankers Order</Description>
+				<Date>2011-05-25</Date>
+				<Comment>Obtained via Sitel</Comment>
+			</DirectMarketingType>
+		</Attributes>
+		<ConstituentAppeal>
+			<AppealID>DMC0112E</AppealID>
+			<PackageID>GEN</PackageID>
+			<Date>2011-05-25</Date>
+			<Response>Responded</Response>
+			<MarketingSourceCode>52728</MarketingSourceCode>
+		</ConstituentAppeal>
+		<TaxDeclaration>
+			<StartDate>2011-05-25</StartDate>
+			<TaxPayer>false</TaxPayer>
+			<DeclarationDate>2011-05-25</DeclarationDate>
+			<DeclarationIndicator>Oral</DeclarationIndicator>
+			<ConfirmationDate>2011-05-25</ConfirmationDate>
+		</TaxDeclaration>
+		<DonationDetails>
+			<DirectDebitDonationCplxType>
+				<Type>Pledge</Type>
+				<SubType>Donations - 1010</SubType>
+				<Date>2011-05-25</Date>
+				<Amount>4.00</Amount>
+				<Fund>UNGEN</Fund>
+				<Campaign>DM01</Campaign>
+				<Appeal>DMC0112E</Appeal>
+				<Package>GEN</Package>
+				<PostStatus>Not Posted</PostStatus>
+				<PaymentType>Direct Debit</PaymentType>
+				<LetterCode/>
+				<PDDUpgradeFlag>
+					<PDDUpgradeFlag>false</PDDUpgradeFlag>
+					<PreviousPaymentMethod>Not Applicable</PreviousPaymentMethod>
+					<GiftimportID/>
+				</PDDUpgradeFlag>
+				<InstallmentFreq>Monthly</InstallmentFreq>
+				<NoOfInstalments>120</NoOfInstalments>
+				<ScheduleMonthlyType>Specific Day</ScheduleMonthlyType>
+				<ScheduleDayOfMonth>5</ScheduleDayOfMonth>
+				<ScheduleSpacing>1</ScheduleSpacing>
+				<ScheduleWeeklyDayOfWeek>0</ScheduleWeeklyDayOfWeek>
+				<Date1stPayment>2011-07-05</Date1stPayment>
+				<RefNo/>
+				<GiftStatus>Active</GiftStatus>
+				<DonorBankCplxType>
+					<BankName>BARCLAYS BANK PLC</BankName>
+					<BranchName> </BranchName>
+					<BankSort>20-62-69</BankSort>
+					<BankAccName>Mr M, 
+					Edwards</BankAccName>
+					<BankAccNo>10311545</BankAccNo>
+					<BankAddress>
+						<AddressLine>Leicester</AddressLine>
+					</BankAddress>
+					<BankCity>Leicester</BankCity>
+					<BankCounty/>
+					<BankPost>LE87 2BB</BankPost>
+				</DonorBankCplxType>
+			</DirectDebitDonationCplxType>
+		</DonationDetails>
+	</DonorCplxType>
+</GOSHCC>

@@ -1,0 +1,578 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Coverage Report</title>
+<link title="Style" type="text/css" rel="stylesheet" href="css/main.css"/>
+<script type="text/javascript" src="js/popup.js"></script>
+</head>
+<body>
+<h5>Coverage Report - org.gosh.validation.webdds.WebGeneratedDDsTransformer</h5>
+<div class="separator">&nbsp;</div>
+<table class="report">
+<thead><tr>  <td class="heading">Classes in this File</td>  <td class="heading"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">Line Coverage</a></td>  <td class="heading"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">Branch Coverage</a></td>  <td class="heading"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">Complexity</a></td></tr></thead>
+  <tr><td><a href="org.gosh.validation.webdds.WebGeneratedDDsTransformer.html">WebGeneratedDDsTransformer</a></td><td><table cellpadding="0px" cellspacing="0px" class="percentgraph"><tr class="percentgraph"><td align="right" class="percentgraph" width="40">87%</td><td class="percentgraph"><div class="percentgraph"><div class="greenbar" style="width:86px"><span class="text">71/82</span></div></div></td></tr></table></td><td><table cellpadding="0px" cellspacing="0px" class="percentgraph"><tr class="percentgraph"><td align="right" class="percentgraph" width="40">54%</td><td class="percentgraph"><div class="percentgraph"><div class="greenbar" style="width:54px"><span class="text">27/50</span></div></div></td></tr></table></td><td class="value"><span class="hidden">0.0;</span>0</td></tr>
+  <tr><td><a href="org.gosh.validation.webdds.WebGeneratedDDsTransformer.html">WebGeneratedDDsTransformer$1</a></td><td><table cellpadding="0px" cellspacing="0px" class="percentgraph"><tr class="percentgraph"><td align="right" class="percentgraph" width="40">100%</td><td class="percentgraph"><div class="percentgraph"><div class="greenbar" style="width:100px"><span class="text">2/2</span></div></div></td></tr></table></td><td><table cellpadding="0px" cellspacing="0px" class="percentgraph"><tr class="percentgraph"><td align="right" class="percentgraph" width="40"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">N/A</a></td><td class="percentgraph"><div class="percentgraph"><div class="na" style="width:100px"><span class="text"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">N/A</a></span></div></div></td></tr></table></td><td class="value"><span class="hidden">0.0;</span>0</td></tr>
+
+</table>
+<div class="separator">&nbsp;</div>
+<table cellspacing="0" cellpadding="0" class="src">
+<tr>  <td class="numLine">&nbsp;1</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">package</span> org.gosh.validation.webdds;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;2</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;3</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> java.io.IOException;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;4</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> java.math.BigDecimal;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;5</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> java.math.BigInteger;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;6</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> java.util.ArrayList;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;7</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> java.util.List;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;8</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;9</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> javax.xml.bind.JAXBException;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;10</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> javax.xml.datatype.XMLGregorianCalendar;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;11</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;12</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.apache.commons.collections.CollectionUtils;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;13</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.apache.commons.collections.Predicate;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;14</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.apache.commons.lang.StringUtils;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;15</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.gosh.re.dmcash.bindings.Address;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;16</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.gosh.re.dmcash.bindings.GOSHCC;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;17</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.gosh.re.dmcash.bindings.GiftSubtype;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;18</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.gosh.re.dmcash.bindings.GOSHCC.DonorCplxType;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;19</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.gosh.re.dmcash.bindings.GOSHCC.DonorCplxType.Attributes;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;20</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.gosh.re.dmcash.bindings.GOSHCC.DonorCplxType.ConstituentAppeal;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;21</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.gosh.re.dmcash.bindings.GOSHCC.DonorCplxType.TaxDeclaration;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;22</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.gosh.re.dmcash.bindings.GOSHCC.DonorCplxType.Attributes.SolicitCodes;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;23</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.gosh.re.dmcash.bindings.GOSHCC.DonorCplxType.Attributes.Source;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;24</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.gosh.re.dmcash.bindings.GOSHCC.DonorCplxType.DonationDetails.DirectDebitDonationCplxType;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;25</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.gosh.re.dmcash.bindings.GOSHCC.DonorCplxType.DonationDetails.DirectDebitDonationCplxType.DonorBankCplxType;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;26</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.gosh.re.dmcash.bindings.GOSHCC.DonorCplxType.DonationDetails.DirectDebitDonationCplxType.PDDUpgradeFlag;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;27</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.gosh.validation.convertion.AbstractCsvConverter;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;28</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.springframework.integration.annotation.Transformer;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;29</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;30</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">/**</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;31</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> * This converts the file supplied by RSM to our XML format. </span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;32</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> */</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;33</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;<span class="keyword">public</span> <span class="keyword">class</span> WebGeneratedDDsTransformer <span class="keyword">extends</span> AbstractCsvConverter{</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;34</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String PAPERLESSDDS_HEADER = <span class="string">"Date,Time,Batch No,Ref,Campaign ID,Campaign,Donor Ref,Appeal Code,Title,Forename,Middle Name,Surname,Address 1,Address 2,Address 3,Town,County,Post Code,Country,Account Holder,Sort Code,Account No,Amount,Purchase Desc,Purchase 1,Purchase 2,Donation 1,Donation 2,Gift Aid,Start Date,Frequency,Bank Name,Bank Address 1,Bank Address 2,Bank Address 3,Bank Town,Bank County,Bank Post Code,Tel Type 1,Tel 1,Tel Type 2,Tel 2,Email,Data Protection Mail,Data Protection Email,Data Protection Phone,Data Protection SMS,Data Protection Sister,Data Protection Partner,Prompt Reason,Sex,DOB,Partner Forename,Partner Surname,Custom 1,Custom 2,Custom 3,Custom 4,Custom 5,Custom 6,Custom 7,Custom 8,Custom 9,Custom 10"</span>;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;35</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;36</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        @Transformer</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;37</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String transform(String message) <span class="keyword">throws</span> IOException, JAXBException {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;38</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                List&lt;String&gt; lines = <span class="keyword">new</span> ArrayList&lt;String&gt;();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;39</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                CollectionUtils.addAll(lines, StringUtils.split(message, <span class="string">"\n"</span>));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;40</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                CollectionUtils.filter(lines, <span class="keyword">new</span> Predicate(){</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;41</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        @Override</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;42</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">public</span> <span class="keyword">boolean</span> evaluate(Object object) {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;43</td>  <td class="nbHitsCovered">&nbsp;7</td>  <td class="src"><pre class="src">&nbsp;                                <span class="keyword">return</span> StringUtils.isNotBlank((String)object);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;44</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;45</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                });</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;46</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                </pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;47</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                GOSHCC goshcc = setUpGoshcc();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;48</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                loadDonations(lines, goshcc);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;49</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                </pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;50</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> marshall(goshcc);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;51</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;52</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;53</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">protected</span> <span class="keyword">void</span> loadDonations(List&lt;String&gt; donorLines, GOSHCC goshcc) {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;54</td>  <td class="nbHitsCovered"><a title="Line 54: Conditional coverage 100% (2/2).">&nbsp;3</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 54: Conditional coverage 100% (2/2).">                <span class="keyword">for</span> (String donorLine : donorLines) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;55</td>  <td class="nbHitsCovered"><a title="Line 55: Conditional coverage 100% (2/2).">&nbsp;6</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 55: Conditional coverage 100% (2/2).">                        <span class="keyword">if</span> (donorLines.get(0).equals(donorLine)){</a></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;56</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                <span class="comment">// this means we have the header line</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;57</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                                <span class="keyword">continue</span>;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;58</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;59</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        String[] fields = getFields(donorLine, <span class="string">","</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;60</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;61</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        DonorCplxType donor = <span class="keyword">new</span> DonorCplxType();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;62</td>  <td class="nbHitsCovered"><a title="Line 62: Conditional coverage 100% (2/2).">&nbsp;3</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 62: Conditional coverage 100% (2/2).">                        <span class="keyword">if</span> (fields.length != 64){</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;63</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                                <span class="keyword">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="string">"One of the records had an unexpected number of columns "</span> + String.valueOf(fields.length)+ <span class="string">". It was the following line: "</span> + donorLine);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;64</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;65</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        <span class="comment">// This is a bug but nobody noticed it before on test</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;66</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donor.setSupplierDonorID(fields[3]);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;67</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donor.setTitle1(fields[8]);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;68</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donor.setFirstName(fields[9]);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;69</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donor.setLastName(fields[11]);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;70</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donor.setChangeOfName(<span class="keyword">false</span>); <span class="comment">// from Bolaji's Data Mapping Doc</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;71</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        </pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;72</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        ArrayList&lt;String&gt; addressLines = <span class="keyword">new</span> ArrayList&lt;String&gt;();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;73</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        addressLines.add(fields[12]);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;74</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        addressLines.add(fields[13]);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;75</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        addressLines.add(fields[14]);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;76</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donor.setAddress(<span class="keyword">new</span> Address());</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;77</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donor.getAddress().getAddressLine().addAll(addressLines);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;78</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donor.setPrimaryAddress(<span class="keyword">false</span>); <span class="comment">// from Bolaji's Data Mapping Doc</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;79</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;80</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donor.setCity(fields[15]);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;81</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donor.setCounty(fields[16]);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;82</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donor.setPostCode(fields[17]);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;83</td>  <td class="nbHitsUncovered"><a title="Line 83: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 83: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (<span class="string">"GBR"</span>.equals(fields[18])){</a></span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;84</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                donor.setCountry(<span class="string">"United Kingdom"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;85</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        }<span class="keyword">else</span>{</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;86</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donor.setCountry(fields[18]); <span class="comment">// from Bolaji's Data Mapping Doc</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;87</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;88</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        XMLGregorianCalendar date = toDate(fields[51], <span class="string">"yyyy-MM-dd"</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;89</td>  <td class="nbHitsUncovered"><a title="Line 89: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 89: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (date != <span class="keyword">null</span>){</a></span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;90</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donor.setDateOfBirth(date);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;91</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;92</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donor.setGender(<span class="string">"Unknown"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;93</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;94</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        GOSHCC.DonorCplxType.ConsCodes consCodes = <span class="keyword">new</span> GOSHCC.DonorCplxType.ConsCodes();</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;95</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        consCodes.setCode(<span class="string">"DMGen"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;96</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        consCodes.setDateFrom(toDate(fields[0], <span class="string">"yyyy-MM-dd"</span>)); <span class="comment">// from Bolaji's Data Mapping Doc</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;97</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donor.getConsCodes().add(consCodes);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;98</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        </pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;99</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        addPhoneEmail(donor, fields[42], <span class="string">"Email"</span>); <span class="comment">// from Bolaji's Data Mapping Doc</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;100</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        addPhoneEmail(donor, fields[39], <span class="string">"Home"</span>); <span class="comment">// from Bolaji's Data Mapping Doc</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;101</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        addPhoneEmail(donor, fields[41], <span class="string">"Mobile"</span>); <span class="comment">// from Bolaji's Data Mapping Doc</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;102</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;103</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        <span class="comment">// Attributes </span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;104</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        Attributes attributes = <span class="keyword">new</span> GOSHCC.DonorCplxType.Attributes();</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;105</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donor.setAttributes(attributes);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;106</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                </pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;107</td>  <td class="nbHitsUncovered"><a title="Line 107: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 107: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (<span class="string">"Y"</span>.equals(fields[44])){</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;108</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                                addSolicitCodes(donor, <span class="string">"Email Opt-In"</span>); <span class="comment">// from Bolaji's Data Mapping Doc</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;109</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;110</td>  <td class="nbHitsUncovered"><a title="Line 110: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 110: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (<span class="string">"Y"</span>.equals(fields[45])){</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;111</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                addSolicitCodes(donor, <span class="string">"Phone Opt-In"</span>);</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;112</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;113</td>  <td class="nbHitsUncovered"><a title="Line 113: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 113: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (<span class="string">"Y"</span>.equals(fields[46])){</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;114</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                addSolicitCodes(donor, <span class="string">"SMS Opt-In"</span>); <span class="comment">// from Bolaji's Data Mapping Doc</span></span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;115</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;116</td>  <td class="nbHitsUncovered"><a title="Line 116: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 116: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (<span class="string">"Y"</span>.equals(fields[47])){</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;117</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                                addSolicitCodes(donor, <span class="string">"3rd Party Data Protection Opt Out"</span>); <span class="comment">// from Bolaji's Data Mapping Doc</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;118</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;119</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        </pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;120</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        addSourceOnline(donor);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;121</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        </pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;122</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        addDirectMarketingType(donor, <span class="string">"Bankers Order"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;123</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;124</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        <span class="comment">// Donation</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;125</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        GOSHCC.DonorCplxType.DonationDetails donationDetails = <span class="keyword">new</span> GOSHCC.DonorCplxType.DonationDetails();</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;126</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donor.setDonationDetails(donationDetails);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;127</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;128</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        DirectDebitDonationCplxType donation = <span class="keyword">new</span> DirectDebitDonationCplxType();</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;129</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;130</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setType(<span class="string">"Pledge"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;131</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        <span class="comment">// Live Reported Bug that BS retains was part of the spec and does not want to raise as CR. It was 'Donations - 1010'.</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;132</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setSubType(GiftSubtype.DONATIONS_INTERNET_1014);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;133</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setDate(toDate(fields[0], <span class="string">"yyyy-MM-dd"</span>));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;134</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setAmount(<span class="keyword">new</span> BigDecimal(fields[22]));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;135</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setFund(<span class="string">"UNGEN"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;136</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setCampaign(createCampaignFromCR104(fields[6]));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;137</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setAppeal(createAppealFromCR104(fields[7], fields[54]));                        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;138</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setPackage(<span class="string">"GEN"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;139</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setPostStatus(<span class="string">"Not Posted"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;140</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setPaymentType(<span class="string">"Direct Debit"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;141</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setLetterCode(<span class="string">""</span>); <span class="comment">//leave blank</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;142</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        PDDUpgradeFlag flag = <span class="keyword">new</span> PDDUpgradeFlag();</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;143</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        flag.setPDDUpgradeFlag(<span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;144</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        flag.setPreviousPaymentMethod(<span class="string">"Not Applicable"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;145</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        flag.setGiftimportID(<span class="string">""</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;146</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setPDDUpgradeFlag(flag);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;147</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setInstallmentFreq(fields[30]);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;148</td>  <td class="nbHitsUncovered"><a title="Line 148: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 148: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (StringUtils.equals(fields[30], <span class="string">"Monthly"</span>)){</a></span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;149</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                donation.setNoOfInstalments(BigInteger.valueOf(<span class="keyword">new</span> Long(120)));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;150</td>  <td class="nbHitsUncovered"><a title="Line 150: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 150: Conditional coverage 0% (0/2).">                        } <span class="keyword">else</span> <span class="keyword">if</span> (StringUtils.equals(fields[30], <span class="string">"Annually"</span>)){</a></span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;151</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                donation.setNoOfInstalments(BigInteger.valueOf(<span class="keyword">new</span> Long(10)));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;152</td>  <td class="nbHitsUncovered"><a title="Line 152: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 152: Conditional coverage 0% (0/2).">                        } <span class="keyword">else</span> <span class="keyword">if</span> (StringUtils.equals(fields[30], <span class="string">"Semi-Annually"</span>)){</a></span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;153</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                donation.setNoOfInstalments(BigInteger.valueOf(<span class="keyword">new</span> Long(20)));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;154</td>  <td class="nbHitsUncovered"><a title="Line 154: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 154: Conditional coverage 0% (0/2).">                        } <span class="keyword">else</span> <span class="keyword">if</span> (StringUtils.equals(fields[30], <span class="string">"Quarterly"</span>)){</a></span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;155</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                donation.setNoOfInstalments(BigInteger.valueOf(<span class="keyword">new</span> Long(40)));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;156</td>  <td class="nbHitsUncovered"><a title="Line 156: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 156: Conditional coverage 0% (0/2).">                        }  <span class="keyword">else</span> <span class="keyword">if</span> (StringUtils.equals(fields[30], <span class="string">"Bimonthly"</span>)){</a></span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;157</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                donation.setNoOfInstalments(BigInteger.valueOf(<span class="keyword">new</span> Long(240)));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;158</td>  <td class="nbHitsUncovered"><a title="Line 158: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 158: Conditional coverage 0% (0/2).">                        }  <span class="keyword">else</span> <span class="keyword">if</span> (StringUtils.equals(fields[30], <span class="string">"Quarterly"</span>)){</a></span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;159</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                donation.setNoOfInstalments(BigInteger.valueOf(<span class="keyword">new</span> Long(40)));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;160</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;161</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setScheduleMonthlyType(<span class="string">"Specific Day"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;162</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setScheduleDayOfMonth(setupDaySchedule(fields[29]));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;163</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setScheduleSpacing(BigInteger.valueOf(<span class="keyword">new</span> Long(1)));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;164</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setScheduleWeeklyDayOfWeek(BigInteger.valueOf(<span class="keyword">new</span> Long(0)));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;165</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setDate1StPayment(toDate(fields[29], <span class="string">"yyyy-MM-dd"</span>));                </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;166</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setRefNo(<span class="string">"1"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;167</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setGiftStatus(<span class="string">"Active"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;168</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;169</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        <span class="comment">//Bank</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;170</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        DonorBankCplxType bank = <span class="keyword">new</span> DonorBankCplxType();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;171</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        String clean = cleanupField(fields[31]);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;172</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        bank.setBankName(clean);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;173</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        bank.setBranchName(<span class="string">" "</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;174</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        ArrayList&lt;String&gt; bAddLines = <span class="keyword">new</span> ArrayList&lt;String&gt;();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;175</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        bAddLines.add(fields[32]);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;176</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        bAddLines.add(fields[33]);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;177</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        bAddLines.add(fields[34]);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;178</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        bank.setBankAddress(<span class="keyword">new</span> Address());</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;179</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        bank.getBankAddress().getAddressLine().addAll(bAddLines);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;180</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        bank.setBankCity(fields[35]);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;181</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        bank.setBankCounty(fields[36]);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;182</td>  <td class="nbHitsUncovered"><a title="Line 182: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 182: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (StringUtils.isBlank(fields[37])){</a></span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;183</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                bank.setBankPost(<span class="string">"AAAAAAA"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;184</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        }<span class="keyword">else</span>{</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;185</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                bank.setBankPost(fields[37]);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;186</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;187</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        bank.setBankAccName(fields[19]);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;188</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        bank.setBankAccNo(fields[21]);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;189</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        bank.setBankSort(formatSortCode(fields[20]));</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;190</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;191</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donation.setDonorBankCplxType(bank);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;192</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;193</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        <span class="comment">//Tax                </span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;194</td>  <td class="nbHitsUncovered"><a title="Line 194: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 194: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (<span class="string">"Y"</span>.equals(fields[28])){</a></span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;195</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                TaxDeclaration declaration = <span class="keyword">new</span> GOSHCC.DonorCplxType.TaxDeclaration(); <span class="comment">// from Bolaji's Data Mapping Doc</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;196</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                declaration.setDeclarationDate(donation.getDate());</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;197</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                declaration.setDeclarationIndicator(<span class="string">"Oral"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;198</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                declaration.setStartDate(donation.getDate());</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;199</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                declaration.setTaxPayer(<span class="keyword">true</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;200</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                declaration.setConfirmationDate(donation.getDate());</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;201</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                donor.setTaxDeclaration(declaration);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;202</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;203</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                                                </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;204</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        donationDetails.setDirectDebitDonationCplxType(donation);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;205</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        </pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;206</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        addConstituentAppeal(donor, donation);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;207</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;208</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        goshcc.getDonorCplxType().add(donor);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;209</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;210</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;211</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;212</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> String formatSortCode(String sortCode) {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;213</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                String s1 = sortCode.substring(0, 2) ;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;214</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                String s2 = sortCode.substring(2, 4) ;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;215</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                String s3 = sortCode.substring(4, 6) ;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;216</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> s1 + <span class="string">"-"</span> + s2 + <span class="string">"-"</span> + s3;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;217</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;218</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;219</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> String cleanupField(String field) {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;220</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                String clean = StringUtils.substringBefore(field, <span class="string">","</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;221</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                String clean1 = StringUtils.strip(clean, <span class="string">"\""</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;222</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                String clean2 = StringUtils.strip(clean1, <span class="string">"'"</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;223</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                String clean3 = StringUtils.trimToEmpty(clean2);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;224</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> clean3;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;225</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;226</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;227</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">int</span> setupDaySchedule(String startDate) {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;228</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                String dayFromStartDate = startDate.substring(8,10);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;229</td>  <td class="nbHitsUncovered"><a title="Line 229: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 229: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (dayFromStartDate.equals(<span class="string">"01"</span>)){</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;230</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> 1;</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;231</td>  <td class="nbHitsUncovered"><a title="Line 231: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 231: Conditional coverage 50% (1/2).">                } <span class="keyword">else</span> <span class="keyword">if</span> (dayFromStartDate.equals(<span class="string">"05"</span>)){</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;232</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> 5;</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;233</td>  <td class="nbHitsUncovered"><a title="Line 233: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 233: Conditional coverage 50% (1/2).">                } <span class="keyword">else</span> <span class="keyword">if</span> (dayFromStartDate.equals(<span class="string">"15"</span>)){</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;234</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> 15;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;235</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                } </pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;236</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> 1;</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;237</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;238</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/**</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;239</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * @return string appealid</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;240</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * @param string fields 7 (Appeal Code), string fields 54 (Custom 1)</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;241</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * &lt;p&gt; Code according to CR RE-IT-104:</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;242</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * &lt;p&gt;1)        Pre-coded within the landing pages, retain these codes (this also includes other none DM codes that are pre-populated). </span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;243</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                &lt;br/&gt;                        Appeal Code DMC0910B. Donor Ref (RE CampID) DM09</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;244</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;245</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * &lt;p&gt;2)        Code to be populated based on data within the Custom 1 field as follows:</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;246</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                &lt;br/&gt;                        If 'TV Ad' then Appeal Code: DMC0110N, Donor Ref: DM01</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;247</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                &lt;br/&gt;                        If 'Other' then Appeal Code: DMC0110P, Donor Ref: DM01</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;248</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                &lt;br/&gt;                        If 'Mailing' then Appeal Code: DMC01109, Donor Ref: DM01</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;249</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;250</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * &lt;p&gt;3) All other gifts that are neither pre-coded (1) or have Custom 1 fields populated are to be defaulted to:</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;251</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                &lt;br/&gt;                        Appeal Code: DMC011009, Donor Ref: DM01</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;252</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;253</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String createAppealFromCR104(String fields7, String field54) {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;254</td>  <td class="nbHitsCovered"><a title="Line 254: Conditional coverage 100% (2/2).">&nbsp;7</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 254: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (StringUtils.isBlank(fields7)){</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;255</td>  <td class="nbHitsCovered"><a title="Line 255: Conditional coverage 100% (2/2).">&nbsp;6</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 255: Conditional coverage 100% (2/2).">                        <span class="keyword">if</span> (StringUtils.equalsIgnoreCase(<span class="string">"TV ad"</span>, field54)){</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;256</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                                <span class="keyword">return</span> <span class="string">"DMC0110N"</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;257</td>  <td class="nbHitsCovered"><a title="Line 257: Conditional coverage 100% (2/2).">&nbsp;3</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 257: Conditional coverage 100% (2/2).">                        } <span class="keyword">else</span> <span class="keyword">if</span> (StringUtils.equalsIgnoreCase(<span class="string">"Other"</span>, field54)){</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;258</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                                <span class="keyword">return</span> <span class="string">"DMC0110P"</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;259</td>  <td class="nbHitsCovered"><a title="Line 259: Conditional coverage 100% (2/2).">&nbsp;2</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 259: Conditional coverage 100% (2/2).">                        } <span class="keyword">else</span> <span class="keyword">if</span> (StringUtils.equalsIgnoreCase(<span class="string">"Mailing"</span>, field54)){</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;260</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                                <span class="keyword">return</span> <span class="string">"DMC01109"</span>;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;261</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        } <span class="keyword">else</span> {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;262</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                                <span class="keyword">return</span> <span class="string">"DMC011009"</span>;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;263</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;264</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;265</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> fields7;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;266</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;267</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;268</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/**</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;269</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * @return string campaignid</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;270</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * @param string fields 6 (Donor Ref)</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;271</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * &lt;p&gt; Code according to CR RE-IT-104:</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;272</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * &lt;p&gt;1)        Pre-coded within the landing pages, retain these codes (this also includes other none DM codes that are pre-populated). </span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;273</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                &lt;br/&gt;                        Appeal Code DMC0910B. Donor Ref (RE CampID) DM09</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;274</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;275</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * &lt;p&gt;2)        Code to be populated based on data within the Custom 1 field as follows:</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;276</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                &lt;br/&gt;                        If TV Ad then Appeal Code: DMC0110N, Donor Ref: DM01</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;277</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                &lt;br/&gt;                        If Other then Appeal Code: DMC0110P, Donor Ref: DM01</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;278</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                &lt;br/&gt;                        If Mailing then Appeal Code: DMC01109, Donor Ref: DM01</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;279</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;280</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * &lt;p&gt;3) All other gifts that are neither pre-coded (1) or have Custom 1 fields populated are to be defaulted to:</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;281</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                &lt;br/&gt;                        Appeal Code: DMC011009, Donor Ref: DM01</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;282</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;283</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> String createCampaignFromCR104(String fields6) {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;284</td>  <td class="nbHitsUncovered"><a title="Line 284: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 284: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (StringUtils.isBlank(fields6)){                        </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;285</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> <span class="string">"DM01"</span>;        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;286</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                } </pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;287</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> fields6;</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;288</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;289</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;290</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">void</span> addSourceOnline(DonorCplxType donor) {</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;291</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                Source source = <span class="keyword">new</span> Source();</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;292</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                source.setDescription(<span class="string">"Online"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;293</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                source.setCategory(<span class="string">"Source"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;294</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                source.setDate(donor.getConsCodes().get(0).getDateFrom());</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;295</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                source.setComment(<span class="string">"Obtained via RSM"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;296</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                donor.getAttributes().setSource(source);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;297</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;298</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;299</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">void</span> addConstituentAppeal(DonorCplxType donor, DirectDebitDonationCplxType donation) {</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;300</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                ConstituentAppeal constituentAppeal = <span class="keyword">new</span> ConstituentAppeal();</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;301</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                constituentAppeal.setAppealID(donation.getAppeal());</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;302</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                constituentAppeal.setPackageID(donation.getPackage());</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;303</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                constituentAppeal.setMarketingSourceCode(donor.getSupplierDonorID()); <span class="comment">// This has been reported as live bug but the logic is already in the code.</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;304</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                constituentAppeal.setDate(donation.getDate());</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;305</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                constituentAppeal.setResponse(<span class="string">"Responded"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;306</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                donor.setConstituentAppeal(constituentAppeal);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;307</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;308</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;309</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">void</span> addSolicitCodes(DonorCplxType donor, String description){</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;310</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                List&lt;SolicitCodes&gt; solicitCodes = donor.getAttributes().getSolicitCodes();</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;311</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                SolicitCodes solicitCode = <span class="keyword">new</span> SolicitCodes();</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;312</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                solicitCode.setDescription(description);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;313</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                solicitCode.setCategory(<span class="string">"Solicit Codes"</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;314</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                solicitCode.setDate(donor.getConsCodes().get(0).getDateFrom());</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;315</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                solicitCode.setComment(<span class="string">"Obtained via RSM"</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;316</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                solicitCodes.add(solicitCode);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;317</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;318</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;}</pre></td></tr>
+</table>
+
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 1.9 on 01/02/12 15:22.</div>
+</body>
+</html>

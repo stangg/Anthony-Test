@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GOSHCC>
+    <BatchNo>85142</BatchNo>
+    <SupplierID>testID</SupplierID>
+    <DonorCplxType>
+        <SupplierDonorID>144058</SupplierDonorID>
+        <Title1>Mrs</Title1>
+        <FirstName>E</FirstName>
+        <LastName>Jerome</LastName>
+        <ChangeOfName>false</ChangeOfName>
+        <PrimaryAddress>false</PrimaryAddress>
+        <Address>
+            <AddressLine>Flat 34</AddressLine>
+            <AddressLine>Tealby Court</AddressLine>
+            <AddressLine>Georges Road</AddressLine>
+        </Address>
+        <City>LONDON</City>
+        <County />
+        <PostCode>N7 8HY</PostCode>
+        <Country />
+        <DateOfBirth>1928-04-08</DateOfBirth>
+        <Gender>Female</Gender>
+        <ConsCodes>
+            <Code>DMGen</Code>
+            <DateFrom>2011-04-26</DateFrom>
+        </ConsCodes>
+        <Attributes>
+            <Source>
+                <Category>Source</Category>
+                <Description>Direct Mail</Description>
+                <Date>2011-04-26</Date>
+                <Comment>Obtained via testID</Comment>
+            </Source>
+            <DirectMarketingType>
+                <Category>Direct Marketing Type</Category>
+                <Description>Bankers Order</Description>
+                <Date>2011-04-26</Date>
+                <Comment>Obtained Via testID</Comment>
+            </DirectMarketingType>
+        </Attributes>
+        <ConstituentAppeal>
+            <AppealID>DMW5612A</AppealID>
+            <PackageID>GEN</PackageID>
+            <Date>2011-04-26</Date>
+            <Response>Responded</Response>
+            <MarketingSourceCode>144058</MarketingSourceCode>
+        </ConstituentAppeal>
+        <DonationDetails>
+            <DirectDebitDonationCplxType>
+                <Type>Pledge</Type>
+                <SubType>Donations - 1010</SubType>
+                <Date>2011-04-26</Date>
+                <Amount>3.00</Amount>
+                <Fund>UNGEN</Fund>
+                <Campaign>DM56</Campaign>
+                <Appeal>DMW5612A/GEN</Appeal>
+                <Package>GEN</Package>
+                <PostStatus>Not Posted</PostStatus>
+                <PaymentType>Direct Debit</PaymentType>
+                <LetterCode />
+                <PDDUpgradeFlag>
+                    <PDDUpgradeFlag>false</PDDUpgradeFlag>
+                    <PreviousPaymentMethod>Not Applicable</PreviousPaymentMethod>
+                    <GiftimportID> </GiftimportID>
+                </PDDUpgradeFlag>
+                <InstallmentFreq>Monthly</InstallmentFreq>
+                <NoOfInstalments>120</NoOfInstalments>
+                <ScheduleMonthlyType>Specific Day</ScheduleMonthlyType>
+                <ScheduleDayOfMonth>15</ScheduleDayOfMonth>
+                <ScheduleSpacing>1</ScheduleSpacing>
+                <ScheduleWeeklyDayOfWeek>0</ScheduleWeeklyDayOfWeek>
+                <Date1stPayment>2011-06-15</Date1stPayment>
+                <RefNo/>
+                <GiftStatus>Active</GiftStatus>
+                <DonorBankCplxType>
+                    <BankName>BARCLAYS BANK PLC</BankName>
+                    <BranchName>Finsbury Park, N4</BranchName>
+                    <BankSort>20-46-57</BankSort>
+                    <BankAccName>EILEEN ADA JEROME</BankAccName>
+                    <BankAccNo>90380563</BankAccNo>
+                    <BankAddress>
+                        <AddressLine> </AddressLine>
+                    </BankAddress>
+                    <BankCity>LEICESTER</BankCity>
+                    <BankCounty />
+                    <BankPost>AAAA AAA</BankPost>
+                </DonorBankCplxType>
+            </DirectDebitDonationCplxType>
+        </DonationDetails>
+    </DonorCplxType>
+    <DonorCplxType>
+        <Constituent_ID>40202398</Constituent_ID>
+        <SupplierDonorID>144059</SupplierDonorID>
+        <Title1>Ms</Title1>
+        <FirstName>Jane</FirstName>
+        <LastName>Crowther</LastName>
+        <ChangeOfName>false</ChangeOfName>
+        <PrimaryAddress>false</PrimaryAddress>
+        <Address>
+            <AddressLine>11 Corringham Road</AddressLine>
+        </Address>
+        <City>LONDON</City>
+        <County />
+        <PostCode>NW11 7BS</PostCode>
+        <Country />
+        <DateOfBirth>1958-06-12</DateOfBirth>
+        <Gender>Female</Gender>
+        <PhoneEmail>
+            <Type>Home</Type>
+            <Value>02084555540</Value>
+        </PhoneEmail>
+        <PhoneEmail>
+            <Type>Email</Type>
+            <Value>jane@thecrowthers.ne.uk</Value>
+        </PhoneEmail>
+        <PhoneEmail>
+            <Type>Mobile</Type>
+            <Value>07720038835</Value>
+        </PhoneEmail>
+        <ConsCodes>
+            <Code>DMGen</Code>
+            <DateFrom>2011-04-26</DateFrom>
+        </ConsCodes>
+        <Attributes>
+            <Source>
+                <Category>Source</Category>
+                <Description>Direct Mail</Description>
+                <Date>2011-04-26</Date>
+                <Comment>Obtained via testID</Comment>
+            </Source>
+            <DirectMarketingType>
+                <Category>Direct Marketing Type</Category>
+                <Description>Bankers Order</Description>
+                <Date>2011-04-26</Date>
+                <Comment>Obtained Via testID</Comment>
+            </DirectMarketingType>
+        </Attributes>
+        <ConstituentAppeal>
+            <AppealID>DMW5612A</AppealID>
+            <PackageID>GEN</PackageID>
+            <Date>2011-04-26</Date>
+            <Response>Responded</Response>
+            <MarketingSourceCode>144059</MarketingSourceCode>
+        </ConstituentAppeal>
+        <DonationDetails>
+            <DirectDebitDonationCplxType>
+                <Type>Pledge</Type>
+                <SubType>Donations - 1010</SubType>
+                <Date>2011-04-26</Date>
+                <Amount>10.00</Amount>
+                <Fund>UNGEN</Fund>
+                <Campaign>DM56</Campaign>
+                <Appeal>DMW5612A/GEN</Appeal>
+                <Package>GEN</Package>
+                <PostStatus>Not Posted</PostStatus>
+                <PaymentType>Direct Debit</PaymentType>
+                <LetterCode />
+                <PDDUpgradeFlag>
+                    <PDDUpgradeFlag>false</PDDUpgradeFlag>
+                    <PreviousPaymentMethod>Not Applicable</PreviousPaymentMethod>
+                    <GiftimportID> </GiftimportID>
+                </PDDUpgradeFlag>
+                <InstallmentFreq>Monthly</InstallmentFreq>
+                <NoOfInstalments>120</NoOfInstalments>
+                <ScheduleMonthlyType>Specific Day</ScheduleMonthlyType>
+                <ScheduleDayOfMonth>1</ScheduleDayOfMonth>
+                <ScheduleSpacing>1</ScheduleSpacing>
+                <ScheduleWeeklyDayOfWeek>0</ScheduleWeeklyDayOfWeek>
+                <Date1stPayment>2011-06-01</Date1stPayment>
+                <RefNo>40202398/1</RefNo>
+                <GiftStatus>Active</GiftStatus>
+                <DonorBankCplxType>
+                    <BankName>HSBC BANK PLC</BankName>
+                    <BranchName>Cross Roads</BranchName>
+                    <BankSort>40-03-11</BankSort>
+                    <BankAccName>MS JANE CROWTHER</BankAccName>
+                    <BankAccNo>31214691</BankAccNo>
+                    <BankAddress>
+                        <AddressLine>Cross Roads</AddressLine>
+                    </BankAddress>
+                    <BankCity>London</BankCity>
+                    <BankCounty />
+                    <BankPost>AAAA AAA</BankPost>
+                </DonorBankCplxType>
+            </DirectDebitDonationCplxType>
+        </DonationDetails>
+    </DonorCplxType>
+    <DonorCplxType>
+        <Constituent_ID>40700783</Constituent_ID>
+        <SupplierDonorID>144065</SupplierDonorID>
+        <Title1>Mr</Title1>
+        <FirstName>Ron</FirstName>
+        <LastName>Martin</LastName>
+        <ChangeOfName>false</ChangeOfName>
+        <PrimaryAddress>false</PrimaryAddress>
+        <Address>
+            <AddressLine>167b Downham Road</AddressLine>
+        </Address>
+        <City>LONDON</City>
+        <County />
+        <PostCode>N1 3HQ</PostCode>
+        <Country />
+        <DateOfBirth>1951-11-13</DateOfBirth>
+        <Gender>Male</Gender>
+        <PhoneEmail>
+            <Type>Email</Type>
+            <Value>ronaldmartine@nhs.net</Value>
+        </PhoneEmail>
+        <ConsCodes>
+            <Code>DMGen</Code>
+            <DateFrom>2011-04-27</DateFrom>
+        </ConsCodes>
+        <Attributes>
+            <Source>
+                <Category>Source</Category>
+                <Description>Direct Mail</Description>
+                <Date>2011-04-27</Date>
+                <Comment>Obtained via testID</Comment>
+            </Source>
+            <DirectMarketingType>
+                <Category>Direct Marketing Type</Category>
+                <Description>Bankers Order</Description>
+                <Date>2011-04-27</Date>
+                <Comment>Obtained Via testID</Comment>
+            </DirectMarketingType>
+        </Attributes>
+        <ConstituentAppeal>
+            <AppealID>DMW5611C</AppealID>
+            <PackageID>A</PackageID>
+            <Date>2011-04-27</Date>
+            <Response>Responded</Response>
+            <MarketingSourceCode>144065</MarketingSourceCode>
+        </ConstituentAppeal>
+        <DonationDetails>
+            <DirectDebitDonationCplxType>
+                <Type>Pledge</Type>
+                <SubType>Donations - 1010</SubType>
+                <Date>2011-04-27</Date>
+                <Amount>5.00</Amount>
+                <Fund>UNGEN</Fund>
+                <Campaign>DM56</Campaign>
+                <Appeal>DMW5611C</Appeal>
+                <Package>A</Package>
+                <PostStatus>Not Posted</PostStatus>
+                <PaymentType>Direct Debit</PaymentType>
+                <LetterCode />
+                <PDDUpgradeFlag>
+                    <PDDUpgradeFlag>false</PDDUpgradeFlag>
+                    <PreviousPaymentMethod>Not Applicable</PreviousPaymentMethod>
+                    <GiftimportID> </GiftimportID>
+                </PDDUpgradeFlag>
+                <InstallmentFreq>Monthly</InstallmentFreq>
+                <NoOfInstalments>120</NoOfInstalments>
+                <ScheduleMonthlyType>Specific Day</ScheduleMonthlyType>
+                <ScheduleDayOfMonth>1</ScheduleDayOfMonth>
+                <ScheduleSpacing>1</ScheduleSpacing>
+                <ScheduleWeeklyDayOfWeek>0</ScheduleWeeklyDayOfWeek>
+                <Date1stPayment>2011-07-01</Date1stPayment>
+                <RefNo>40700783/1</RefNo>
+                <GiftStatus>Active</GiftStatus>
+                <DonorBankCplxType>
+                    <BankName>HALIFAX</BankName>
+                    <BranchName>Artillery Row</BranchName>
+                    <BankSort>11-04-76</BankSort>
+                    <BankAccName>MR RONALD GEORGE MARTIN</BankAccName>
+                    <BankAccNo>00103349</BankAccNo>
+                    <BankAddress>
+                        <AddressLine>P O Box 722</AddressLine>
+                    </BankAddress>
+                    <BankCity>Leeds</BankCity>
+                    <BankCounty />
+                    <BankPost>AAAA AAA</BankPost>
+                </DonorBankCplxType>
+            </DirectDebitDonationCplxType>
+        </DonationDetails>
+    </DonorCplxType>
+</GOSHCC>

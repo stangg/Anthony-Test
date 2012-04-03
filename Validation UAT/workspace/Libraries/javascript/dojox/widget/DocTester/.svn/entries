@@ -1,0 +1,52 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Libraries/javascript/dojox/widget/DocTester
+svn://goshcc-devsvr1
+
+
+
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+DocTester.css
+file
+
+
+
+
+2012-01-18T12:23:36.211000Z
+af48bdb20e8d3b99636a0b97763d5bbd
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+DocTester.html
+file
+
+
+
+
+2012-01-18T12:23:36.211000Z
+25576f614c40e718e5ace4c7e8fc6bef
+2008-10-07T14:00:18.863231Z
+821
+maria
+

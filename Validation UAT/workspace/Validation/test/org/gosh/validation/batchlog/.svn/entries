@@ -1,0 +1,52 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Validation/test/org/gosh/validation/batchlog
+svn://goshcc-devsvr1
+
+
+
+2011-07-07T13:36:11.345150Z
+4918
+gayathri
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+BatchLogWriterOutboundChannelAdapterTest.java
+file
+
+
+
+
+2012-01-18T12:23:08.947000Z
+46867bf86f77bdb6cb4d5d21884dafd9
+2009-08-26T15:04:54.099099Z
+3106
+kevin
+
+REBatchNumberValidationTransformerTest.java
+file
+
+
+
+
+2012-01-18T12:23:08.931000Z
+5bc9b47707a388c1efdeb53e120b8858
+2011-07-07T13:36:11.345150Z
+4918
+gayathri
+

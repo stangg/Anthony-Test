@@ -1,0 +1,55 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Libraries/javascript/dojox/widget/FilePicker
+svn://goshcc-devsvr1
+
+
+
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+FilePicker.css
+file
+
+
+
+
+2012-01-18T12:23:37.258000Z
+54eb944782b99f922ddb2068c9a04150
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+_FileInfoPane.html
+file
+
+
+
+
+2012-01-18T12:23:37.258000Z
+d2318a74a9f31555af647c24e7537f7c
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+images
+dir
+

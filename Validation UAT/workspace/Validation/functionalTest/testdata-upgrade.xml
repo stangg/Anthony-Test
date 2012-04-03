@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GOSHCC>
+	<BatchNo>99999</BatchNo>
+	<SupplierID>testID</SupplierID>
+	<DonorCplxType>
+		<Constituent_ID>40393027</Constituent_ID>
+		<InternalConstit_ID>770815</InternalConstit_ID>
+		<SupplierDonorID>24351021</SupplierDonorID>
+		<Title1>Mrs</Title1>
+		<FirstName>Anita</FirstName>
+		<LastName>Austins</LastName>
+		<ChangeOfName>false</ChangeOfName>
+		<PrimaryAddress>false</PrimaryAddress>
+		<Address>
+			<AddressLine>192 Blakemore</AddressLine>
+			<AddressLine>Brookside</AddressLine>
+		</Address>
+		<City>TELFORD</City>
+		<County>Shropshire</County>
+		<PostCode>TF3 1PZ</PostCode>
+		<Country>United Kingdom</Country>
+		<DateOfBirth>1950-12-13</DateOfBirth>
+		<Gender>Unknown</Gender>
+		<PhoneEmail>
+			<Type>Mobile</Type>
+			<Value>07731789272</Value>
+		</PhoneEmail>
+		<ConsCodes>
+			<Code>DMGen</Code>
+			<DateFrom>2009-06-17</DateFrom>
+		</ConsCodes>
+		<Attributes>
+			<Source>
+				<Category>Source</Category>
+				<Description>Telemarketing</Description>
+				<Date>2009-06-17</Date>
+				<Comment>Obtained via testID</Comment>
+			</Source>
+			<DirectMarketingType>
+				<Category>Direct Marketing Type</Category>
+				<Description>Bankers Order</Description>
+				<Date>2009-06-17</Date>
+				<Comment>Obtained via testID</Comment>
+			</DirectMarketingType>
+		</Attributes>
+		<ConstituentAppeal>
+			<AppealID>DM0109/J</AppealID>
+			<PackageID>GEN10A</PackageID>
+			<Date>2009-06-17</Date>
+			<Response>Upgraded</Response>
+			<MarketingSourceCode>24351021</MarketingSourceCode>
+		</ConstituentAppeal>
+		<TaxDeclaration>
+			<StartDate>2001-04-06</StartDate>
+			<TaxPayer>false</TaxPayer>
+			<DeclarationDate>2009-06-17</DeclarationDate>
+			<DeclarationIndicator>Oral</DeclarationIndicator>
+			<ConfirmationDate>2009-06-17</ConfirmationDate>
+		</TaxDeclaration>
+		<DonationDetails>
+			<DirectDebitDonationCplxType>
+				<Type>Pledge</Type>
+				<SubType>Donations - 1010</SubType>
+				<Date>2009-06-17</Date>
+				<Amount>20.00</Amount>
+                <Fund>1010</Fund>
+                <Campaign>DM01</Campaign>
+                <Appeal>DM0109/J</Appeal>
+                <Package>GEN10A</Package>
+				<PostStatus>Not Posted</PostStatus>
+				<PaymentType>Direct Debit</PaymentType>
+				<LetterCode />
+				<PDDUpgradeFlag>
+					<PDDUpgradeFlag>true</PDDUpgradeFlag>
+					<PreviousPaymentMethod>Direct Debit</PreviousPaymentMethod>
+					<GiftimportID>00170-545-0003232757</GiftimportID>
+				</PDDUpgradeFlag>
+				<InstallmentFreq>Monthly</InstallmentFreq>
+				<NoOfInstalments>120</NoOfInstalments>
+				<ScheduleMonthlyType>Specific Day</ScheduleMonthlyType>
+				<ScheduleDayOfMonth>15</ScheduleDayOfMonth>
+				<ScheduleSpacing>1</ScheduleSpacing>
+				<ScheduleWeeklyDayOfWeek>0</ScheduleWeeklyDayOfWeek>
+				<Date1stPayment>2009-08-15</Date1stPayment>
+				<RefNo>1</RefNo>
+				<GiftStatus>Active</GiftStatus>
+			</DirectDebitDonationCplxType>
+		</DonationDetails>
+	</DonorCplxType>
+</GOSHCC>

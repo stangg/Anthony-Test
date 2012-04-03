@@ -1,0 +1,79 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Libraries/javascript/dojox/io/proxy
+svn://goshcc-devsvr1
+
+
+
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+README
+file
+
+
+
+
+2012-01-18T12:23:41.602000Z
+f0de702425acdc9d0bef8537d7cfc972
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+tests
+dir
+
+xip.js
+file
+
+
+
+
+2012-01-18T12:23:41.602000Z
+ef4a499185b741acec22eb800256c887
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+xip_client.html
+file
+
+
+
+
+2012-01-18T12:23:41.570000Z
+250d741efccd16780610d6937e42be88
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+xip_server.html
+file
+
+
+
+
+2012-01-18T12:23:41.586000Z
+8c80885162ec7a90f301a8be0606cf68
+2008-10-07T14:00:18.863231Z
+821
+maria
+

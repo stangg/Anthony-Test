@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GOSHCC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\ECLIPS~1\SchemaBindings\CASHIM~1.XSD">
+	<BatchNo>2379</BatchNo>
+	<SupplierID>testID</SupplierID>
+	<DonorCplxType>
+		<Constituent_ID>40369066</Constituent_ID>
+		<SupplierDonorID>2750463</SupplierDonorID>
+		<Title1>Mr</Title1>
+		<FirstName/>
+		<LastName>Anon</LastName>
+		<ChangeOfName>false</ChangeOfName>
+		<PrimaryAddress>false</PrimaryAddress>
+		<Address>
+			<AddressLine/>
+		</Address>
+		<City> </City>
+		<County/>
+		<PostCode> </PostCode>
+		<Country/>
+		<Gender>Unknown</Gender>
+		<ConsCodes>
+			<Code>DMGen</Code>
+			<DateFrom>2009-03-30</DateFrom>
+		</ConsCodes>
+		<Attributes>
+			<Source>
+				<Category>Source</Category>
+				<Description>Direct Mail</Description>
+				<Date>2009-03-30</Date>
+				<Comment>Obtained via testID</Comment>
+			</Source>
+			<DirectMarketingType>
+				<Category>Direct Marketing Type</Category>
+				<Description>Individual Donor</Description>
+				<Date>2009-03-30</Date>
+				<Comment>Obtained Via testID</Comment>
+			</DirectMarketingType>
+		</Attributes>
+		<ConstituentAppeal>
+			<AppealID>DM5009/ZZ904</AppealID>
+			<PackageID>GEN10A</PackageID>
+			<Date>2009-03-30</Date>
+			<Response>Responded</Response>
+			<MarketingSourceCode>2750463</MarketingSourceCode>
+		</ConstituentAppeal>
+		<DonationDetails>
+			<CashDonationCplxType>
+				<Type>Pledge</Type>
+				<SubType>Donations - 1010</SubType>
+				<Date>2009-03-30</Date>
+				<Amount>10.00</Amount>
+				<Fund>UNGEN</Fund>
+				<Campaign>DM50</Campaign>
+				<Appeal>DM5009/ZZ904</Appeal>
+				<Package>GEN10A</Package>
+				<RefNo/>
+				<PostStatus>Not Posted</PostStatus>
+				<LetterCode/>
+				<PaymentType>Voucher</PaymentType>
+				<Agency>CAF</Agency>
+			</CashDonationCplxType>
+		</DonationDetails>
+	</DonorCplxType>
+</GOSHCC>

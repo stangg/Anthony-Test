@@ -1,0 +1,210 @@
+<GOSHCC>
+    <BatchNo>629000008</BatchNo>
+    <SupplierID>Netbanx</SupplierID>
+    <DonorCplxType>
+        <SupplierDonorID>50559</SupplierDonorID>
+        <Title1>Mr</Title1>
+        <FirstName>James</FirstName>
+        <LastName>Davies</LastName>
+        <ChangeOfName>false</ChangeOfName>
+        <PrimaryAddress>false</PrimaryAddress>
+        <Address>
+            <AddressLine>28 Amesbury Road</AddressLine>
+            <AddressLine/>
+            <AddressLine/>
+            <AddressLine/>
+            <AddressLine/>
+        </Address>
+        <City>Bromley</City>
+        <County>Kent</County>
+        <PostCode>br1 2qj</PostCode>
+        <Country>United Kingdom</Country>
+        <Gender>Unknown</Gender>
+        <ConsCodes>
+            <Code>GEN</Code>
+            <DateFrom>2008-07-04+01:00</DateFrom>
+        </ConsCodes>
+        <Attributes>
+            <SolicitCodes>
+                <Category>Solicit Codes</Category>
+                <Description>3rd Party Data Protection Opt Out</Description>
+                <Date>2008-07-04+01:00</Date>
+                <Comment>Obtained via Netbanx</Comment>
+            </SolicitCodes>
+            <Source>
+                <Category>Source</Category>
+                <Description>Online</Description>
+                <Date>2008-07-04+01:00</Date>
+                <Comment>Obtained via Netbanx</Comment>
+            </Source>
+            <DirectMarketingType>
+                <Category>Direct Marketing Type</Category>
+                <Description>Individual Donor</Description>
+                <Date>2008-07-04+01:00</Date>
+                <Comment>Obtained via Netbanx</Comment>
+            </DirectMarketingType>
+        </Attributes>
+        <ConstituentAppeal>
+            <AppealID>DMC0910A</AppealID>
+            <PackageID>GEN</PackageID>
+            <Date>2009-08-17+01:00</Date>
+            <Response>Responded</Response>
+            <MarketingSourceCode>50559</MarketingSourceCode>
+        </ConstituentAppeal>
+        <TaxDeclaration>
+            <StartDate>2002-04-06+01:00</StartDate>
+            <TaxPayer>true</TaxPayer>
+            <DeclarationDate>2008-07-04+01:00</DeclarationDate>
+            <DeclarationIndicator>Oral</DeclarationIndicator>
+            <ConfirmationDate>2008-07-04+01:00</ConfirmationDate>
+        </TaxDeclaration>
+        <DonationDetails>
+            <CashDonationCplxType>
+                <Type>Cash</Type>
+                <SubType>Donations - Internet - 1014</SubType>
+                <Date>2008-07-04+01:00</Date>
+                <Amount>50.00</Amount>
+                <Fund>UNGEN</Fund>
+                <Campaign>DM09</Campaign>
+                <Appeal>DMC0910A</Appeal>
+                <Package>GEN</Package>
+                <Reference>webdata17.08.2009</Reference>
+                <PostStatus>Not Posted</PostStatus>
+                <LetterCode>01</LetterCode>
+                <PaymentType>Credit Card</PaymentType>
+                <CardType>Unknown</CardType>
+            </CashDonationCplxType>
+        </DonationDetails>
+    </DonorCplxType>
+    <DonorCplxType>
+        <SupplierDonorID>50663</SupplierDonorID>
+        <Title1>Mr</Title1>
+        <FirstName>Shafaat</FirstName>
+        <LastName>Ahmed</LastName>
+        <ChangeOfName>false</ChangeOfName>
+        <PrimaryAddress>false</PrimaryAddress>
+        <Address>
+            <AddressLine>53 Kinlet Road</AddressLine>
+            <AddressLine/>
+            <AddressLine/>
+            <AddressLine/>
+            <AddressLine/>
+        </Address>
+        <City>London</City>
+        <County/>
+        <PostCode>SS18 3BZ</PostCode>
+        <Country>United Kingdom</Country>
+        <Gender>Unknown</Gender>
+        <PhoneEmail>
+            <Type>Home</Type>
+            <Value>02082448433</Value>
+        </PhoneEmail>
+        <ConsCodes>
+            <Code>GEN</Code>
+            <DateFrom>2008-07-17+01:00</DateFrom>
+        </ConsCodes>
+        <Attributes>
+            <Source>
+                <Category>Source</Category>
+                <Description>Online</Description>
+                <Date>2008-07-17+01:00</Date>
+                <Comment>Obtained via Netbanx</Comment>
+            </Source>
+        </Attributes>
+        <ConstituentAppeal>
+            <AppealID>DMC0110F</AppealID>
+            <PackageID>GEN</PackageID>
+            <Date>2009-08-17+01:00</Date>
+            <Response>Responded</Response>
+            <MarketingSourceCode>50663</MarketingSourceCode>
+        </ConstituentAppeal>
+        <TaxDeclaration>
+            <StartDate>2002-04-06+01:00</StartDate>
+            <TaxPayer>true</TaxPayer>
+            <DeclarationDate>2008-07-17+01:00</DeclarationDate>
+            <DeclarationIndicator>Oral</DeclarationIndicator>
+            <ConfirmationDate>2008-07-17+01:00</ConfirmationDate>
+        </TaxDeclaration>
+    </DonorCplxType>
+    <DonorCplxType>
+        <Constituent_ID>40491991</Constituent_ID>
+        <InternalConstit_ID>886107</InternalConstit_ID>
+        <SupplierDonorID>50621</SupplierDonorID>
+        <Title1>Mr</Title1>
+        <FirstName>ricky</FirstName>
+        <LastName>wells</LastName>
+        <ChangeOfName>false</ChangeOfName>
+        <PrimaryAddress>false</PrimaryAddress>
+        <Address>
+            <AddressLine>7 lovell close</AddressLine>
+            <AddressLine>thruxton</AddressLine>
+            <AddressLine/>
+            <AddressLine/>
+            <AddressLine/>
+        </Address>
+        <City>andover</City>
+        <County>Hampshire</County>
+        <PostCode>sp11 8nh</PostCode>
+        <Country>United Kingdom</Country>
+        <Gender>Unknown</Gender>
+        <PhoneEmail>
+            <Type>Email</Type>
+            <Value>3rhwbs@uk.ibm.com</Value>
+        </PhoneEmail>
+        <ConsCodes>
+            <Code>GEN</Code>
+            <DateFrom>2008-07-11+01:00</DateFrom>
+        </ConsCodes>
+        <Attributes>
+            <SolicitCodes>
+                <Category>Solicit Codes</Category>
+                <Description>3rd Party Data Protection Opt Out</Description>
+                <Date>2008-07-11+01:00</Date>
+                <Comment>Obtained via Netbanx</Comment>
+            </SolicitCodes>
+            <Source>
+                <Category>Source</Category>
+                <Description>Online</Description>
+                <Date>2008-07-11+01:00</Date>
+                <Comment>Obtained via Netbanx</Comment>
+            </Source>
+            <DirectMarketingType>
+                <Category>Direct Marketing Type</Category>
+                <Description>Individual Donor</Description>
+                <Date>2008-07-11+01:00</Date>
+                <Comment>Obtained via Netbanx</Comment>
+            </DirectMarketingType>
+        </Attributes>
+        <ConstituentAppeal>
+            <AppealID>DMC0110E</AppealID>
+            <PackageID>GEN</PackageID>
+            <Date>2009-08-17+01:00</Date>
+            <Response>Responded</Response>
+            <MarketingSourceCode>50621</MarketingSourceCode>
+        </ConstituentAppeal>
+        <TaxDeclaration>
+            <StartDate>2002-04-06+01:00</StartDate>
+            <TaxPayer>true</TaxPayer>
+            <DeclarationDate>2008-07-11+01:00</DeclarationDate>
+            <DeclarationIndicator>Oral</DeclarationIndicator>
+            <ConfirmationDate>2008-07-11+01:00</ConfirmationDate>
+        </TaxDeclaration>
+        <DonationDetails>
+            <CashDonationCplxType>
+                <Type>Cash</Type>
+                <SubType>Donations - Internet - 1014</SubType>
+                <Date>2008-07-11+01:00</Date>
+                <Amount>30.00</Amount>
+                <Fund>UNGEN</Fund>
+                <Campaign>DM01</Campaign>
+                <Appeal>DMC0110E</Appeal>
+                <Package>GEN</Package>
+                <Reference>webdata17.08.2009</Reference>
+                <PostStatus>Not Posted</PostStatus>
+                <LetterCode>01</LetterCode>
+                <PaymentType>Credit Card</PaymentType>
+                <CardType>Unknown</CardType>
+            </CashDonationCplxType>
+        </DonationDetails>
+    </DonorCplxType>
+</GOSHCC>

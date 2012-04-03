@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GOSHCC>
+	<BatchNo>20110801</BatchNo>
+	<SupplierID>testID</SupplierID>
+	<DonorCplxType>
+		<Constituent_ID>40792368</Constituent_ID>
+		<SupplierDonorID>2430002</SupplierDonorID>
+		<Title1>Miss</Title1>
+		<FirstName>Two</FirstName>
+		<LastName>Smith</LastName>
+		<ChangeOfName>false</ChangeOfName>
+		<PrimaryAddress>false</PrimaryAddress>
+		<Address>
+			<AddressLine>2 Sample Road</AddressLine>
+		</Address>
+		<City>Altrincham</City>
+		<County/>
+		<PostCode>SM2 2MS</PostCode>
+		<Country>United Kingdom</Country>
+		<Gender>Female</Gender>
+		<ConsCodes>
+			<Code>DMGen</Code>
+			<DateFrom>2011-07-20</DateFrom>
+		</ConsCodes>
+		<Attributes>
+			<Source>
+				<Category>Source</Category>
+				<Description>Telemarketing</Description>
+				<Date>2011-07-20</Date>
+				<Comment>Obtained via testID</Comment>
+			</Source>
+			<DirectMarketingType>
+				<Category>Direct Marketing Type</Category>
+				<Description>Bankers Order</Description>
+				<Date>2011-07-20</Date>
+				<Comment>Obtained via testID</Comment>
+			</DirectMarketingType>
+		</Attributes>
+		<ConstituentAppeal>
+			<AppealID>DMC1811</AppealID>
+			<PackageID>GEN</PackageID>
+			<Date>2011-07-20</Date>
+			<Response>Upgraded</Response>
+			<MarketingSourceCode>2430002</MarketingSourceCode>
+		</ConstituentAppeal>
+		<DonationDetails>
+			<DirectDebitDonationCplxType>
+				<Type>Pledge</Type>
+				<SubType>Donations - 1010</SubType>
+				<Date>2011-07-20</Date>
+				<Amount>16.00</Amount>
+				<Fund>UNGEN</Fund>
+				<Campaign>DM18</Campaign>
+				<Appeal>DMC1811</Appeal>
+				<Package>GEN</Package>
+				<PostStatus>Not Posted</PostStatus>
+				<PaymentType>Direct Debit</PaymentType>
+				<LetterCode/>
+				<PDDUpgradeFlag>
+					<PDDUpgradeFlag>true</PDDUpgradeFlag>
+					<PreviousPaymentMethod>Direct Debit</PreviousPaymentMethod>
+					<GiftimportID>00170-545-0008288730</GiftimportID>
+				</PDDUpgradeFlag>
+				<InstallmentFreq>Monthly</InstallmentFreq>
+				<NoOfInstalments>120</NoOfInstalments>
+				<ScheduleMonthlyType>Specific Day</ScheduleMonthlyType>
+				<ScheduleDayOfMonth>1</ScheduleDayOfMonth>
+				<ScheduleSpacing>1</ScheduleSpacing>
+				<ScheduleWeeklyDayOfWeek>0</ScheduleWeeklyDayOfWeek>
+				<Date1stPayment>2011-10-01</Date1stPayment>
+				<RefNo/>
+				<GiftStatus>Active</GiftStatus>
+			</DirectDebitDonationCplxType>
+		</DonationDetails>
+	</DonorCplxType>
+</GOSHCC>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-autowire="autodetect" xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:lang="http://www.springframework.org/schema/lang"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-2.5.xsd">
+
+	<import resource="config.xml"/>
+	
+	<bean id="fileFormatRouter" class="org.gosh.validation.general.FileFormatRouter"/>
+
+	<!-- our specific beans and configuration -->	
+	<bean id="webGeneratedDDsTransformer" class="org.gosh.validation.webdds.WebGeneratedDDsTransformer">
+		<property name="batchNumberGenerator">
+			<bean class="org.gosh.validation.convertion.DatabaseBatchNumberGenerator">
+				<property name="logDataSource" ref="legacyDataSource"/>
+				<property name="supplierBatchNumberLog" ref="supplierBatchNumberLog"/>
+				<property name="startOfRange" value="7760000"/>
+				<property name="endOfRange" value="7780000"/>
+			</bean>
+		</property>
+		<property name="supplierID" value="RSM"/>
+	</bean>
+	
+	<bean id="webDonationsAggregator" class="org.gosh.validation.webcash.WebDonationsAggregator">
+		<property name="legacyDao">
+			<bean class="org.gosh.validation.webcash.LegacyDatabaseDAO">
+				<property name="dataSource" ref="webDonationsLegacyDataSource"/>
+			</bean>
+		</property>
+		<property name="batchNumberGenerator">
+			<bean class="org.gosh.validation.convertion.DatabaseBatchNumberGenerator">
+				<property name="logDataSource" ref="legacyDataSource"/>
+				<property name="supplierBatchNumberLog" ref="supplierBatchNumberLog"/>
+				<property name="startOfRange" value="629000000"/>
+				<property name="endOfRange" value="630000000"/>
+			</bean>
+		</property>
+		<property name="supplierID" value="Netbanx"/>
+	</bean>
+	<bean id="webCashFileReprocessingTransformer" class="org.gosh.validation.webcash.WebCashFileReprocessingTransformer"/>
+	
+	<bean id="weightedMatcherTransformer" class="org.gosh.validation.general.deduplication.WeightedMatcherTransformer">
+		<property name="matcher" ref="weightedScoringMatcher"/>
+		<property name="dao">
+			<bean class="org.gosh.validation.general.deduplication.ExtendedDatasetDAO">
+					<property name="phoneNumberTypes">
+						<list>
+							<value>Home</value>
+							<value>Mobile</value>
+							<value>Business</value>
+						</list>
+					</property>
+					<property name="emailTypes">
+						<list>
+							<value>Email</value>
+						</list>
+					</property>
+			</bean>
+		</property>
+	</bean>
+	<bean id="existingDDsValidationTransformer" class="org.gosh.validation.directdebits.ExistingDDsValidationTransformer"/>
+	
+	<!-- schema related beans -->
+	<bean id="schemaValidationTransformer" class="org.gosh.validation.general.xml.SchemaValidationTransformer">
+		<property name="schemaLocation" value="classpath:RaisersEdgeImportSchema_v1.xsd"/>
+	</bean>
+	
+	<bean id="unmarshallingTransformer" class="org.gosh.validation.general.xml.DMCashUnmarshallerTransformer"/>
+	<bean id="marshallingTransformer" class="org.gosh.validation.general.xml.DMCashMarshallerTransformer"/>
+	
+	<!-- bank official list & search related beans -->
+	<bean id="bankValidationTransformer" class="org.gosh.validation.general.bank.BankValidationTransformer">
+		<property name="dao" ref="bankXindiceDAO"/>
+	</bean>
+	<bean id="bankXindiceDAO" class="org.gosh.validation.general.bank.BankXindiceDAO"/>
+
+	<!-- batch number related beans -->
+	<bean id="reBatchNumberValidationTransformer" class="org.gosh.validation.general.batchlog.REBatchNumberValidationTransformer"/>
+    <bean id="logBatchNumberValidationTransformer" class="org.gosh.validation.general.batchlog.LogBatchNumberValidationTransformer">
+		<property name="dataSource" ref="legacyDataSource"/>
+		<property name="supplierBatchNumberLog" ref="supplierBatchNumberLog"/>
+	</bean>
+ 	<bean id="batchLogWriterOutboundChannelAdapter" class="org.gosh.validation.general.batchlog.BatchLogWriterOutboundChannelAdapter">
+		<property name="dataSource" ref="legacyDataSource"/>
+		<property name="supplierBatchNumberLog" ref="supplierBatchNumberLog"/>
+	</bean>
+	
+	<!-- id validation beans -->
+	<bean id="constituentIdValidationTransformer" class="org.gosh.validation.general.businessrules.ConstituentIdValidationTransformer"/>
+	<bean id="miscValidationTransformer" class="org.gosh.validation.general.MiscValidationTransformer"/>
+	<bean id="theFourIdsValidationTransformer" class="org.gosh.validation.general.businessrules.TheFourIdsValidationTransformer"/>
+	<bean id="tributeValidationTransformer" class="org.gosh.validation.tributes.TributeValidationTransformer"/>
+	
+	<!-- multi purpose beans -->
+	<bean id="headerAdditionTransformer" class="org.gosh.validation.general.HeaderAdditionTransformer"/>
+	<bean id="dataCleanUpTransformer" class="org.gosh.validation.general.DataCleanUpTransformer"/>
+	<bean id="genericBankTransformer" class="org.gosh.validation.general.bank.GenericBankValidationTransformer"/>
+	<bean id="firstPaymentDateTransformer" class="org.gosh.validation.directdebits.FirstPaymentDateTransformer"/>
+	<bean id="phoneEmailValidationTransformer" class="org.gosh.validation.general.businessrules.PhoneEmailValidationTransformer"/>
+	<bean id="fixedStringCorrelationSetter" class="org.gosh.validation.webcash.FixedStringCorrelationSetter"/>
+	<bean id="bolajisAdditionsTransformer" class="org.gosh.validation.general.BolajisAdditionsTransformer"/>
+	<lang:groovy id="adjustCafFileBatchNumbersTransformer" script-source="classpath:org/gosh/validation/general/businessrules/AdjustCafFileBatchNumbersTransformer.groovy"/>
+	<bean id="blankSurnameTransformer" class="org.gosh.validation.general.businessrules.BlankSurnameTransformer"/>
+	<bean id="tributeImportIdTransformer" class="org.gosh.validation.tributes.TributeImportIdTransformer"/>
+	<bean id="ddUpgradeBankValidationTransformer" class="org.gosh.validation.general.bank.DDUpgradeBankValidationTransformer"/>
+	<bean id="bankUpgradeTransformer" class="org.gosh.validation.general.bank.BankUpgradeTransformer"/>
+	<bean id="giftReferenceNoRecogniserTransformer" class="org.gosh.validation.tributes.GiftReferenceNoRecogniserTransformer"/>
+	
+	<!-- web services -->
+	<bean id="bankWS" class="org.gosh.validation.general.bank.ws.SvcGetBankDetForPledge"/>
+	<bean id="accountNumberWS" class="org.gosh.validation.general.accountnumber.ws.SvcGetAccountNumber"/>
+	
+	<!-- error handling beans -->
+	<bean id="errorHeaderRouter" class="org.gosh.validation.general.error.ErrorHeaderRouter"/>
+	<bean id="errorReporter" class="org.gosh.validation.general.error.ErrorReporter"/>
+	<bean id="messageXmlTransformer" class="org.gosh.validation.general.error.MessageXmlTransformer"/>
+	
+	<!-- e-mail purpose beans -->
+	<bean id="fundraiserEmailSplitter" class="org.gosh.validation.webcash.FundraiserEmailSplitter">
+		<property name="properties" ref="properties"/>
+	</bean>
+	<bean id="outboundMailTransformer" class="org.gosh.validation.general.error.OutboundMailTransformer"/>
+	
+</beans>

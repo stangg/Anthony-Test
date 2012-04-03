@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GOSHCC>
+	<BatchNo>2011072931</BatchNo>
+	<SupplierID>testID</SupplierID>
+	<DonorCplxType>
+		<Constituent_ID>40792216</Constituent_ID>
+		<SupplierDonorID>30040</SupplierDonorID>
+		<Title1>Miss</Title1>
+		<FirstName>ZN</FirstName>
+		<LastName>Fourty</LastName>
+		<ChangeOfName>false</ChangeOfName>
+		<PrimaryAddress>false</PrimaryAddress>
+		<Address>
+			<AddressLine>22 Tolchurch House</AddressLine>
+		</Address>
+		<City>London</City>
+		<County/>
+		<PostCode>W11 1DT</PostCode>
+		<Country>United Kingdom</Country>
+		<Gender>Female</Gender>
+		<ConsCodes>
+			<Code>DMGen</Code>
+			<DateFrom>2011-03-22</DateFrom>
+		</ConsCodes>
+		<Attributes>
+			<Source>
+				<Category>Source</Category>
+				<Description>Telemarketing</Description>
+				<Date>2011-03-22</Date>
+				<Comment>Obtained via testID</Comment>
+			</Source>
+			<DirectMarketingType>
+				<Category>Direct Marketing Type</Category>
+				<Description>Bankers Order</Description>
+				<Date>2011-03-22</Date>
+				<Comment>Obtained via testID</Comment>
+			</DirectMarketingType>
+		</Attributes>
+		<ConstituentAppeal>
+			<AppealID>DMC1811</AppealID>
+			<PackageID>GEN</PackageID>
+			<Date>2011-03-22</Date>
+			<Response>Upgraded</Response>
+			<MarketingSourceCode>30040</MarketingSourceCode>
+		</ConstituentAppeal>
+		<DonationDetails>
+			<DirectDebitDonationCplxType>
+				<Type>Pledge</Type>
+				<SubType>Donations - 1010</SubType>
+				<Date>2011-03-22</Date>
+				<Amount>15.00</Amount>
+				<Fund>UNGEN</Fund>
+				<Campaign>DM18</Campaign>
+				<Appeal>DMC1811</Appeal>
+				<Package>GEN</Package>
+				<PostStatus>Not Posted</PostStatus>
+				<PaymentType>Direct Debit</PaymentType>
+				<LetterCode/>
+				<PDDUpgradeFlag>
+					<PDDUpgradeFlag>true</PDDUpgradeFlag>
+					<PreviousPaymentMethod>Not Applicable</PreviousPaymentMethod>
+					<GiftimportID>00170-545-0008265051</GiftimportID>
+				</PDDUpgradeFlag>
+				<InstallmentFreq>Quarterly</InstallmentFreq>
+				<NoOfInstalments>40</NoOfInstalments>
+				<ScheduleMonthlyType>Specific Day</ScheduleMonthlyType>
+				<ScheduleDayOfMonth>1</ScheduleDayOfMonth>
+				<ScheduleSpacing>1</ScheduleSpacing>
+				<ScheduleWeeklyDayOfWeek>0</ScheduleWeeklyDayOfWeek>
+				<Date1stPayment>2011-07-15</Date1stPayment>
+				<RefNo/>
+				<GiftStatus>Active</GiftStatus>
+				<DonorBankCplxType>
+					<BankName>Lloyds TSB Bank</BankName>
+					<BranchName>Spalding</BranchName>
+					<BankSort>20-80-78</BankSort>
+					<BankAccName>Miss ZN Fourty</BankAccName>
+					<BankAccNo>80804517</BankAccNo>
+					<BankAddress>
+						<AddressLine/>
+						<AddressLine/>
+						<AddressLine/>
+					</BankAddress>
+					<BankCity>Leicester</BankCity>
+					<BankCounty>Leicestershire</BankCounty>
+					<BankPost>LE87 2BB</BankPost>
+				</DonorBankCplxType>
+			</DirectDebitDonationCplxType>
+		</DonationDetails>
+	</DonorCplxType>
+</GOSHCC>

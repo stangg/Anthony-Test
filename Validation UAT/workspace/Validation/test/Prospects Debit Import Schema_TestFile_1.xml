@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GOSHCC>
+    <BatchNo>4640029</BatchNo>
+    <SupplierID>GOGEN</SupplierID>
+    <DonorCplxType>
+        <Constituent_ID/>
+        <InternalConstit_ID/>
+        <SupplierDonorID>656201</SupplierDonorID>
+        <Title1>Mrs</Title1>
+        <FirstName>A</FirstName>
+        <MiddleName/>
+        <LastName>MILLS</LastName>
+        <ChangeOfName>false</ChangeOfName>
+        <Suffix1/>
+        <Suffix2/>
+        <PrimaryAddress>true</PrimaryAddress>
+        <Address>
+            <AddressLine>16A Heath Road</AddressLine>
+        </Address>
+        <City>LEIGHTON BUZZARD</City>
+        <County>Bedfordshire</County>
+        <PostCode>LU7 8AB</PostCode>
+        <Country>United Kingdom</Country>
+        <DateOfBirth>1900-01-01</DateOfBirth>
+        <Gender>Female</Gender>
+        <PhoneEmail>
+            <Type>Home</Type>
+            <Value>00000000000</Value>
+        </PhoneEmail>
+        <ConsCodes>
+            <Code>DMGen</Code>
+            <DateFrom>2009-02-12</DateFrom>
+        </ConsCodes>
+        <Attributes>
+            <SolicitCodes>
+                <Category>Solicit Codes</Category>
+                <Description>General Suppressions</Description>
+                <Date>2009-02-12</Date>
+                <Comment>NA</Comment>
+            </SolicitCodes>
+            <Source>
+                <Category>Source</Category>
+                <Description>Online</Description>
+                <Date>2009-02-12</Date>
+                <Comment/>
+            </Source>
+            <DirectMarketingType>
+                <Category>Direct Marketing Type</Category>
+                <Description>DM Prospect</Description>
+                <Date>2009-02-12</Date>
+                <Comment/>
+            </DirectMarketingType>
+        </Attributes>
+        <ConstituentAppeal>
+            <AppealID>DM2309/A</AppealID>
+            <PackageID>TC2508</PackageID>
+            <Date>2009-02-12</Date>
+            <Response>Prospect</Response>
+            <MarketingSourceCode>DM2309/A</MarketingSourceCode>
+        </ConstituentAppeal>
+        <TaxDeclaration>
+            <StartDate>2002-04-06</StartDate>
+            <TaxPayer>true</TaxPayer>
+            <DeclarationDate>2008-05-19</DeclarationDate>
+            <DeclarationIndicator>Oral</DeclarationIndicator>
+            <ConfirmationDate>2008-05-21</ConfirmationDate>
+        </TaxDeclaration>
+    </DonorCplxType>
+</GOSHCC>

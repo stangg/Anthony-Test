@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+
+	<display-name>Validation</display-name>
+
+	<description>Validation against some business rules and a schema "RaisersEdgeImportSchema_v1.xsd"</description>
+
+	<context-param>
+	  <param-name>contextConfigLocation</param-name>
+	  <param-value>classpath:validation.xml</param-value>
+	</context-param>
+
+	<servlet>
+		<description>Validation</description>
+		<servlet-name>validation</servlet-name>
+		<servlet-class>org.springframework.web.context.ContextLoaderServlet</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	
+</web-app>

@@ -1,0 +1,182 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Validation
+svn://goshcc-devsvr1
+
+
+
+2012-02-01T12:30:20.731535Z
+6106
+gayathri
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+.classpath
+file
+
+
+
+
+2012-01-18T12:23:10.337000Z
+375cabdc520c7f4f5d544685d9647fa0
+2011-09-02T10:07:30.518362Z
+5734
+gayathri
+
+.project
+file
+
+
+
+
+2012-01-18T12:23:09.493000Z
+f9d3c645369b3153a4407c4b916e86db
+2009-07-27T11:30:03.970213Z
+2955
+maria
+
+.settings
+dir
+
+.springBeans
+file
+
+
+
+
+2012-01-18T12:23:10.290000Z
+b50861f7b656fc00fa38730db3542a59
+2009-08-24T11:46:16.549631Z
+3090
+kevin
+
+DM Import System v13.xsd
+file
+
+
+
+
+2012-01-18T12:23:09.509000Z
+52ed138a34c459e24ea48b3aceb54789
+2009-01-27T11:57:00.549562Z
+1338
+kevin
+
+Documents
+dir
+
+ProductionTasks
+file
+
+
+
+
+2012-01-18T12:23:10.337000Z
+37c3f54aec0f4a660e70646369ea5fd3
+2011-02-02T17:00:47.507967Z
+4690
+maria
+
+WEB-INF
+dir
+
+build.xml
+file
+
+
+
+
+2012-01-18T12:23:10.337000Z
+2441f3c45b709eff6611a1572a45a2e3
+2011-09-14T16:04:47.020727Z
+5762
+gayathri
+
+buildinfo.properties
+file
+
+
+
+
+2012-01-18T12:23:10.900000Z
+91c1f27fac403bea55e274cdc541dc2c
+2011-08-19T13:08:16.836147Z
+5268
+gayathri
+has-props
+
+firstFewLinesOfdonations.txt
+file
+
+
+
+
+2012-01-18T12:23:10.900000Z
+bfce73690aa1e1f3bc662c48fb2b20a7
+2009-05-05T10:19:45.991130Z
+2533
+kevin
+
+firstFewLinesOfdonors.txt
+file
+
+
+
+
+2012-01-18T12:23:10.900000Z
+b44bdbeb4bd0cd309ebc6afb91e82350
+2009-05-05T10:19:45.991130Z
+2533
+kevin
+
+functionalTest
+dir
+
+ivy.xml
+file
+
+
+
+
+2012-01-18T12:23:10.900000Z
+21811b77d4ec033ced3ac55bf20e455b
+2009-09-08T12:39:44.649605Z
+3175
+kevin
+
+ivysettings.xml
+file
+
+
+
+
+2012-01-18T12:23:09.493000Z
+1eea654c118cbaea13518fbdbd952d41
+2011-12-22T12:35:34.633126Z
+6001
+gayathri
+
+jsp
+dir
+
+src
+dir
+
+test
+dir
+

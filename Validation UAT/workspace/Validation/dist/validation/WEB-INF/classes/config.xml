@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-autowire="autodetect" xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+	<bean id="fuzzyLookupTransformer" class="org.gosh.validation.general.deduplication.FuzzyLookupTransformer">
+		<property name="fuzzymatchiness" value="0.636"/>
+	</bean>
+	
+	<bean id="weightedScoringMatcher" class="org.gosh.validation.general.deduplication.WeightedScoringMatcher">
+		<property name="threshold" value="130"/>
+		<property name="fieldWeightings">
+			<list>
+				<bean class="org.gosh.validation.general.deduplication.FieldWeighting">
+					<property name="schemaLocation" value="title1"/>
+					<property name="fieldToCompareTo" value="title"/>
+					<property name="weight" value="3"/>
+				</bean>
+				<bean class="org.gosh.validation.general.deduplication.FieldWeighting">
+					<property name="schemaLocation" value="firstName"/>
+					<property name="fieldToCompareTo" value="firstName"/>
+					<property name="weight" value="107"/>
+					<property name="shortMatchWeight" value="104"/>
+				</bean>
+				<bean class="org.gosh.validation.general.deduplication.FieldWeighting">
+					<property name="schemaLocation" value="middleName"/>
+					<property name="fieldToCompareTo" value="middleName"/>
+					<property name="weight" value="5"/>
+				</bean>
+				<bean class="org.gosh.validation.general.deduplication.FieldWeighting">
+					<property name="schemaLocation" value="lastName"/>
+					<property name="fieldToCompareTo" value="lastName"/>
+					<property name="weight" value="8"/>
+				</bean>
+				<bean class="org.gosh.validation.general.deduplication.FieldWeighting">
+					<property name="schemaLocation" value="gender"/>
+					<property name="fieldToCompareTo" value="gender"/>
+					<property name="weight" value="8"/>
+				</bean>
+				<bean class="org.gosh.validation.general.deduplication.FieldWeighting">
+					<property name="schemaLocation" value="address/addressLine[1]"/>
+					<property name="fieldToCompareTo" value="firstLineOfAddress"/>
+					<property name="weight" value="4"/>
+				</bean>
+				<bean class="org.gosh.validation.general.deduplication.FieldWeighting">
+					<property name="schemaLocation" value="postCode"/>
+					<property name="fieldToCompareTo" value="postCode"/>
+					<property name="weight" value="7"/>
+				</bean>
+				<bean class="org.gosh.validation.general.deduplication.FieldWeighting">
+					<property name="schemaLocation" value="donationDetails/directDebitDonationCplxType/donorBankCplxType/bankAccName"/>
+					<property name="fieldToCompareTo" value="accountName"/>
+					<property name="weight" value="4"/>
+				</bean>
+				<bean class="org.gosh.validation.general.deduplication.FieldWeighting">
+					<property name="schemaLocation" value="donationDetails/directDebitDonationCplxType/donorBankCplxType/bankName"/>
+					<property name="fieldToCompareTo" value="branchName"/>
+					<property name="weight" value="2"/>
+				</bean>
+				<bean class="org.gosh.validation.general.deduplication.FieldWeighting">
+					<property name="schemaLocation" value="donationDetails/directDebitDonationCplxType/donorBankCplxType/bankSort"/>
+					<property name="fieldToCompareTo" value="sortCode"/>
+					<property name="weight" value="5"/>
+				</bean>
+				<bean class="org.gosh.validation.general.deduplication.FieldWeighting">
+					<property name="schemaLocation" value="phoneEmail[type=&quot;Home&quot;][1]/value"/>
+					<property name="fieldToCompareTo" value="phoneNumber"/>
+					<property name="weight" value="4"/>
+				</bean>
+				<bean class="org.gosh.validation.general.deduplication.FieldWeighting">
+					<property name="schemaLocation" value="phoneEmail[type=&quot;Email&quot;][1]/value"/>
+					<property name="fieldToCompareTo" value="email"/>
+					<property name="weight" value="5"/>
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="reCodeTableValidationTransformer" class="org.gosh.validation.general.businessrules.RECodeTableValidationTransformer">
+		<property name="fieldNameToCodeMapping">
+			<map>
+				<entry key="title1" value="5013"/>
+				<entry key="suffix1" value="5012"/>
+				<entry key="suffix2" value="5012"/>
+				<entry key="county" value="5001"/>
+				<entry key="country" value="5"/>
+				<entry key="consCodes/code.short" value="43"/>
+				<entry key="attributes/deceasedNotificationDate/category.attributeType" value="3"/>
+				<entry key="attributes/directMarketingType/description" value="1129"/>
+				<entry key="attributes/source/description" value="1006"/>
+				<entry key="attributes/solicitCodes/description" value="1010"/>
+				<!--  <entry key="donationDetails/directDebitDonationCplxType/donorBankCplxType/bankName" value="5087"/> -->
+				<entry key="donationDetails/directDebitDonationCplxType/donorBankCplxType/bankCounty" value="5001"/>
+				<entry key="donationDetails/directDebitDonationCplxType/cashDonationCplxType/cardType" value="5002"/>
+				<entry key="donationDetails/cashDonationCplxType/giftAttributes/category.attributeType" value="6,1"/>
+				<entry key="donationDetails/cashDonationCplxType/giftAttributes/description" value="1163"/>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="relationshipReciprocalGuessingTransformer" class="org.gosh.validation.tributes.RelationshipReciprocalGuessingTransformer">
+		<property name="relationshipToReciprocalMap">
+			<map>
+				<entry key="Mother" value="Child"/>
+				<entry key="Father" value="Child"/>
+				<entry key="Son" value="Parent"/>
+				<entry key="Daughter" value="Parent"/>
+				<entry key="Brother" value="Sibling"/>
+				<entry key="Sister" value="Sibling"/>
+				<entry key="Cousin" value="Cousin"/>
+				<entry key="Aunt" value="Relation"/>
+				<entry key="Uncle" value="Relation"/>
+				<entry key="Nephew" value="Relation"/>
+				<entry key="Niece" value="Relation"/>
+				<entry key="Grandmother" value="Grandchild"/>
+				<entry key="Grandfather" value="Grandchild"/>
+				<entry key="Great Grandmother" value="Great Grandchild"/>
+				<entry key="Great Grandfather" value="Great Grandchild"/>
+				<entry key="Godparent" value="Godchild"/>
+				<entry key="Friend" value="Friend"/>
+				<entry key="Partner" value="Partner"/>
+				<entry key="Husband" value="Wife"/>
+				<entry key="Wife" value="Husband"/>
+			</map>
+		</property>
+	</bean>
+	
+	<!-- some technical level things we need -->
+	
+    <bean id="reDataSource" class="com.microsoft.sqlserver.jdbc.SQLServerDataSource">
+        <property name="databaseName" value="${reDataSource.dbname}"/>
+		<property name="serverName" value="${reDataSource.svrname}"/>
+		<property name="portNumber" value="${reDataSource.port}"/>
+		<property name="user" value="${reDataSource.username}"/>
+		<property name="password" value="${reDataSource.password}"/>
+		<property name="selectMethod" value="CURSOR"/>
+    </bean>
+
+    <bean id="legacyDataSource" class="com.microsoft.sqlserver.jdbc.SQLServerDataSource" autowire-candidate="false">
+		<property name="databaseName" value="${legacyDataSource.dbname}"/>
+		<property name="serverName" value="${legacyDataSource.svrname}"/>
+		<property name="portNumber" value="${legacyDataSource.port}"/>
+		<property name="user" value="${legacyDataSource.username}"/>
+		<property name="password" value="${legacyDataSource.password}"/>
+		<property name="selectMethod" value="CURSOR"/>
+    </bean>
+	
+    <bean id="webDonationsLegacyDataSource" class="com.microsoft.sqlserver.jdbc.SQLServerDataSource" autowire-candidate="false">
+        <property name="databaseName" value="${webDonationsLegacyDataSource.dbname}"/>
+		<property name="serverName" value="${webDonationsLegacyDataSource.svrname}"/>
+		<property name="portNumber" value="${webDonationsLegacyDataSource.port}"/>
+		<property name="user" value="${webDonationsLegacyDataSource.username}"/>
+		<property name="password" value="${webDonationsLegacyDataSource.password}"/>
+		<property name="selectMethod" value="CURSOR"/>
+    </bean>
+    
+    <bean id="supplierBatchNumberLog" class="java.lang.String">
+		<constructor-arg type="java.lang.String" value="${supplierBatchNumberLog.table}"/>
+	</bean>
+	
+	<util:properties id="properties" location="classpath:org/gosh/validation/application/test.properties"/>
+
+	<!-- configuration with properties file for each environment this has to change when you deploy -->
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="properties" ref="properties"/>
+	</bean>
+</beans>

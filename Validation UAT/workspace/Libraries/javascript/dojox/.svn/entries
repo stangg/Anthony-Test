@@ -1,0 +1,442 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Libraries/javascript/dojox
+svn://goshcc-devsvr1
+
+
+
+2009-03-09T15:25:52.671786Z
+1785
+kevin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+LICENSE
+file
+
+
+
+
+2012-01-18T12:23:38.742000Z
+11ab1416e634de9512c8771b59ff9ff3
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+analytics
+dir
+
+analytics.js
+file
+
+
+
+
+2012-01-18T12:23:35.023000Z
+22d8422ac93d16f33c9200ef10d53c32
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+av
+dir
+
+charting
+dir
+
+collections
+dir
+
+collections.js
+file
+
+
+
+
+2012-01-18T12:23:34.945000Z
+d76e3c18b9244ac10a5c664e84259441
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+color
+dir
+
+color.js
+file
+
+
+
+
+2012-01-18T12:23:33.320000Z
+8e3943829b1285935e6b2673698ff3c5
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+cometd
+dir
+
+cometd.js
+file
+
+
+
+
+2012-01-18T12:23:37.695000Z
+874ad6aaafdbc2309b5bf8f54f330c5f
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+data
+dir
+
+date
+dir
+
+dtl
+dir
+
+dtl.js
+file
+
+
+
+
+2012-01-18T12:23:33.320000Z
+5b1773a1737f440baa0dea9876621c15
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+editor
+dir
+
+embed
+dir
+
+encoding
+dir
+
+flash
+dir
+
+flash.js
+file
+
+
+
+
+2012-01-18T12:23:35.055000Z
+c42eefcf5ae958326019ba52a0708d89
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+form
+dir
+
+fx
+dir
+
+fx.js
+file
+
+
+
+
+2012-01-18T12:23:34.945000Z
+e3dc8eede68091a4fd3d1ef3e0803748
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+gfx
+dir
+
+gfx.js
+file
+
+
+
+
+2012-01-18T12:23:39.992000Z
+c13aa0ceb994ff922315aa4b81960dbe
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+gfx3d
+dir
+
+gfx3d.js
+file
+
+
+
+
+2012-01-18T12:23:37.695000Z
+2edd6f67c9e423462f5d93ef1d8b484f
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+grid
+dir
+
+help
+dir
+
+highlight
+dir
+
+highlight.js
+file
+
+
+
+
+2012-01-18T12:23:35.851000Z
+931df98c0fc3a57f68f246f8b39b54b2
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+html
+dir
+
+html.js
+file
+
+
+
+
+2012-01-18T12:23:32.851000Z
+980d012af18737939faa60ca8b2558cf
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+image
+dir
+
+io
+dir
+
+json
+dir
+
+jsonPath
+dir
+
+jsonPath.js
+file
+
+
+
+
+2012-01-18T12:23:37.758000Z
+fcf349015a1522f6d72656c3caf82eaa
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+lang
+dir
+
+layout
+dir
+
+math
+dir
+
+math.js
+file
+
+
+
+
+2012-01-18T12:23:37.773000Z
+822979524339e4836f622934adf0c480
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+off
+dir
+
+off.js
+file
+
+
+
+
+2012-01-18T12:23:34.945000Z
+cde11b3c04a562899a747f37d8348709
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+presentation
+dir
+
+presentation.js
+file
+
+
+
+
+2012-01-18T12:23:33.164000Z
+f0ad24671ebbd00818737738392b29f9
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+resources
+dir
+
+robot
+dir
+
+rpc
+dir
+
+secure
+dir
+
+sketch
+dir
+
+sketch.js
+file
+
+
+
+
+2012-01-18T12:23:34.945000Z
+898eea2c7e63e2e8a8c49fd9d8ae6d47
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+sql
+dir
+
+sql.js
+file
+
+
+
+
+2012-01-18T12:23:41.930000Z
+87f61cc8cb63de3ff4befaf02cb75d87
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+storage
+dir
+
+storage.js
+file
+
+
+
+
+2012-01-18T12:23:35.851000Z
+849b07527bfea9b87a67150c4af9c549
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+string
+dir
+
+testing
+dir
+
+timing
+dir
+
+timing.js
+file
+
+
+
+
+2012-01-18T12:23:35.023000Z
+43d0dffb505ef4290735310892d6b636
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+uuid
+dir
+
+uuid.js
+file
+
+
+
+
+2012-01-18T12:23:38.742000Z
+2c33615ae5255d8d4841729efc29c9a7
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+validate
+dir
+
+validate.js
+file
+
+
+
+
+2012-01-18T12:23:33.851000Z
+eba572ade573ad6c057ecfb69d875574
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+widget
+dir
+
+wire
+dir
+
+wire.js
+file
+
+
+
+
+2012-01-18T12:23:35.851000Z
+f8333ff690e6d900bfa86ab11f504592
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+xml
+dir
+
+xmpp
+dir
+

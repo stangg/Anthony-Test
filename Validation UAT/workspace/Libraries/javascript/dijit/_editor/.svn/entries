@@ -1,0 +1,94 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Libraries/javascript/dijit/_editor
+svn://goshcc-devsvr1
+
+
+
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+RichText.js
+file
+
+
+
+
+2012-01-18T12:23:27.133000Z
+14dbafc4a4ea74d2d816e149893645f1
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+_Plugin.js
+file
+
+
+
+
+2012-01-18T12:23:27.133000Z
+36f1b0860f6be0812de97a5c8aaff7eb
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+html.js
+file
+
+
+
+
+2012-01-18T12:23:27.054000Z
+52b53000a0ab74837bd99f7e62c116f7
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+nls
+dir
+
+plugins
+dir
+
+range.js
+file
+
+
+
+
+2012-01-18T12:23:27.133000Z
+9bfb5eb3bfe848f58f4e6e8453b30a56
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+selection.js
+file
+
+
+
+
+2012-01-18T12:23:27.070000Z
+4d8cd7ab75e4b4a2d8ee6470239ef109
+2008-10-07T14:00:18.863231Z
+821
+maria
+

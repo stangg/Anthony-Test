@@ -1,0 +1,202 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Validation/test
+svn://goshcc-devsvr1
+
+
+
+2012-02-01T12:30:20.731535Z
+6106
+gayathri
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+Cash Import Schema_TestFile_1.xml
+file
+
+
+
+
+2012-01-18T12:23:09.306000Z
+3e3479f708e43a3073afe199a2cb3ec0
+2009-03-10T11:32:13.241695Z
+1792
+kevin
+
+Direct Debit Import Schema_TestFile_1.xml
+file
+
+
+
+
+2012-01-18T12:23:09.447000Z
+0dbe02b01e99c8d0d873586254ebd7a7
+2009-03-10T11:32:13.241695Z
+1792
+kevin
+
+IshasSuppliedDonations.txt
+file
+
+
+
+
+2012-01-18T12:23:09.431000Z
+cd51f852a315ebf9e5157f7bb2434ddd
+2009-04-29T12:50:54.461722Z
+2506
+maria
+
+IshasSuppliedDonors.txt
+file
+
+
+
+
+2012-01-18T12:23:08.822000Z
+7d85e745bd07f5ea1358142754d7f08a
+2009-04-29T12:50:54.461722Z
+2506
+maria
+
+Prospects Debit Import Schema_TestFile_1.xml
+file
+
+
+
+
+2012-01-18T12:23:08.837000Z
+d45ae85423fca1155b8a4a50119f4ef3
+2009-03-10T13:55:31.177832Z
+1801
+kevin
+
+data
+dir
+
+firstFewLinesOfWebDDs_BlankFirstLine.txt
+file
+
+
+
+
+2012-01-18T12:23:09.290000Z
+911afe92a29837fc8acc16b24fd99aa2
+2009-05-05T15:38:31.988000Z
+2553
+kevin
+
+firstFewLinesOfWebDDs_MariaTest.txt
+file
+
+
+
+
+2012-01-18T12:23:09.290000Z
+9568089a28a5dcf025274eedb6d7db61
+2009-03-26T16:37:05.226464Z
+2103
+maria
+
+firstFewLinesOfWebDDs_errorCase.txt
+file
+
+
+
+
+2012-01-18T12:23:08.837000Z
+bdccd9015b4e5336ec381ea3554aa673
+2009-04-29T12:19:34.877135Z
+2505
+kevin
+
+firstFewLinesOfdonations.txt
+file
+
+
+
+
+2012-01-18T12:23:09.290000Z
+bfce73690aa1e1f3bc662c48fb2b20a7
+2009-05-05T10:26:27.637098Z
+2535
+kevin
+
+firstFewLinesOfdonors.txt
+file
+
+
+
+
+2012-01-18T12:23:09.447000Z
+b44bdbeb4bd0cd309ebc6afb91e82350
+2009-05-05T10:26:27.637098Z
+2535
+kevin
+
+firstFewRecordsOfConvertedWebDDFile.xml
+file
+
+
+
+
+2012-01-18T12:23:08.822000Z
+316084ddc72d74fd555214f920fe6506
+2009-03-26T16:27:16.710281Z
+2101
+maria
+
+firstFewRecordsOfConvertedWebDDFile_MariaTest.xml
+file
+
+
+
+
+2012-01-18T12:23:09.290000Z
+ceb0ce4aaea8d0a85cd091de51d36c05
+2011-06-21T16:09:10.954958Z
+4876
+gayathri
+
+org
+dir
+
+paperlessdd_goshcc_all_20080207-20080213_allbasic.txt
+file
+
+
+
+
+2012-01-18T12:23:09.431000Z
+b716a8872f491d7c1f864e585388b052
+2009-05-05T09:14:10.451257Z
+2528
+kevin
+
+testdata.xml
+file
+
+
+
+
+2012-01-18T12:23:09.290000Z
+c7c361b61e791d4a92de57a13875d20d
+2009-05-05T09:12:56.375029Z
+2527
+kevin
+

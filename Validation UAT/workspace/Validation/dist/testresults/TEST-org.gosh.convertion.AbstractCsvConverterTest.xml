@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="GOSHCC-ASDEV" name="org.gosh.convertion.AbstractCsvConverterTest" tests="6" time="0.469" timestamp="2012-02-01T15:22:23">
+  <properties>
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="ivy.retrieve.pattern.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/lib/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="java.vendor.url.ivy.instance" value="http://java.sun.com/" />
+    <property name="ivy.project.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ivy.resolve.default.type.filter" value="*" />
+    <property name="java.home" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre" />
+    <property name="ivy.configurations.ivy.instance" value="*" />
+    <property name="major" value="4" />
+    <property name="ivy.basedir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ivy.dep.file.ivy.instance" value="ivy.xml" />
+    <property name="ant.file.buildCommon" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\AntBuilds\commonBuild.xml" />
+    <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\endorsed" />
+    <property name="java.class.path.ivy.instance" value="C:\Apache\apache-ant-1.8.2\bin\..\lib\ant-launcher.jar;C:\Apache\apache-ant-1.8.2\lib\ant-antlr.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-bcel.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-bsf.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-log4j.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-oro.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-regexp.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-resolver.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-xalan2.jar;C:\Apache\apache-ant-1.8.2\lib\ant-commons-logging.jar;C:\Apache\apache-ant-1.8.2\lib\ant-commons-net.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jai.jar;C:\Apache\apache-ant-1.8.2\lib\ant-javamail.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jdepend.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jmf.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jsch.jar;C:\Apache\apache-ant-1.8.2\lib\ant-junit.jar;C:\Apache\apache-ant-1.8.2\lib\ant-junit4.jar;C:\Apache\apache-ant-1.8.2\lib\ant-launcher.jar;C:\Apache\apache-ant-1.8.2\lib\ant-netrexx.jar;C:\Apache\apache-ant-1.8.2\lib\ant-swing.jar;C:\Apache\apache-ant-1.8.2\lib\ant-testutil.jar;C:\Apache\apache-ant-1.8.2\lib\ant.jar;C:\Apache\apache-ant-1.8.2\lib\ivy-2.2.0.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\lib\tools.jar" />
+    <property name="ivy.home" value="C:\.ivy2" />
+    <property name="java.vm.specification.vendor.ivy.instance" value="Sun Microsystems Inc." />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="ivy.dep.file" value="ivy.xml" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="ant.file.Root" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\AntBuilds\build.xml" />
+    <property name="ivy.lib.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/lib" />
+    <property name="java.version" value="1.6.0_24" />
+    <property name="ivy.conf.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="sun.boot.library.path.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\bin" />
+    <property name="ivy.report.output.pattern.ivy.instance" value="[organisation]-[module]-[conf].[ext]" />
+    <property name="ivy.module" value="Validation" />
+    <property name="ivy.publish.src.artifacts.pattern.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="sun.management.compiler.ivy.instance" value="HotSpot Client Compiler" />
+    <property name="ant.project.invoked-targets" value="Deploy on UAT env" />
+    <property name="service" value="Tomcat6" />
+    <property name="ant.file.type.buildCommon" value="file" />
+    <property name="os.name.ivy.instance" value="Windows Server 2008 R2" />
+    <property name="ivy.default.ivy.user.dir.ivy.instance" value="C:\.ivy2" />
+    <property name="ivy.default.always.check.exact.revision" value="false" />
+    <property name="ivy.default.settings.dir.ivy.instance" value="jar:file:/C:/Apache/apache-ant-1.8.2/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings" />
+    <property name="user.name" value="GOSHCC-ASDEV$" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="cxf.dir" value="C:/Apache/CXF/apache-cxf-2.2.6" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="jsp-folder-exists" value="true" />
+    <property name="ant.home.ivy.instance" value="C:\Apache\apache-ant-1.8.2\bin\.." />
+    <property name="file.encoding.ivy.instance" value="Cp1252" />
+    <property name="ivy.cache.ttl.default.ivy.instance" value="10s" />
+    <property name="ivy.conf.file.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\ivysettings.xml" />
+    <property name="java.specification.vendor.ivy.instance" value="Sun Microsystems Inc." />
+    <property name="java.vendor.ivy.instance" value="Sun Microsystems Inc." />
+    <property name="lib.dir" value="dist/validation/WEB-INF/lib" />
+    <property name="sun.cpu.isalist.ivy.instance" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="user.timezone" value="" />
+    <property name="java.endorsed.dirs.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\endorsed" />
+    <property name="path.separator" value=";" />
+    <property name="urldevsvr2" value="http://goshcc-devsvr2:8080/manager" />
+    <property name="java.class.version.ivy.instance" value="50.0" />
+    <property name="ivy.default.conf.dir" value="jar:file:/C:/Apache/apache-ant-1.8.2/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="java.runtime.name.ivy.instance" value="Java(TM) SE Runtime Environment" />
+    <property name="svn.home" value="C:/Program Files/CollabNet/Subversion Client" />
+    <property name="ivy.resolve.default.type.filter.ivy.instance" value="*" />
+    <property name="ant.project.default-target" value="Validation" />
+    <property name="build" value="0" />
+    <property name="ivy.targets.copied" value="true" />
+    <property name="ant.file" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\build.xml" />
+    <property name="ivy.distrib.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib" />
+    <property name="ivy.checksums.ivy.instance" value="sha1,md5" />
+    <property name="sun.arch.data.model.ivy.instance" value="32" />
+    <property name="ivy.build.artifacts.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/build/artifacts" />
+    <property name="instrumented.dir" value="cobertura/instr" />
+    <property name="user.variant.ivy.instance" value="" />
+    <property name="ivy.settings.file" value="ivysettings.xml" />
+    <property name="java.io.tmpdir" value="P:\TEMP\" />
+    <property name="cxf.home" value="C:\Apache\CXF\apache-cxf-2.2.6" />
+    <property name="ivy.buildlist.ivyfilepath.ivy.instance" value="ivy.xml" />
+    <property name="TODAY" value="February 1 2012" />
+    <property name="ivy.cache.ttl.default" value="10s" />
+    <property name="user.language" value="en" />
+    <property name="user.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ivy.home.ivy.instance" value="C:\.ivy2" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.specification.version.ivy.instance" value="1.6" />
+    <property name="ant.file.type" value="file" />
+    <property name="ivy.build.artifacts.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/build/artifacts" />
+    <property name="ant.file.type.Root" value="file" />
+    <property name="sun.io.unicode.encoding.ivy.instance" value="UnicodeLittle" />
+    <property name="ivy.status" value="integration" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="ivy.lib.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/lib" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ivy.default.conf.dir.ivy.instance" value="jar:file:/C:/Apache/apache-ant-1.8.2/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings" />
+    <property name="java.vm.version.ivy.instance" value="19.1-b02" />
+    <property name="ivy.file.present" value="true" />
+    <property name="cobertura.dir" value="C:/Cobertura/cobertura-1.9" />
+    <property name="projectVersion" value="" />
+    <property name="user.name.ivy.instance" value="GOSHCC-ASDEV$" />
+    <property name="ivy.cache.dir" value="C:\.ivy2\cache" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="java.io.tmpdir.ivy.instance" value="P:\TEMP\" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
+    <property name="java.home.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre" />
+    <property name="java.vm.vendor.ivy.instance" value="Sun Microsystems Inc." />
+    <property name="password" value="s3cret" />
+    <property name="ivy.default.settings.dir" value="jar:file:/C:/Apache/apache-ant-1.8.2/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings" />
+    <property name="ivy.configurations" value="*" />
+    <property name="springSourceDistDir" value="springSourceDistDir" />
+    <property name="ivy.settings.url" value="file:/C:/jenkinsbuilds/jobs/Validation%20-%20UAT/workspace/Validation/ivysettings.xml" />
+    <property name="os.name" value="Windows Server 2008 R2" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="sun.jnu.encoding.ivy.instance" value="Cp1252" />
+    <property name="ivy.deliver.ivy.pattern.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="urllocal" value="http://localhost:8080/manager" />
+    <property name="ivy.checksums" value="sha1,md5" />
+    <property name="ant.file.Validation" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\build.xml" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="ivy.log.modules.in.use" value="false" />
+    <property name="java.runtime.version.ivy.instance" value="1.6.0_24-b07" />
+    <property name="ivy.report.output.pattern" value="[organisation]-[module]-[conf].[ext]" />
+    <property name="ivy.version" value="2.2.0" />
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.6.0_24\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Java\jdk1.6.0_24\/bin;C:\Program Files (x86)\CollabNet\Subversion Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\NetApp\Windows Host Utilities\;C:\Program Files\NetApp\SnapDrive\;C:\Apache\apache-ant-1.8.2\bin;" />
+    <property name="ivy.conf.url" value="file:/C:/jenkinsbuilds/jobs/Validation%20-%20UAT/workspace/Validation/ivysettings.xml" />
+    <property name="java.vm.name.ivy.instance" value="Java HotSpot(TM) Client VM" />
+    <property name="os.version.ivy.instance" value="6.1" />
+    <property name="line.separator.ivy.instance" value="&#xd;&#xa;" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="sun.desktop.ivy.instance" value="windows" />
+    <property name="sun.cpu.endian.ivy.instance" value="little" />
+    <property name="java.vm.specification.name.ivy.instance" value="Java Virtual Machine Specification" />
+    <property name="basedir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="java.class.version" value="50.0" />
+    <property name="ivy.settings.url.ivy.instance" value="file:/C:/jenkinsbuilds/jobs/Validation%20-%20UAT/workspace/Validation/ivysettings.xml" />
+    <property name="path.separator.ivy.instance" value=";" />
+    <property name="sun.boot.class.path.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\modules\jdk.boot.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\classes" />
+    <property name="ant.home" value="C:\Apache\apache-ant-1.8.2\bin\.." />
+    <property name="distribution" value="validation" />
+    <property name="ivy.resolved.configurations" value="default" />
+    <property name="ivy.deliver.ivy.pattern" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="isFail" value="on" />
+    <property name="dependents" value="SchemaBindings" />
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\bin" />
+    <property name="ivy.default.always.check.exact.revision.ivy.instance" value="false" />
+    <property name="java.library.path.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Java\jdk1.6.0_24\/bin;C:\Program Files (x86)\CollabNet\Subversion Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\NetApp\Windows Host Utilities\;C:\Program Files\NetApp\SnapDrive\;C:\Apache\apache-ant-1.8.2\bin;" />
+    <property name="awt.toolkit.ivy.instance" value="sun.awt.windows.WToolkit" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="ivy.basedir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="user.variant" value="" />
+    <property name="ivy.log.modules.in.use.ivy.instance" value="false" />
+    <property name="sun.os.patch.level.ivy.instance" value="Service Pack 1" />
+    <property name="file.encoding.pkg.ivy.instance" value="sun.io" />
+    <property name="ivy.resolver.default.check.modified" value="false" />
+    <property name="ivy.settings.file.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\ivysettings.xml" />
+    <property name="ivy.nb.targets.copied" value="57" />
+    <property name="ant.project.name" value="Validation" />
+    <property name="ivy.cache.dir.ivy.instance" value="C:\.ivy2\cache" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="ivy.status.ivy.instance" value="integration" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="minor" value="0" />
+    <property name="file.separator.ivy.instance" value="\" />
+    <property name="ivy.deps.changed" value="true" />
+    <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="os.version" value="6.1" />
+    <property name="cobertura.home" value="C:/Cobertura/cobertura-1.9" />
+    <property name="user.home" value="C:\" />
+    <property name="sun.java.launcher.ivy.instance" value="SUN_STANDARD" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="ivy.organisation" value="gosh" />
+    <property name="user.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ant.library.dir.ivy.instance" value="C:\Apache\apache-ant-1.8.2\lib" />
+    <property name="ivy.publish.src.artifacts.pattern" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="java.vm.info.ivy.instance" value="mixed mode, sharing" />
+    <property name="ivy.distrib.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="project" value="Validation" />
+    <property name="ivy.revision" value="working@GOSHCC-ASDEV" />
+    <property name="user.timezone.ivy.instance" value="Europe/London" />
+    <property name="java.vm.version" value="19.1-b02" />
+    <property name="java.class.path" value="C:\Apache\apache-ant-1.8.2\bin\..\lib\ant-launcher.jar;C:\Apache\apache-ant-1.8.2\lib\ant-antlr.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-bcel.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-bsf.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-log4j.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-oro.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-regexp.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-resolver.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-xalan2.jar;C:\Apache\apache-ant-1.8.2\lib\ant-commons-logging.jar;C:\Apache\apache-ant-1.8.2\lib\ant-commons-net.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jai.jar;C:\Apache\apache-ant-1.8.2\lib\ant-javamail.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jdepend.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jmf.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jsch.jar;C:\Apache\apache-ant-1.8.2\lib\ant-junit.jar;C:\Apache\apache-ant-1.8.2\lib\ant-junit4.jar;C:\Apache\apache-ant-1.8.2\lib\ant-launcher.jar;C:\Apache\apache-ant-1.8.2\lib\ant-netrexx.jar;C:\Apache\apache-ant-1.8.2\lib\ant-swing.jar;C:\Apache\apache-ant-1.8.2\lib\ant-testutil.jar;C:\Apache\apache-ant-1.8.2\lib\ant.jar;C:\Apache\apache-ant-1.8.2\lib\ivy-2.2.0.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\lib\tools.jar" />
+    <property name="ivy.default.ivy.user.dir" value="C:\.ivy2" />
+    <property name="DSTAMP" value="20120201" />
+    <property name="user.home.ivy.instance" value="C:\" />
+    <property name="basedir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ant.library.dir" value="C:\Apache\apache-ant-1.8.2\lib" />
+    <property name="os.arch" value="x86" />
+    <property name="ivy.conf.file" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\ivysettings.xml" />
+    <property name="java.awt.graphicsenv.ivy.instance" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.vendor.url.bug.ivy.instance" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="java.vm.specification.version.ivy.instance" value="1.0" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="java.awt.printerjob.ivy.instance" value="sun.awt.windows.WPrinterJob" />
+    <property name="ivy.settings.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="username" value="tomcat" />
+    <property name="ant.core.lib" value="C:\Apache\apache-ant-1.8.2\lib\ant.jar" />
+    <property name="ivy.resolver.default.check.modified.ivy.instance" value="false" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ivy.settings.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="TSTAMP" value="1522" />
+    <property name="file.separator" value="\" />
+    <property name="user.language.ivy.instance" value="en" />
+    <property name="user.country.ivy.instance" value="GB" />
+    <property name="ivy.conf.url.ivy.instance" value="file:/C:/jenkinsbuilds/jobs/Validation%20-%20UAT/workspace/Validation/ivysettings.xml" />
+    <property name="java.runtime.version" value="1.6.0_24-b07" />
+    <property name="java.specification.name.ivy.instance" value="Java Platform API Specification" />
+    <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\modules\jdk.boot.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\classes" />
+    <property name="ivy.conf.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ant.file.type.Validation" value="file" />
+    <property name="ivy.retrieve.pattern" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/lib/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="release" value=".RELEASE" />
+    <property name="user.country" value="GB" />
+    <property name="java.version.ivy.instance" value="1.6.0_24" />
+    <property name="ivy.resolved.file" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\ivy.xml" />
+    <property name="os.arch.ivy.instance" value="x86" />
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="ivy.project.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="ivy.buildlist.ivyfilepath" value="ivy.xml" />
+  </properties>
+  <testcase classname="org.gosh.convertion.AbstractCsvConverterTest" name="testGetFields" time="0.031" />
+  <testcase classname="org.gosh.convertion.AbstractCsvConverterTest" name="testGetFieldsWithLongSeperator" time="0.0" />
+  <testcase classname="org.gosh.convertion.AbstractCsvConverterTest" name="testGetFieldsWithTabSeperatorOnly" time="0.0" />
+  <testcase classname="org.gosh.convertion.AbstractCsvConverterTest" name="testGetFieldsWithARealCase" time="0.0" />
+  <testcase classname="org.gosh.convertion.AbstractCsvConverterTest" name="testGetFieldsWithARealCaseWithDoubleProblem" time="0.0" />
+  <testcase classname="org.gosh.convertion.AbstractCsvConverterTest" name="testMinusSixFiscalYears" time="0.11" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[log4j:ERROR Could not find value for key log4j.appender.INFO
+log4j:ERROR Could not instantiate appender named "INFO".
+log4j:WARN File option not set for appender [logfile].
+log4j:WARN Are you using FileAppender instead of ConsoleAppender?
+]]></system-err>
+</testsuite>

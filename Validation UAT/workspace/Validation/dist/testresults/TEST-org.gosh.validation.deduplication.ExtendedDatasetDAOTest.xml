@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="GOSHCC-ASDEV" name="org.gosh.validation.deduplication.ExtendedDatasetDAOTest" tests="4" time="0.781" timestamp="2012-02-01T15:22:33">
+  <properties>
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="ivy.retrieve.pattern.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/lib/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="java.vendor.url.ivy.instance" value="http://java.sun.com/" />
+    <property name="ivy.project.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ivy.resolve.default.type.filter" value="*" />
+    <property name="java.home" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre" />
+    <property name="ivy.configurations.ivy.instance" value="*" />
+    <property name="major" value="4" />
+    <property name="ivy.basedir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ivy.dep.file.ivy.instance" value="ivy.xml" />
+    <property name="ant.file.buildCommon" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\AntBuilds\commonBuild.xml" />
+    <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\endorsed" />
+    <property name="java.class.path.ivy.instance" value="C:\Apache\apache-ant-1.8.2\bin\..\lib\ant-launcher.jar;C:\Apache\apache-ant-1.8.2\lib\ant-antlr.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-bcel.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-bsf.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-log4j.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-oro.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-regexp.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-resolver.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-xalan2.jar;C:\Apache\apache-ant-1.8.2\lib\ant-commons-logging.jar;C:\Apache\apache-ant-1.8.2\lib\ant-commons-net.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jai.jar;C:\Apache\apache-ant-1.8.2\lib\ant-javamail.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jdepend.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jmf.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jsch.jar;C:\Apache\apache-ant-1.8.2\lib\ant-junit.jar;C:\Apache\apache-ant-1.8.2\lib\ant-junit4.jar;C:\Apache\apache-ant-1.8.2\lib\ant-launcher.jar;C:\Apache\apache-ant-1.8.2\lib\ant-netrexx.jar;C:\Apache\apache-ant-1.8.2\lib\ant-swing.jar;C:\Apache\apache-ant-1.8.2\lib\ant-testutil.jar;C:\Apache\apache-ant-1.8.2\lib\ant.jar;C:\Apache\apache-ant-1.8.2\lib\ivy-2.2.0.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\lib\tools.jar" />
+    <property name="ivy.home" value="C:\.ivy2" />
+    <property name="java.vm.specification.vendor.ivy.instance" value="Sun Microsystems Inc." />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="ivy.dep.file" value="ivy.xml" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="ant.file.Root" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\AntBuilds\build.xml" />
+    <property name="ivy.lib.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/lib" />
+    <property name="java.version" value="1.6.0_24" />
+    <property name="ivy.conf.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="sun.boot.library.path.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\bin" />
+    <property name="ivy.report.output.pattern.ivy.instance" value="[organisation]-[module]-[conf].[ext]" />
+    <property name="ivy.module" value="Validation" />
+    <property name="ivy.publish.src.artifacts.pattern.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="sun.management.compiler.ivy.instance" value="HotSpot Client Compiler" />
+    <property name="ant.project.invoked-targets" value="Deploy on UAT env" />
+    <property name="service" value="Tomcat6" />
+    <property name="ant.file.type.buildCommon" value="file" />
+    <property name="os.name.ivy.instance" value="Windows Server 2008 R2" />
+    <property name="ivy.default.ivy.user.dir.ivy.instance" value="C:\.ivy2" />
+    <property name="ivy.default.always.check.exact.revision" value="false" />
+    <property name="ivy.default.settings.dir.ivy.instance" value="jar:file:/C:/Apache/apache-ant-1.8.2/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings" />
+    <property name="user.name" value="GOSHCC-ASDEV$" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="cxf.dir" value="C:/Apache/CXF/apache-cxf-2.2.6" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="jsp-folder-exists" value="true" />
+    <property name="ant.home.ivy.instance" value="C:\Apache\apache-ant-1.8.2\bin\.." />
+    <property name="file.encoding.ivy.instance" value="Cp1252" />
+    <property name="ivy.cache.ttl.default.ivy.instance" value="10s" />
+    <property name="ivy.conf.file.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\ivysettings.xml" />
+    <property name="java.specification.vendor.ivy.instance" value="Sun Microsystems Inc." />
+    <property name="java.vendor.ivy.instance" value="Sun Microsystems Inc." />
+    <property name="lib.dir" value="dist/validation/WEB-INF/lib" />
+    <property name="sun.cpu.isalist.ivy.instance" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="user.timezone" value="" />
+    <property name="java.endorsed.dirs.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\endorsed" />
+    <property name="path.separator" value=";" />
+    <property name="urldevsvr2" value="http://goshcc-devsvr2:8080/manager" />
+    <property name="java.class.version.ivy.instance" value="50.0" />
+    <property name="ivy.default.conf.dir" value="jar:file:/C:/Apache/apache-ant-1.8.2/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="java.runtime.name.ivy.instance" value="Java(TM) SE Runtime Environment" />
+    <property name="svn.home" value="C:/Program Files/CollabNet/Subversion Client" />
+    <property name="ivy.resolve.default.type.filter.ivy.instance" value="*" />
+    <property name="ant.project.default-target" value="Validation" />
+    <property name="build" value="0" />
+    <property name="ivy.targets.copied" value="true" />
+    <property name="ant.file" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\build.xml" />
+    <property name="ivy.distrib.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib" />
+    <property name="ivy.checksums.ivy.instance" value="sha1,md5" />
+    <property name="sun.arch.data.model.ivy.instance" value="32" />
+    <property name="ivy.build.artifacts.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/build/artifacts" />
+    <property name="instrumented.dir" value="cobertura/instr" />
+    <property name="user.variant.ivy.instance" value="" />
+    <property name="ivy.settings.file" value="ivysettings.xml" />
+    <property name="java.io.tmpdir" value="P:\TEMP\" />
+    <property name="cxf.home" value="C:\Apache\CXF\apache-cxf-2.2.6" />
+    <property name="ivy.buildlist.ivyfilepath.ivy.instance" value="ivy.xml" />
+    <property name="TODAY" value="February 1 2012" />
+    <property name="ivy.cache.ttl.default" value="10s" />
+    <property name="user.language" value="en" />
+    <property name="user.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ivy.home.ivy.instance" value="C:\.ivy2" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.specification.version.ivy.instance" value="1.6" />
+    <property name="ant.file.type" value="file" />
+    <property name="ivy.build.artifacts.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/build/artifacts" />
+    <property name="ant.file.type.Root" value="file" />
+    <property name="sun.io.unicode.encoding.ivy.instance" value="UnicodeLittle" />
+    <property name="ivy.status" value="integration" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="ivy.lib.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/lib" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ivy.default.conf.dir.ivy.instance" value="jar:file:/C:/Apache/apache-ant-1.8.2/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings" />
+    <property name="java.vm.version.ivy.instance" value="19.1-b02" />
+    <property name="ivy.file.present" value="true" />
+    <property name="cobertura.dir" value="C:/Cobertura/cobertura-1.9" />
+    <property name="projectVersion" value="" />
+    <property name="user.name.ivy.instance" value="GOSHCC-ASDEV$" />
+    <property name="ivy.cache.dir" value="C:\.ivy2\cache" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="java.io.tmpdir.ivy.instance" value="P:\TEMP\" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
+    <property name="java.home.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre" />
+    <property name="java.vm.vendor.ivy.instance" value="Sun Microsystems Inc." />
+    <property name="password" value="s3cret" />
+    <property name="ivy.default.settings.dir" value="jar:file:/C:/Apache/apache-ant-1.8.2/lib/ivy-2.2.0.jar!/org/apache/ivy/core/settings" />
+    <property name="ivy.configurations" value="*" />
+    <property name="springSourceDistDir" value="springSourceDistDir" />
+    <property name="ivy.settings.url" value="file:/C:/jenkinsbuilds/jobs/Validation%20-%20UAT/workspace/Validation/ivysettings.xml" />
+    <property name="os.name" value="Windows Server 2008 R2" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="sun.jnu.encoding.ivy.instance" value="Cp1252" />
+    <property name="ivy.deliver.ivy.pattern.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="urllocal" value="http://localhost:8080/manager" />
+    <property name="ivy.checksums" value="sha1,md5" />
+    <property name="ant.file.Validation" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\build.xml" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="ivy.log.modules.in.use" value="false" />
+    <property name="java.runtime.version.ivy.instance" value="1.6.0_24-b07" />
+    <property name="ivy.report.output.pattern" value="[organisation]-[module]-[conf].[ext]" />
+    <property name="ivy.version" value="2.2.0" />
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.6.0_24\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Java\jdk1.6.0_24\/bin;C:\Program Files (x86)\CollabNet\Subversion Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\NetApp\Windows Host Utilities\;C:\Program Files\NetApp\SnapDrive\;C:\Apache\apache-ant-1.8.2\bin;" />
+    <property name="ivy.conf.url" value="file:/C:/jenkinsbuilds/jobs/Validation%20-%20UAT/workspace/Validation/ivysettings.xml" />
+    <property name="java.vm.name.ivy.instance" value="Java HotSpot(TM) Client VM" />
+    <property name="os.version.ivy.instance" value="6.1" />
+    <property name="line.separator.ivy.instance" value="&#xd;&#xa;" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="sun.desktop.ivy.instance" value="windows" />
+    <property name="sun.cpu.endian.ivy.instance" value="little" />
+    <property name="java.vm.specification.name.ivy.instance" value="Java Virtual Machine Specification" />
+    <property name="basedir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="java.class.version" value="50.0" />
+    <property name="ivy.settings.url.ivy.instance" value="file:/C:/jenkinsbuilds/jobs/Validation%20-%20UAT/workspace/Validation/ivysettings.xml" />
+    <property name="path.separator.ivy.instance" value=";" />
+    <property name="sun.boot.class.path.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\modules\jdk.boot.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\classes" />
+    <property name="ant.home" value="C:\Apache\apache-ant-1.8.2\bin\.." />
+    <property name="distribution" value="validation" />
+    <property name="ivy.resolved.configurations" value="default" />
+    <property name="ivy.deliver.ivy.pattern" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="isFail" value="on" />
+    <property name="dependents" value="SchemaBindings" />
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\bin" />
+    <property name="ivy.default.always.check.exact.revision.ivy.instance" value="false" />
+    <property name="java.library.path.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Java\jdk1.6.0_24\/bin;C:\Program Files (x86)\CollabNet\Subversion Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\NetApp\Windows Host Utilities\;C:\Program Files\NetApp\SnapDrive\;C:\Apache\apache-ant-1.8.2\bin;" />
+    <property name="awt.toolkit.ivy.instance" value="sun.awt.windows.WToolkit" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="ivy.basedir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs.ivy.instance" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="user.variant" value="" />
+    <property name="ivy.log.modules.in.use.ivy.instance" value="false" />
+    <property name="sun.os.patch.level.ivy.instance" value="Service Pack 1" />
+    <property name="file.encoding.pkg.ivy.instance" value="sun.io" />
+    <property name="ivy.resolver.default.check.modified" value="false" />
+    <property name="ivy.settings.file.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\ivysettings.xml" />
+    <property name="ivy.nb.targets.copied" value="57" />
+    <property name="ant.project.name" value="Validation" />
+    <property name="ivy.cache.dir.ivy.instance" value="C:\.ivy2\cache" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="ivy.status.ivy.instance" value="integration" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="minor" value="0" />
+    <property name="file.separator.ivy.instance" value="\" />
+    <property name="ivy.deps.changed" value="true" />
+    <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="os.version" value="6.1" />
+    <property name="cobertura.home" value="C:/Cobertura/cobertura-1.9" />
+    <property name="user.home" value="C:\" />
+    <property name="sun.java.launcher.ivy.instance" value="SUN_STANDARD" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="ivy.organisation" value="gosh" />
+    <property name="user.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ant.library.dir.ivy.instance" value="C:\Apache\apache-ant-1.8.2\lib" />
+    <property name="ivy.publish.src.artifacts.pattern" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="java.vm.info.ivy.instance" value="mixed mode, sharing" />
+    <property name="ivy.distrib.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/distrib" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="project" value="Validation" />
+    <property name="ivy.revision" value="working@GOSHCC-ASDEV" />
+    <property name="user.timezone.ivy.instance" value="Europe/London" />
+    <property name="java.vm.version" value="19.1-b02" />
+    <property name="java.class.path" value="C:\Apache\apache-ant-1.8.2\bin\..\lib\ant-launcher.jar;C:\Apache\apache-ant-1.8.2\lib\ant-antlr.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-bcel.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-bsf.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-log4j.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-oro.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-regexp.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-resolver.jar;C:\Apache\apache-ant-1.8.2\lib\ant-apache-xalan2.jar;C:\Apache\apache-ant-1.8.2\lib\ant-commons-logging.jar;C:\Apache\apache-ant-1.8.2\lib\ant-commons-net.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jai.jar;C:\Apache\apache-ant-1.8.2\lib\ant-javamail.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jdepend.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jmf.jar;C:\Apache\apache-ant-1.8.2\lib\ant-jsch.jar;C:\Apache\apache-ant-1.8.2\lib\ant-junit.jar;C:\Apache\apache-ant-1.8.2\lib\ant-junit4.jar;C:\Apache\apache-ant-1.8.2\lib\ant-launcher.jar;C:\Apache\apache-ant-1.8.2\lib\ant-netrexx.jar;C:\Apache\apache-ant-1.8.2\lib\ant-swing.jar;C:\Apache\apache-ant-1.8.2\lib\ant-testutil.jar;C:\Apache\apache-ant-1.8.2\lib\ant.jar;C:\Apache\apache-ant-1.8.2\lib\ivy-2.2.0.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\lib\tools.jar" />
+    <property name="ivy.default.ivy.user.dir" value="C:\.ivy2" />
+    <property name="DSTAMP" value="20120201" />
+    <property name="user.home.ivy.instance" value="C:\" />
+    <property name="basedir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ant.library.dir" value="C:\Apache\apache-ant-1.8.2\lib" />
+    <property name="os.arch" value="x86" />
+    <property name="ivy.conf.file" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\ivysettings.xml" />
+    <property name="java.awt.graphicsenv.ivy.instance" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.vendor.url.bug.ivy.instance" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="java.vm.specification.version.ivy.instance" value="1.0" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="java.awt.printerjob.ivy.instance" value="sun.awt.windows.WPrinterJob" />
+    <property name="ivy.settings.dir.ivy.instance" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="username" value="tomcat" />
+    <property name="ant.core.lib" value="C:\Apache\apache-ant-1.8.2\lib\ant.jar" />
+    <property name="ivy.resolver.default.check.modified.ivy.instance" value="false" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ivy.settings.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="TSTAMP" value="1522" />
+    <property name="file.separator" value="\" />
+    <property name="user.language.ivy.instance" value="en" />
+    <property name="user.country.ivy.instance" value="GB" />
+    <property name="ivy.conf.url.ivy.instance" value="file:/C:/jenkinsbuilds/jobs/Validation%20-%20UAT/workspace/Validation/ivysettings.xml" />
+    <property name="java.runtime.version" value="1.6.0_24-b07" />
+    <property name="java.specification.name.ivy.instance" value="Java Platform API Specification" />
+    <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\lib\modules\jdk.boot.jar;C:\Program Files (x86)\Java\jdk1.6.0_24\jre\classes" />
+    <property name="ivy.conf.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="ant.file.type.Validation" value="file" />
+    <property name="ivy.retrieve.pattern" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation/lib/[artifact]-[revision](-[classifier]).[ext]" />
+    <property name="release" value=".RELEASE" />
+    <property name="user.country" value="GB" />
+    <property name="java.version.ivy.instance" value="1.6.0_24" />
+    <property name="ivy.resolved.file" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation\ivy.xml" />
+    <property name="os.arch.ivy.instance" value="x86" />
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="ivy.project.dir" value="C:\jenkinsbuilds\jobs\Validation - UAT\workspace\Validation" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="ivy.buildlist.ivyfilepath" value="ivy.xml" />
+  </properties>
+  <testcase classname="org.gosh.validation.deduplication.ExtendedDatasetDAOTest" name="testNullCase" time="0.0" />
+  <testcase classname="org.gosh.validation.deduplication.ExtendedDatasetDAOTest" name="testWithDezsErrorCase" time="0.031" />
+  <testcase classname="org.gosh.validation.deduplication.ExtendedDatasetDAOTest" name="testEmailsGetPopulated" time="0.031" />
+  <testcase classname="org.gosh.validation.deduplication.ExtendedDatasetDAOTest" name="testWithLargeExample" time="0.719" />
+  <system-out><![CDATA[2012-02-01 15:22:33,602 INFO [org.gosh.validation.general.deduplication.ExtendedDatasetDAO] - <looked up 0 main details for weighting>
+2012-02-01 15:22:33,602 INFO [org.gosh.validation.general.deduplication.ExtendedDatasetDAO] - <populated the above with phone numbers, etc.>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Getting BeanInfo for class [org.gosh.validation.general.deduplication.ExtendedDataSetModel]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Caching PropertyDescriptors for class [org.gosh.validation.general.deduplication.ExtendedDataSetModel]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'accountName' of type [java.lang.String]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'addressBlock' of type [java.lang.String]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'addressId' of type [int]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'branchName' of type [java.lang.String]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'class' of type [java.lang.Class]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'constituentId' of type [java.lang.String]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'deceased' of type [int]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'email' of type [java.lang.String]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'firstLineOfAddress' of type [java.lang.String]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'firstName' of type [java.lang.String]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'gender' of type [java.lang.String]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'id' of type [int]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'inactive' of type [int]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'lastName' of type [java.lang.String]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'middleName' of type [java.lang.String]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'phoneNumber' of type [java.lang.String]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'postCode' of type [java.lang.String]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'sex' of type [int]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'sortCode' of type [java.lang.String]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.beans.CachedIntrospectionResults] - <Found bean property 'title' of type [java.lang.String]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [SELECT RECORDS.ID, RECORDS.DECEASED, RECORDS.INACTIVE, RECORDS.CONSTITUENT_ID as constituentId, TABLEENTRIES.LONGDESCRIPTION as title, RECORDS.FIRST_NAME as firstName, records.MIDDLE_NAME as middleName, RECORDS.LAST_NAME as lastName, records.SEX,CONSTIT_ADDRESS.ID as addressId,address.ADDRESS_BLOCK as addressBlock, address.POST_CODE as postCode, CONSTITUENT_bank.ACCOUNT_NAME as accountName,BANK.BRANCH_NAME as branchName, BANK.SORT_CODE as sortCode FROM tableentries, RECORDS Left JOIN Constit_Address ON RECORDS.ID = CONSTIT_ADDRESS.CONSTIT_ID Left JOIN address ON address.ID = CONSTIT_ADDRESS.ADDRESS_ID Left JOIN CONSTITUENT_BANK ON records.ID = CONSTITUENT_BANK.CONSTIT_ID Left JOIN bank ON constituent_bank.BRANCH_ID = BANK.id where records.TITLE_1 = TABLEENTRIES.TABLEENTRIESID and CONSTITUENT_ID in ('09889429')]>
+2012-02-01 15:22:33,602 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'id' to property 'id' of type int>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'deceased' to property 'deceased' of type int>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'inactive' to property 'inactive' of type int>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'constituentid' to property 'constituentId' of type class java.lang.String>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'title' to property 'title' of type class java.lang.String>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'firstname' to property 'firstName' of type class java.lang.String>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'middlename' to property 'middleName' of type class java.lang.String>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'lastname' to property 'lastName' of type class java.lang.String>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'sex' to property 'sex' of type int>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'addressid' to property 'addressId' of type int>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'addressblock' to property 'addressBlock' of type class java.lang.String>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'postcode' to property 'postCode' of type class java.lang.String>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'accountname' to property 'accountName' of type class java.lang.String>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'branchname' to property 'branchName' of type class java.lang.String>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'sortcode' to property 'sortCode' of type class java.lang.String>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:33,617 INFO [org.gosh.validation.general.deduplication.ExtendedDatasetDAO] - <looked up 2 main details for weighting>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (169303,2079030)]>
+2012-02-01 15:22:33,617 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:33,633 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:33,633 INFO [org.gosh.validation.general.deduplication.ExtendedDatasetDAO] - <populated the above with phone numbers, etc.>
+2012-02-01 15:22:33,633 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [SELECT RECORDS.ID, RECORDS.DECEASED, RECORDS.INACTIVE, RECORDS.CONSTITUENT_ID as constituentId, TABLEENTRIES.LONGDESCRIPTION as title, RECORDS.FIRST_NAME as firstName, records.MIDDLE_NAME as middleName, RECORDS.LAST_NAME as lastName, records.SEX,CONSTIT_ADDRESS.ID as addressId,address.ADDRESS_BLOCK as addressBlock, address.POST_CODE as postCode, CONSTITUENT_bank.ACCOUNT_NAME as accountName,BANK.BRANCH_NAME as branchName, BANK.SORT_CODE as sortCode FROM tableentries, RECORDS Left JOIN Constit_Address ON RECORDS.ID = CONSTIT_ADDRESS.CONSTIT_ID Left JOIN address ON address.ID = CONSTIT_ADDRESS.ADDRESS_ID Left JOIN CONSTITUENT_BANK ON records.ID = CONSTITUENT_BANK.CONSTIT_ID Left JOIN bank ON constituent_bank.BRANCH_ID = BANK.id where records.TITLE_1 = TABLEENTRIES.TABLEENTRIESID and CONSTITUENT_ID in ('40546467')]>
+2012-02-01 15:22:33,633 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'id' to property 'id' of type int>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'deceased' to property 'deceased' of type int>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'inactive' to property 'inactive' of type int>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'constituentid' to property 'constituentId' of type class java.lang.String>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'title' to property 'title' of type class java.lang.String>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'firstname' to property 'firstName' of type class java.lang.String>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'middlename' to property 'middleName' of type class java.lang.String>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'lastname' to property 'lastName' of type class java.lang.String>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'sex' to property 'sex' of type int>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'addressid' to property 'addressId' of type int>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'addressblock' to property 'addressBlock' of type class java.lang.String>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'postcode' to property 'postCode' of type class java.lang.String>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'accountname' to property 'accountName' of type class java.lang.String>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'branchname' to property 'branchName' of type class java.lang.String>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.core.BeanPropertyRowMapper] - <Mapping column 'sortcode' to property 'sortCode' of type class java.lang.String>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:33,649 INFO [org.gosh.validation.general.deduplication.ExtendedDatasetDAO] - <looked up 2 main details for weighting>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (1812888,2079684)]>
+2012-02-01 15:22:33,649 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:33,664 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:33,664 INFO [org.gosh.validation.general.deduplication.ExtendedDatasetDAO] - <populated the above with phone numbers, etc.>
+2012-02-01 15:22:33,664 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62)]>
+2012-02-01 15:22:33,664 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:33,711 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:33,711 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124)]>
+2012-02-01 15:22:33,711 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:33,774 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:33,774 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186)]>
+2012-02-01 15:22:33,774 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:33,820 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:33,820 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249)]>
+2012-02-01 15:22:33,820 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:33,867 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:33,867 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311)]>
+2012-02-01 15:22:33,867 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:33,914 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:33,914 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374)]>
+2012-02-01 15:22:33,930 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:33,977 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:33,977 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432,433,434,435,436)]>
+2012-02-01 15:22:33,977 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:34,024 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:34,024 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (437,438,439,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499)]>
+2012-02-01 15:22:34,024 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:34,071 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:34,071 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (500,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,519,520,521,522,523,524,525,526,527,528,529,530,531,532,533,534,535,536,537,538,539,540,541,542,543,544,545,546,547,548,549,550,551,552,553,554,555,556,557,558,559,560,561)]>
+2012-02-01 15:22:34,071 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:34,117 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:34,117 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (562,563,564,565,566,567,568,569,570,571,572,573,574,575,576,577,578,579,580,581,582,583,584,585,586,587,588,589,590,591,592,593,594,595,596,597,598,599,600,601,602,603,604,605,606,607,608,609,610,611,612,613,614,615,616,617,618,619,620,621,622,623,624)]>
+2012-02-01 15:22:34,117 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:34,149 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:34,149 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (625,626,627,628,629,630,631,632,633,634,635,636,637,638,639,640,641,642,643,644,645,646,647,648,649,650,651,652,653,654,655,656,657,658,659,660,661,662,663,664,665,666,667,668,669,670,671,672,673,674,675,676,677,678,679,680,681,682,683,684,685,686)]>
+2012-02-01 15:22:34,149 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:34,196 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:34,196 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (687,688,689,690,691,692,693,694,695,696,697,698,699,700,701,702,703,704,705,706,707,708,709,710,711,712,713,714,715,716,717,718,719,720,721,722,723,724,725,726,727,728,729,730,731,732,733,734,735,736,737,738,739,740,741,742,743,744,745,746,747,748,749)]>
+2012-02-01 15:22:34,196 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:34,227 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:34,227 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (750,751,752,753,754,755,756,757,758,759,760,761,762,763,764,765,766,767,768,769,770,771,772,773,774,775,776,777,778,779,780,781,782,783,784,785,786,787,788,789,790,791,792,793,794,795,796,797,798,799,800,801,802,803,804,805,806,807,808,809,810,811)]>
+2012-02-01 15:22:34,227 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:34,258 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:34,258 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (812,813,814,815,816,817,818,819,820,821,822,823,824,825,826,827,828,829,830,831,832,833,834,835,836,837,838,839,840,841,842,843,844,845,846,847,848,849,850,851,852,853,854,855,856,857,858,859,860,861,862,863,864,865,866,867,868,869,870,871,872,873,874)]>
+2012-02-01 15:22:34,258 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:34,305 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:34,305 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (875,876,877,878,879,880,881,882,883,884,885,886,887,888,889,890,891,892,893,894,895,896,897,898,899,900,901,902,903,904,905,906,907,908,909,910,911,912,913,914,915,916,917,918,919,920,921,922,923,924,925,926,927,928,929,930,931,932,933,934,935,936)]>
+2012-02-01 15:22:34,305 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:34,321 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+2012-02-01 15:22:34,321 DEBUG [org.springframework.jdbc.core.JdbcTemplate] - <Executing SQL query [select CONSTIT_ADDRESS.id, PHONES.num, TABLEENTRIES.LONGDESCRIPTION from phones, CONSTIT_ADDRESS_PHONES, CONSTIT_ADDRESS, TABLEENTRIES where CONSTIT_ADDRESS_PHONES.CONSTITADDRESSID = CONSTIT_ADDRESS.ID and Phones.PHONESID = CONSTIT_ADDRESS_PHONES.PHONESID and TABLEENTRIES.TABLEENTRIESID = PHONES.PHONETYPEID and CONSTIT_ADDRESS.id in (937,938,939,940,941,942,943,944,945,946,947,948,949,950,951,952,953,954,955,956,957,958,959,960,961,962,963,964,965,966,967,968,969,970,971,972,973,974,975,976,977,978,979,980,981,982,983,984,985,986,987,988,989,990,991,992,993,994,995,996,997,998,999)]>
+2012-02-01 15:22:34,321 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Fetching JDBC Connection from DataSource>
+2012-02-01 15:22:34,383 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] - <Returning JDBC Connection to DataSource>
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

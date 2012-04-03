@@ -1,0 +1,121 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Libraries/javascript/dojox/charting
+svn://goshcc-devsvr1
+
+
+
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+Chart2D.js
+file
+
+
+
+
+2012-01-18T12:23:33.336000Z
+2604b6c3802dd5ca03dc3a4ed1dbda51
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+Chart3D.js
+file
+
+
+
+
+2012-01-18T12:23:33.336000Z
+a77ee75a4d4c9537f9638843d6a06461
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+Element.js
+file
+
+
+
+
+2012-01-18T12:23:33.398000Z
+9b914f611d2709be47ebf0d29ee4c9d3
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+README
+file
+
+
+
+
+2012-01-18T12:23:33.820000Z
+dd7ced0b9fc609d7e358dc709d7cb220
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+Series.js
+file
+
+
+
+
+2012-01-18T12:23:33.508000Z
+9f03ab0bdeead5d4b5dafea8aebde774
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+Theme.js
+file
+
+
+
+
+2012-01-18T12:23:33.820000Z
+77b5e4c2d88c2d999bd53ec3de014777
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+action2d
+dir
+
+axis2d
+dir
+
+plot2d
+dir
+
+plot3d
+dir
+
+scaler
+dir
+
+themes
+dir
+
+widget
+dir
+

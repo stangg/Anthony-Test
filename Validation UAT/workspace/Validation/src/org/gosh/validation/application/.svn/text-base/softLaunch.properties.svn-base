@@ -1,0 +1,27 @@
+application.name = Validation Live
+application.inbound = file://D:\\Validation\\Inbound
+application.errordir = D:\\Validation\\Errors
+application.validdir = D:\\Validation\\Valid
+
+reDataSource.dbname = RE7
+reDataSource.svrname = goshcc-re
+reDataSource.port = 1433
+reDataSource.username = reopen7
+reDataSource.password = iomega
+
+legacyDataSource.dbname = CIIA
+legacyDataSource.svrname = goshcc-legacy
+legacyDataSource.port = 1433
+legacyDataSource.username = jcaps
+legacyDataSource.password = aztecs
+
+webDonationsLegacyDataSource.dbname = Website
+webDonationsLegacyDataSource.svrname = goshcc-legacy
+webDonationsLegacyDataSource.port = 1433
+webDonationsLegacyDataSource.username = ICAN
+webDonationsLegacyDataSource.password = tn3vni
+
+supplierBatchNumberLog.table = supplierBatchNumberLog
+
+humanisedMailOutChannel.subject = Validation on Soft-Launch has just processed a file
+humanisedMailOutChannel.to = maria.urso@gosh.org,gayathri.polavaram@gosh.org,database.support@gosh.org

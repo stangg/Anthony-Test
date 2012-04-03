@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 51
+cobertura
+dist
+cobertura.ser
+unused
+tempe.txt
+
+END

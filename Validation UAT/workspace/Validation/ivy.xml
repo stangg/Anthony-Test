@@ -1,0 +1,82 @@
+<ivy-module version="2.0">
+	<info organisation="gosh" module="Validation" />
+	<dependencies>
+		<dependency org="apache" name="commons-codec" rev="1.3" />
+		<dependency org="apache" name="commons-logging" rev="1.1.1" />
+		<dependency org="apache" name="commons-collections" rev="3.2.1" />
+		<dependency org="apache" name="commons-io" rev="1.4" />
+		<dependency org="apache" name="commons-dbutils" rev="1.1" />
+		<dependency org="apache" name="commons-lang" rev="2.4" />
+		<dependency org="apache" name="commons-beanutils" rev="1" />
+		<dependency org="apache" name="commons-jxpath" rev="1.2" />
+		<dependency org="apache" name="commons-dbcp" rev="1.2.2" />
+		<dependency org="apache" name="commons-pool" rev="1.4" />
+		<dependency org="apache" name="lucene-core" rev="2.3.2"/>
+		<dependency org="apache" name="commons-httpclient" rev="3.1"/>
+        
+        <dependency org="lambdaj" name="lambdaj" rev="1.10-with-dependencies"/>
+
+        <dependency org="jstl" name="jstl" rev="1"/>
+        <dependency org="sun" name="standard" rev="1"/>
+       
+        <!-- spring framework and integration -->
+		<dependency org="spring" name="spring" rev="2.5.5"/>
+		<dependency org="spring" name="spring-webmvc" rev="2.5.5"/>
+		<dependency org="spring" name="spring-test" rev="2.5.5"/>
+		<dependency org="spring" name="org.springframework.integration" rev="1.0.0.RELEASE" />
+		<dependency org="spring" name="org.springframework.integration.file" rev="1.0.0.RELEASE" />
+		<dependency org="spring" name="org.springframework.integration.mail" rev="1.0.0.RELEASE" />
+		<dependency org="spring" name="org.springframework.integration.adapter" rev="1.0.0.RELEASE" />
+		<dependency org="spring" name="org.springframework.integration.xml" rev="1.0.0.RELEASE" />
+		<dependency org="spring" name="groovy" rev="all-1.5.6" />
+		<!-- for bindings -->
+		<dependency org="apache-cxf" name="jaxb-api" rev="2.1" />
+		<dependency org="apache-cxf" name="jaxb-impl" rev="2.1.6" />
+		<dependency org="apache-cxf" name="jaxb-xjc" rev="2.1.6" />
+
+		<!-- extra java bits -->
+		<dependency org="sun" name="servlet-api" rev="1" />
+		<dependency org="sun" name="smtp" rev="1"/>
+		<dependency org="sun" name="mailapi" rev="1"/>
+
+		<!-- databases -->
+		<dependency org="microsoft" name="sqljdbc4" rev="4"/>
+
+		<dependency org="apache" name="xindice" rev="1.1"/>
+		<dependency org="apache" name="xmlrpc" rev="1.1"/>
+		<dependency org="apache" name="xmldb-common" rev="20030701"/>
+		<dependency org="apache" name="xmldb-api" rev="20030701"/>
+		<dependency org="apache" name="xmldb-api-sdk" rev="20030701"/>
+		<dependency org="apache" name="xmldb-xupdate" rev="20040205"/>
+		<dependency org="apache" name="commons-logging" rev="1.0.3"/>
+		<dependency org="apache" name="xalan" rev="2.7.0"/>
+		<dependency org="apache" name="xercesImpl" rev="2.6.1"/>
+		<dependency org="apache" name="xml-apis" rev="1"/>
+	
+		<!-- testing stuff -->
+		<dependency org="junit" name="junit" rev="3.8.1"/>
+		<dependency org="jmock" name="jmock" rev="2.5.0"/>
+		<dependency org="jmock" name="jmock-junit3" rev="2.5.0"/>
+		<dependency org="google" name="hamcrest-all" rev="1.1"/>
+		
+		<dependency org="webdriver" name="webdriver-common" rev="1"/>
+		<dependency org="webdriver" name="webdriver-htmlunit" rev="1"/>
+		<dependency org="webdriver" name="hamcrest-core" rev="1.1"/>
+		<dependency org="webdriver" name="hamcrest-library" rev="1.1"/>
+		<dependency org="webdriver" name="htmlunit" rev="2.3"/>
+		<dependency org="webdriver" name="htmlunit-core-js" rev="2.2"/>
+		<dependency org="webdriver" name="httpunit" rev="1"/>
+		<dependency org="webdriver" name="nekohtml" rev="1.9.9"/>
+		<dependency org="webdriver" name="selenium-java-client-driver" rev="1"/>
+		<dependency org="webdriver" name="cssparser" rev="0.9.5"/>
+		<dependency org="webdriver" name="selenium-java-client-driver-tests" rev="1"/>
+		<dependency org="webdriver" name="xml-apis" rev="1"/>
+		<dependency org="webdriver" name="xml-apis-ext" rev="1"/>
+		<dependency org="webdriver" name="xalan" rev="2.7.0"/>
+		
+		<!-- Project Dependencies -->
+		<dependency name="SchemaBindings" rev="latest.integration" />
+		<!-- To exclude libraries refering to the project wich aren't specified in ivy -->
+		<exclude org="gosh" />
+	</dependencies>
+</ivy-module>

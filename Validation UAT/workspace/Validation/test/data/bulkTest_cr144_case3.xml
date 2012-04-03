@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GOSHCC>
+    <BatchNo>20110805dd</BatchNo>
+    <SupplierID>testID</SupplierID>
+    <DonorCplxType>
+        <Constituent_ID>40600316</Constituent_ID>
+        <InternalConstit_ID>1011653</InternalConstit_ID>
+        <SupplierDonorID>140812</SupplierDonorID>
+        <Title1>Mr</Title1>
+        <FirstName>P</FirstName>
+        <LastName>Tang</LastName>
+        <ChangeOfName>false</ChangeOfName>
+        <PrimaryAddress>false</PrimaryAddress>
+        <Address>
+            <AddressLine>22 Tolchurch</AddressLine>
+        </Address>
+        <City>London</City>
+        <County/>
+        <PostCode>W11 1DT</PostCode>
+        <Country>United Kingdom</Country>
+        <Gender>Male</Gender>
+        <ConsCodes>
+            <Code>DMGen</Code>
+            <DateFrom>2011-07-27</DateFrom>
+        </ConsCodes>
+        <Attributes>
+            <Source>
+                <Category>Source</Category>
+                <Description>Direct Mail</Description>
+                <Date>2011-07-27</Date>
+                <Comment>Obtained via testID</Comment>
+            </Source>
+            <DirectMarketingType>
+                <Category>Direct Marketing Type</Category>
+                <Description>Bankers Order</Description>
+                <Date>2011-07-27</Date>
+                <Comment>Obtained Via testID</Comment>
+            </DirectMarketingType>
+        </Attributes>
+        <ConstituentAppeal>
+            <AppealID>DMW5612H</AppealID>
+            <PackageID>GEN</PackageID>
+            <Date>2011-07-27</Date>
+            <Response>Responded</Response>
+            <MarketingSourceCode>140812</MarketingSourceCode>
+        </ConstituentAppeal>
+        <DonationDetails>
+            <DirectDebitDonationCplxType>
+                <Type>Pledge</Type>
+                <SubType>Donations - 1010</SubType>
+                <Date>2011-07-27</Date>
+                <Amount>3.00</Amount>
+                <Fund>UNGEN</Fund>
+                <Campaign>DM56</Campaign>
+                <Appeal>DMW5612H</Appeal>
+                <Package>GEN</Package>
+                <PostStatus>Not Posted</PostStatus>
+                <PaymentType>Direct Debit</PaymentType>
+                <LetterCode/>
+                <PDDUpgradeFlag>
+                    <PDDUpgradeFlag>true</PDDUpgradeFlag>
+                    <PreviousPaymentMethod>Not Applicable</PreviousPaymentMethod>
+                    <GiftimportID> </GiftimportID>
+                </PDDUpgradeFlag>
+                <InstallmentFreq>Monthly</InstallmentFreq>
+                <NoOfInstalments>120</NoOfInstalments>
+                <ScheduleMonthlyType>Specific Day</ScheduleMonthlyType>
+                <ScheduleDayOfMonth>15</ScheduleDayOfMonth>
+                <ScheduleSpacing>1</ScheduleSpacing>
+                <ScheduleWeeklyDayOfWeek>0</ScheduleWeeklyDayOfWeek>
+                <Date1stPayment>2011-09-15</Date1stPayment>
+                <RefNo/>
+                <GiftStatus>Active</GiftStatus>
+                <DonorBankCplxType>
+                	<BankID>12509</BankID>
+                    <BankName>Nationwide Building Society</BankName>
+                    <BranchName>Flex Account 2007</BranchName>
+                    <BankSort>07-02-46</BankSort>
+                    <BankAccName>Mr P Tang</BankAccName>
+                    <BankAccNo>05612899</BankAccNo>
+                    <BankAddress>
+                        <AddressLine>NATIONWIDE HOUSE</AddressLine>
+                    </BankAddress>
+                    <BankCity>SWINDON</BankCity>
+                    <BankCounty/>
+                    <BankPost>SN38 1NW</BankPost>
+                </DonorBankCplxType>
+            </DirectDebitDonationCplxType>
+        </DonationDetails>
+    </DonorCplxType>
+</GOSHCC>

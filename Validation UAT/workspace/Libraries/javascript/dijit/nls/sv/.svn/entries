@@ -1,0 +1,52 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Libraries/javascript/dijit/nls/sv
+svn://goshcc-devsvr1
+
+
+
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+common.js
+file
+
+
+
+
+2012-01-18T12:23:31.242000Z
+d9656013d4de708ecfb1f3ebeaf60e5d
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+loading.js
+file
+
+
+
+
+2012-01-18T12:23:31.242000Z
+0a7cc64447fd9205a9a0dbacda9d4942
+2008-10-07T14:00:18.863231Z
+821
+maria
+

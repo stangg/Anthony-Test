@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GOSHCC>
+	<BatchNo>20110621001</BatchNo>
+	<SupplierID>testID</SupplierID>
+	<DonorCplxType>
+		<Constituent_ID>40792212</Constituent_ID>
+		<SupplierDonorID>30036</SupplierDonorID>
+		<Title1>Miss</Title1>
+		<FirstName>ZJ</FirstName>
+		<LastName>Thirty Six</LastName>
+		<ChangeOfName>false</ChangeOfName>
+		<PrimaryAddress>false</PrimaryAddress>
+		<Address>
+			<AddressLine>22 Tolchurch House</AddressLine>
+		</Address>
+		<City>London</City>
+		<County/>
+		<PostCode>W11 1DT</PostCode>
+		<Country>United Kingdom</Country>
+		<Gender>Female</Gender>
+		<ConsCodes>
+			<Code>DMGen</Code>
+			<DateFrom>2011-03-22</DateFrom>
+		</ConsCodes>
+		<Attributes>
+			<Source>
+				<Category>Source</Category>
+				<Description>Telemarketing</Description>
+				<Date>2011-03-22</Date>
+				<Comment>Obtained via testID</Comment>
+			</Source>
+			<DirectMarketingType>
+				<Category>Direct Marketing Type</Category>
+				<Description>Bankers Order</Description>
+				<Date>2011-03-22</Date>
+				<Comment>Obtained via testID</Comment>
+			</DirectMarketingType>
+		</Attributes>
+		<ConstituentAppeal>
+			<AppealID>DMC1811</AppealID>
+			<PackageID>GEN</PackageID>
+			<Date>2011-03-22</Date>
+			<Response>Upgraded</Response>
+			<MarketingSourceCode>30036</MarketingSourceCode>
+		</ConstituentAppeal>
+		<DonationDetails>
+			<DirectDebitDonationCplxType>
+				<Type>Pledge</Type>
+				<SubType>Donations - 1010</SubType>
+				<Date>2011-03-22</Date>
+				<Amount>15.00</Amount>
+				<Fund>UNGEN</Fund>
+				<Campaign>DM18</Campaign>
+				<Appeal>DMC1811</Appeal>
+				<Package>GEN</Package>
+				<PostStatus>Not Posted</PostStatus>
+				<PaymentType>Direct Debit</PaymentType>
+				<LetterCode/>
+				<PDDUpgradeFlag>
+					<PDDUpgradeFlag>true</PDDUpgradeFlag>
+					<PreviousPaymentMethod>Not Applicable</PreviousPaymentMethod>
+					<GiftimportID>00170-545-0008265047</GiftimportID>
+				</PDDUpgradeFlag>
+				<InstallmentFreq>Bimonthly</InstallmentFreq>
+				<NoOfInstalments>60</NoOfInstalments>
+				<ScheduleMonthlyType>Specific Day</ScheduleMonthlyType>
+				<ScheduleDayOfMonth>15</ScheduleDayOfMonth>
+				<ScheduleSpacing>1</ScheduleSpacing>
+				<ScheduleWeeklyDayOfWeek>0</ScheduleWeeklyDayOfWeek>
+				<Date1stPayment>2011-12-15</Date1stPayment>
+				<RefNo/>
+				<GiftStatus>Active</GiftStatus>
+			</DirectDebitDonationCplxType>
+		</DonationDetails>
+	</DonorCplxType>
+</GOSHCC>

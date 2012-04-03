@@ -1,0 +1,7 @@
+Production Tasks
+
+*Switch to production.properties on config.xml
+*Create org/gosh/validation/general/bank/ws/ bindings for IIS
+*Verify that utf-8 encoding works.
+
+*Run ant script "deploy Validation to tomcat1"

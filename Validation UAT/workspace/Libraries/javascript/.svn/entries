@@ -1,0 +1,37 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Libraries/javascript
+svn://goshcc-devsvr1
+
+
+
+2009-03-09T15:25:52.671786Z
+1785
+kevin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+dijit
+dir
+
+dojo
+dir
+
+dojox
+dir
+

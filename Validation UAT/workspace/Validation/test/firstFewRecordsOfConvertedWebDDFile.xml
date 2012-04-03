@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GOSHCC>
+    <BatchNo>14038</BatchNo>
+    <SupplierID>RSM</SupplierID>
+    <DonorCplxType>
+        <SupplierDonorID>63.29</SupplierDonorID>
+        <Title1>Mr</Title1>
+        <FirstName>Samuel</FirstName>
+        <LastName>Davey</LastName>
+        <ChangeOfName>false</ChangeOfName>
+        <PrimaryAddress>false</PrimaryAddress>
+        <Address>
+            <AddressLine>35 ennersdale road</AddressLine>
+            <AddressLine></AddressLine>
+            <AddressLine></AddressLine>
+        </Address>
+        <City>london</City>
+        <County></County>
+        <PostCode>se13 6je</PostCode>
+        <Country>United Kingdom</Country>
+        <Gender>Unknown</Gender>
+        <PhoneEmail>
+            <Type>Email</Type>
+            <Value>samdavey@gmail.com</Value>
+        </PhoneEmail>
+        <PhoneEmail>
+            <Type>Home</Type>
+            <Value>02082974350</Value>
+        </PhoneEmail>
+        <PhoneEmail>
+            <Type>Mobile</Type>
+            <Value>07595388713</Value>
+        </PhoneEmail>
+        <ConsCodes>
+            <Code>DMGen</Code>
+            <DateFrom>2009-02-25Z</DateFrom>
+        </ConsCodes>
+        <Attributes>
+            <SolicitCodes>
+                <Category>Solicit Codes</Category>
+                <Description>Phone Opt-In</Description>
+                <Date>2009-02-25Z</Date>
+                <Comment>Obtained via RSM</Comment>
+            </SolicitCodes>
+            <SolicitCodes>
+                <Category>Solicit Codes</Category>
+                <Description>3rd Party Data Protection Opt Out</Description>
+                <Date>2009-02-25Z</Date>
+                <Comment>Obtained via RSM</Comment>
+            </SolicitCodes>
+            <Source>
+                <Category>Online</Category>
+                <Description>Source</Description>
+                <Date>2009-02-25Z</Date>
+                <Comment>Obtained via RSM</Comment>
+            </Source>
+            <DirectMarketingType>
+                <Category>Direct Marketing Type</Category>
+                <Description>Bankers Order</Description>
+                <Date>2009-02-25Z</Date>
+                <Comment>Obtained via RSM</Comment>
+            </DirectMarketingType>
+        </Attributes>
+        <ConstituentAppeal>
+            <AppealID>DM0109/misc</AppealID>
+            <Date>2009-02-25Z</Date>
+            <Response>Responded</Response>
+            <MarketingSourceCode>63.29</MarketingSourceCode>
+        </ConstituentAppeal>
+        <TaxDeclaration>
+            <StartDate>2009-02-25Z</StartDate>
+            <TaxPayer>true</TaxPayer>
+            <DeclarationDate>2009-02-25Z</DeclarationDate>
+            <DeclarationIndicator>Oral</DeclarationIndicator>
+            <ConfirmationDate>2009-02-25Z</ConfirmationDate>
+        </TaxDeclaration>
+        <DonationDetails>
+            <DirectDebitDonationCplxType>
+                <Type>Pledge</Type>
+                <SubType>Donations - 1010</SubType>
+                <Date>2009-02-25Z</Date>
+                <Amount>5.00</Amount>
+                <Fund>UNGEN</Fund>
+                <Campaign>DM01</Campaign>
+                <Appeal>DM0109/misc</Appeal>
+                <PostStatus>Not Posted</PostStatus>
+                <PaymentType>Direct Debit</PaymentType>
+                <PDDUpgradeFlag>
+                    <PDDUpgradeFlag>false</PDDUpgradeFlag>
+                </PDDUpgradeFlag>
+                <InstallmentFreq>Monthly</InstallmentFreq>
+                <NoOfInstalments>120</NoOfInstalments>
+                <ScheduleMonthlyType>Specific Day</ScheduleMonthlyType>
+                <ScheduleDayOfMonth>1</ScheduleDayOfMonth>
+                <ScheduleSpacing>1</ScheduleSpacing>
+                <ScheduleWeeklyDayOfWeek>0</ScheduleWeeklyDayOfWeek>
+                <Date1stPayment>2009-04-01+01:00</Date1stPayment>
+                <RefNo>1</RefNo>
+                <GiftStatus>Active</GiftStatus>
+                <DonorBankCplxType>
+                    <BankName>NAT WEST BANK PLC</BankName>
+                    <BankSort>600511</BankSort>
+                    <BankAccName>Mr S Davey</BankAccName>
+                    <BankAccNo>16564200</BankAccNo>
+                    <BankAddress>
+                        <AddressLine> ST PAUL'S</AddressLine>
+                        <AddressLine>Chatham Customer Service Centre</AddressLine>
+                        <AddressLine>Waterside Court</AddressLine>
+                    </BankAddress>
+                    <BankCity>Chatham Maritime</BankCity>
+                    <BankCounty>Chatham</BankCounty>
+                    <BankPost>Kent</BankPost>
+                </DonorBankCplxType>
+            </DirectDebitDonationCplxType>
+        </DonationDetails>
+    </DonorCplxType>
+</GOSHCC>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GOSHCC>
+    <BatchNo>20120131</BatchNo>
+    <SupplierID>testID</SupplierID>
+    <DonorCplxType>
+        <SupplierDonorID>PDD029785</SupplierDonorID>
+        <Title1>Mrs</Title1>
+        <FirstName>samina</FirstName>
+        <LastName>minhas</LastName>
+        <ChangeOfName>false</ChangeOfName>
+        <PrimaryAddress>false</PrimaryAddress>
+        <Address>
+            <AddressLine>18 Coniston Gardens</AddressLine>
+            <AddressLine/>
+            <AddressLine/>
+        </Address>
+        <City>LONDON</City>
+        <County/>
+        <PostCode>N9 8NB</PostCode>
+        <Country>United Kingdom</Country>
+        <DateOfBirth>1970-12-20+01:00</DateOfBirth>
+        <Gender>Unknown</Gender>
+        <PhoneEmail>
+            <Type>Email</Type>
+            <Value>sminhas94@hotmail.com</Value>
+        </PhoneEmail>
+        <PhoneEmail>
+            <Type>Home</Type>
+            <Value>02088077368</Value>
+        </PhoneEmail>
+        <PhoneEmail>
+            <Type>Mobile</Type>
+            <Value>07539773667</Value>
+        </PhoneEmail>
+        <ConsCodes>
+            <Code>DMGen</Code>
+            <DateFrom>2012-01-11Z</DateFrom>
+        </ConsCodes>
+        <Attributes>
+            <SolicitCodes>
+                <Category>Solicit Codes</Category>
+                <Description>SMS Opt-In</Description>
+                <Date>2012-01-11Z</Date>
+                <Comment>Obtained via testID</Comment>
+            </SolicitCodes>
+            <Source>
+                <Category>Source</Category>
+                <Description>Online</Description>
+                <Date>2012-01-11Z</Date>
+                <Comment>Obtained via testID</Comment>
+            </Source>
+            <DirectMarketingType>
+                <Category>Direct Marketing Type</Category>
+                <Description>Bankers Order</Description>
+                <Date>2012-01-11Z</Date>
+                <Comment>Obtained via testID</Comment>
+            </DirectMarketingType>
+        </Attributes>
+        <ConstituentAppeal>
+            <AppealID>DMC0912A</AppealID>
+            <PackageID>GEN</PackageID>
+            <Date>2012-01-11Z</Date>
+            <Response>Responded</Response>
+            <MarketingSourceCode>PDD029785</MarketingSourceCode>
+        </ConstituentAppeal>
+        <DonationDetails>
+            <DirectDebitDonationCplxType>
+                <Type>Pledge</Type>
+                <SubType>Donations - Internet - 1014</SubType>
+                <Date>2012-01-11Z</Date>
+                <Amount>5.00</Amount>
+                <Fund>UNGEN</Fund>
+                <Campaign>DM09</Campaign>
+                <Appeal>DMC0912A</Appeal>
+                <Package>GEN</Package>
+                <PostStatus>Not Posted</PostStatus>
+                <PaymentType>Direct Debit</PaymentType>
+                <LetterCode/>
+                <PDDUpgradeFlag>
+                    <PDDUpgradeFlag>false</PDDUpgradeFlag>
+                    <PreviousPaymentMethod>Not Applicable</PreviousPaymentMethod>
+                    <GiftimportID/>
+                </PDDUpgradeFlag>
+                <InstallmentFreq>Monthly</InstallmentFreq>
+                <NoOfInstalments>120</NoOfInstalments>
+                <ScheduleMonthlyType>Specific Day</ScheduleMonthlyType>
+                <ScheduleDayOfMonth>1</ScheduleDayOfMonth>
+                <ScheduleSpacing>1</ScheduleSpacing>
+                <ScheduleWeeklyDayOfWeek>0</ScheduleWeeklyDayOfWeek>
+                <Date1stPayment>2012-02-01Z</Date1stPayment>
+                <RefNo>1</RefNo>
+                <GiftStatus>Active</GiftStatus>
+                <DonorBankCplxType>
+                    <BankID>10963</BankID>
+                    <BankName>HSBC BANK PLC</BankName>
+                    <BranchName> </BranchName>
+                    <BankSort>40-05-00</BankSort>
+                    <BankAccName>mrs samina asrar minhas</BankAccName>
+                    <BankAccNo>0615390</BankAccNo>
+                    <BankAddress>
+                        <AddressLine>P O BOX 360</AddressLine>
+                        <AddressLine/>
+                        <AddressLine/>
+                    </BankAddress>
+                    <BankCity>Salford</BankCity>
+                    <BankCounty/>
+                    <BankPost>M5 4WS</BankPost>
+                </DonorBankCplxType>
+            </DirectDebitDonationCplxType>
+        </DonationDetails>
+    </DonorCplxType>
+</GOSHCC>
+

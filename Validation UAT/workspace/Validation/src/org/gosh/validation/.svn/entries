@@ -1,0 +1,55 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Validation/src/org/gosh/validation
+svn://goshcc-devsvr1
+
+
+
+2012-02-01T10:51:17.891902Z
+6104
+gayathri
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+application
+dir
+
+common
+dir
+
+convertion
+dir
+
+directdebits
+dir
+
+general
+dir
+
+tributes
+dir
+
+webcash
+dir
+
+webdds
+dir
+
+xmas
+dir
+

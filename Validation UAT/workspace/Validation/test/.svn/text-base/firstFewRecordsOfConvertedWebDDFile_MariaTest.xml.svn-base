@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GOSHCC>
+    <BatchNo>7760097</BatchNo>
+    <SupplierID>RSM</SupplierID>
+    <DonorCplxType>
+        <SupplierDonorID>PDD012518</SupplierDonorID>
+        <Title1>Mr</Title1>
+        <FirstName>Neil</FirstName>
+        <LastName>Rooney</LastName>
+        <ChangeOfName>false</ChangeOfName>
+        <PrimaryAddress>false</PrimaryAddress>
+        <Address>
+            <AddressLine>1 Park Grove</AddressLine>
+            <AddressLine></AddressLine>
+            <AddressLine></AddressLine>
+        </Address>
+        <City>BEXLEYHEATH</City>
+        <County>Kent</County>
+        <PostCode>DA7 6AA</PostCode>
+        <Country>United Kingdom</Country>
+        <DateOfBirth>1968-11-27+01:00</DateOfBirth>
+        <Gender>Unknown</Gender>
+        <PhoneEmail>
+            <Type>Email</Type>
+            <Value>neilroo@gmail.com</Value>
+        </PhoneEmail>
+        <PhoneEmail>
+            <Type>Mobile</Type>
+            <Value>07950607119</Value>
+        </PhoneEmail>
+        <ConsCodes>
+            <Code>DMGen</Code>
+            <DateFrom>2009-01-28Z</DateFrom>
+        </ConsCodes>
+        <Attributes>
+            <SolicitCodes>
+                <Category>Solicit Codes</Category>
+                <Description>Email Opt-In</Description>
+                <Date>2009-01-28Z</Date>
+                <Comment>Obtained via RSM</Comment>
+            </SolicitCodes>
+            <SolicitCodes>
+                <Category>Solicit Codes</Category>
+                <Description>3rd Party Data Protection Opt Out</Description>
+                <Date>2009-01-28Z</Date>
+                <Comment>Obtained via RSM</Comment>
+            </SolicitCodes>
+            <Source>
+                <Category>Source</Category>
+                <Description>Online</Description>
+                <Date>2009-01-28Z</Date>
+                <Comment>Obtained via RSM</Comment>
+            </Source>
+            <DirectMarketingType>
+                <Category>Direct Marketing Type</Category>
+                <Description>Bankers Order</Description>
+                <Date>2009-01-28Z</Date>
+                <Comment>Obtained via RSM</Comment>
+            </DirectMarketingType>
+        </Attributes>
+        <ConstituentAppeal>
+            <AppealID>DMC0110N</AppealID>
+            <PackageID>GEN</PackageID>
+            <Date>2009-01-28Z</Date>
+            <Response>Responded</Response>
+            <MarketingSourceCode>PDD012518</MarketingSourceCode>
+        </ConstituentAppeal>
+        <TaxDeclaration>
+            <StartDate>2009-01-28Z</StartDate>
+            <TaxPayer>true</TaxPayer>
+            <DeclarationDate>2009-01-28Z</DeclarationDate>
+            <DeclarationIndicator>Oral</DeclarationIndicator>
+            <ConfirmationDate>2009-01-28Z</ConfirmationDate>
+        </TaxDeclaration>
+        <DonationDetails>
+            <DirectDebitDonationCplxType>
+                <Type>Pledge</Type>
+                <SubType>Donations-Internet-1014</SubType>
+                <Date>2009-01-28Z</Date>
+                <Amount>10.00</Amount>
+                <Fund>UNGEN</Fund>
+                <Campaign>DM01</Campaign>
+                <Appeal>DMC0110N</Appeal>
+                <Package>GEN</Package>
+                <PostStatus>Not Posted</PostStatus>
+                <PaymentType>Direct Debit</PaymentType>
+                <LetterCode></LetterCode>
+                <PDDUpgradeFlag>
+                    <PDDUpgradeFlag>false</PDDUpgradeFlag>
+                    <PreviousPaymentMethod>Not Applicable</PreviousPaymentMethod>
+                    <GiftimportID></GiftimportID>
+                </PDDUpgradeFlag>
+                <InstallmentFreq>Monthly</InstallmentFreq>
+                <NoOfInstalments>120</NoOfInstalments>
+                <ScheduleMonthlyType>Specific Day</ScheduleMonthlyType>
+                <ScheduleDayOfMonth>15</ScheduleDayOfMonth>
+                <ScheduleSpacing>1</ScheduleSpacing>
+                <ScheduleWeeklyDayOfWeek>0</ScheduleWeeklyDayOfWeek>
+                <Date1stPayment>2009-03-15Z</Date1stPayment>
+                <RefNo>1</RefNo>
+                <GiftStatus>Active</GiftStatus>
+                <DonorBankCplxType>
+                    <BankName>Royal Bank of Scotland</BankName>
+                    <BranchName> </BranchName>
+                    <BankSort>15-10-00</BankSort>
+                    <BankAccName>Mr N Rooney</BankAccName>
+                    <BankAccNo>17080698</BankAccNo>
+                    <BankAddress>
+                        <AddressLine>62/63 Threadneedle Street</AddressLine>
+                        <AddressLine></AddressLine>
+                        <AddressLine></AddressLine>
+                    </BankAddress>
+                    <BankCity>London</BankCity>
+                    <BankCounty></BankCounty>
+                    <BankPost>EC2R 8LA</BankPost>
+                </DonorBankCplxType>
+            </DirectDebitDonationCplxType>
+        </DonationDetails>
+    </DonorCplxType>
+</GOSHCC>

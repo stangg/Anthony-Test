@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GOSHCC>
+	<BatchNo>2011072912</BatchNo>
+	<SupplierID>testID</SupplierID>
+	<DonorCplxType>
+		<Constituent_ID>40792179</Constituent_ID>
+		<SupplierDonorID>30003</SupplierDonorID>
+		<Title1>Miss</Title1>
+		<FirstName>C</FirstName>
+		<LastName>Three</LastName>
+		<ChangeOfName>false</ChangeOfName>
+		<PrimaryAddress>false</PrimaryAddress>
+		<Address>
+			<AddressLine>22 Tolchurch House</AddressLine>
+		</Address>
+		<City>London</City>
+		<County/>
+		<PostCode>W11 1DT</PostCode>
+		<Country>United Kingdom</Country>
+		<Gender>Female</Gender>
+		<ConsCodes>
+			<Code>DMGen</Code>
+			<DateFrom>2011-03-22</DateFrom>
+		</ConsCodes>
+		<Attributes>
+			<Source>
+				<Category>Source</Category>
+				<Description>Telemarketing</Description>
+				<Date>2011-03-22</Date>
+				<Comment>Obtained via testID</Comment>
+			</Source>
+			<DirectMarketingType>
+				<Category>Direct Marketing Type</Category>
+				<Description>Bankers Order</Description>
+				<Date>2011-03-22</Date>
+				<Comment>Obtained via testID</Comment>
+			</DirectMarketingType>
+		</Attributes>
+		<ConstituentAppeal>
+			<AppealID>DMC1811</AppealID>
+			<PackageID>GEN</PackageID>
+			<Date>2011-03-22</Date>
+			<Response>Upgraded</Response>
+			<MarketingSourceCode>30003</MarketingSourceCode>
+		</ConstituentAppeal>
+		<DonationDetails>
+			<DirectDebitDonationCplxType>
+				<Type>Pledge</Type>
+				<SubType>Donations - 1010</SubType>
+				<Date>2011-03-22</Date>
+				<Amount>5.00</Amount>
+				<Fund>UNGEN</Fund>
+				<Campaign>DM18</Campaign>
+				<Appeal>DMC1811</Appeal>
+				<Package>GEN</Package>
+				<PostStatus>Not Posted</PostStatus>
+				<PaymentType>Direct Debit</PaymentType>
+				<LetterCode/>
+				<PDDUpgradeFlag>
+					<PDDUpgradeFlag>true</PDDUpgradeFlag>
+					<PreviousPaymentMethod>Not Applicable</PreviousPaymentMethod>
+					<GiftimportID>00170-545-0008265014</GiftimportID>
+				</PDDUpgradeFlag>
+				<InstallmentFreq>Monthly</InstallmentFreq>
+				<NoOfInstalments>120</NoOfInstalments>
+				<ScheduleMonthlyType>Specific Day</ScheduleMonthlyType>
+				<ScheduleDayOfMonth>1</ScheduleDayOfMonth>
+				<ScheduleSpacing>1</ScheduleSpacing>
+				<ScheduleWeeklyDayOfWeek>0</ScheduleWeeklyDayOfWeek>
+				<Date1stPayment>2011-08-01</Date1stPayment>
+				<RefNo/>
+				<GiftStatus>Active</GiftStatus>
+				<DonorBankCplxType>
+					<BankName>SANTANDER UK PLC</BankName>
+					<BranchName>A</BranchName>
+					<BankSort>09-01-27</BankSort>
+					<BankAccName>Miss C Three</BankAccName>
+					<BankAccNo>00224433</BankAccNo>
+					<BankAddress>
+						<AddressLine/>
+						<AddressLine/>
+						<AddressLine/>
+					</BankAddress>
+					<BankCity/>
+					<BankCounty/>
+					<BankPost>AAAA AAA</BankPost>
+				</DonorBankCplxType>
+			</DirectDebitDonationCplxType>
+		</DonationDetails>
+	</DonorCplxType>
+</GOSHCC>

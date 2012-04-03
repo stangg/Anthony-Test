@@ -1,0 +1,82 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Libraries/javascript/dojox/embed
+svn://goshcc-devsvr1
+
+
+
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+Flash.js
+file
+
+
+
+
+2012-01-18T12:23:42.117000Z
+b31898b3a378611167cb76076782c370
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+IE
+dir
+
+Object.js
+file
+
+
+
+
+2012-01-18T12:23:42.117000Z
+b8bae0a3e14862aa301ad27bfe44f2d8
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+Quicktime.js
+file
+
+
+
+
+2012-01-18T12:23:42.117000Z
+66e67b337b2e6fdd5e0bf3bb6155635b
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+README
+file
+
+
+
+
+2012-01-18T12:23:42.164000Z
+ce9a1bcc1fb146308cd70b0b378396d5
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+resources
+dir
+

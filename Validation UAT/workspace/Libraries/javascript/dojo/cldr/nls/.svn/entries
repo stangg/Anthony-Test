@@ -1,0 +1,127 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Libraries/javascript/dojo/cldr/nls
+svn://goshcc-devsvr1
+
+
+
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+currency.js
+file
+
+
+
+
+2012-01-18T12:23:43.023000Z
+1db263ba9b0e1623c288a3654dfb5867
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+de
+dir
+
+de-de
+dir
+
+en
+dir
+
+en-au
+dir
+
+en-ca
+dir
+
+en-gb
+dir
+
+en-us
+dir
+
+es
+dir
+
+es-es
+dir
+
+fr
+dir
+
+gregorian.js
+file
+
+
+
+
+2012-01-18T12:23:42.711000Z
+45c1f57c52448074060e41887e4e51a4
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+it
+dir
+
+it-it
+dir
+
+ja
+dir
+
+ja-jp
+dir
+
+ko
+dir
+
+ko-kr
+dir
+
+number.js
+file
+
+
+
+
+2012-01-18T12:23:42.945000Z
+6732b4cbc73e003721fb135e9fcdc800
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+pt
+dir
+
+pt-br
+dir
+
+zh
+dir
+
+zh-cn
+dir
+
+zh-tw
+dir
+

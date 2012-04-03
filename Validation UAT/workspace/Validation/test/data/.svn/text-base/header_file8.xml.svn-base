@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GOSHCC>
+    <BatchNo>85134</BatchNo>
+    <SupplierID>testID</SupplierID>
+    <DonorCplxType>
+        <Constituent_ID>40599060</Constituent_ID>
+        <InternalConstit_ID>1010292</InternalConstit_ID>
+        <SupplierDonorID>143954</SupplierDonorID>
+        <Title1>Mr</Title1>
+        <FirstName>Michael</FirstName>
+        <LastName>Low</LastName>
+        <ChangeOfName>false</ChangeOfName>
+        <PrimaryAddress>false</PrimaryAddress>
+        <Address>
+            <AddressLine>10C Clarendon Place</AddressLine>
+        </Address>
+        <City>STIRLING</City>
+        <County/>
+        <PostCode>FK8 2QW</PostCode>
+        <Country>United Kingdom</Country>
+        <Gender>Male</Gender>
+        <PhoneEmail>
+            <Type>Email</Type>
+            <Value>michael_low@btconnect.com</Value>
+        </PhoneEmail>
+        <ConsCodes>
+            <Code>DMGen</Code>
+            <DateFrom>2011-04-12</DateFrom>
+        </ConsCodes>
+        <Attributes>
+            <SolicitCodes>
+                <Category>Solicit Codes</Category>
+                <Description>3rd Party Data Protection Opt Out</Description>
+                <Date>2011-04-12</Date>
+                <Comment>Obtained via testID</Comment>
+            </SolicitCodes>
+            <Source>
+                <Category>Source</Category>
+                <Description>Direct Mail</Description>
+                <Date>2011-04-12</Date>
+                <Comment>Obtained via testID</Comment>
+            </Source>
+            <DirectMarketingType>
+                <Category>Direct Marketing Type</Category>
+                <Description>Bankers Order</Description>
+                <Date>2011-04-12</Date>
+                <Comment>Obtained Via testID</Comment>
+            </DirectMarketingType>
+        </Attributes>
+        <ConstituentAppeal>
+            <AppealID>DMW3211BA</AppealID>
+            <PackageID>AC</PackageID>
+            <Date>2011-04-12</Date>
+            <Response>Upgraded</Response>
+            <MarketingSourceCode>143954</MarketingSourceCode>
+        </ConstituentAppeal>
+        <DonationDetails>
+            <DirectDebitDonationCplxType>
+                <Type>Pledge</Type>
+                <SubType>Donations - 1010</SubType>
+                <Date>2011-04-12</Date>
+                <Amount>4.00</Amount>
+                <Fund>2GEN</Fund>
+                <Campaign>DM32</Campaign>
+                <Appeal>DMW3211BA</Appeal>
+                <Package>AC</Package>
+                <PostStatus>Not Posted</PostStatus>
+                <PaymentType>Direct Debit</PaymentType>
+                <LetterCode/>
+                <PDDUpgradeFlag>
+                    <PDDUpgradeFlag>true</PDDUpgradeFlag>
+                    <PreviousPaymentMethod>Direct Debit</PreviousPaymentMethod>
+                    <GiftimportID>00170-545-0005424695</GiftimportID>
+                </PDDUpgradeFlag>
+                <InstallmentFreq>Monthly</InstallmentFreq>
+                <NoOfInstalments>120</NoOfInstalments>
+                <ScheduleMonthlyType>Specific Day</ScheduleMonthlyType>
+                <ScheduleDayOfMonth>1</ScheduleDayOfMonth>
+                <ScheduleSpacing>1</ScheduleSpacing>
+                <ScheduleWeeklyDayOfWeek>0</ScheduleWeeklyDayOfWeek>
+                <Date1stPayment>2011-06-01</Date1stPayment>
+                <ConstituentBankID>162045</ConstituentBankID>
+                <RefNo>40599060/1</RefNo>
+                <GiftStatus>Active</GiftStatus>
+            </DirectDebitDonationCplxType>
+        </DonationDetails>
+    </DonorCplxType>
+    <DonorCplxType>
+        <Constituent_ID>40337994</Constituent_ID>
+        <InternalConstit_ID>707072</InternalConstit_ID>
+        <SupplierDonorID>143974</SupplierDonorID>
+        <Title1>Mrs</Title1>
+        <FirstName>J</FirstName>
+        <LastName>Davies</LastName>
+        <ChangeOfName>false</ChangeOfName>
+        <PrimaryAddress>false</PrimaryAddress>
+        <Address>
+            <AddressLine>21 Chapel Street</AddressLine>
+            <AddressLine>Wincham</AddressLine>
+        </Address>
+        <City>NORTHWICH</City>
+        <County/>
+        <PostCode>CW9 6DA</PostCode>
+        <Country>United Kingdom</Country>
+        <DateOfBirth>1940-10-14</DateOfBirth>
+        <Gender>Female</Gender>
+        <PhoneEmail>
+            <Type>Home</Type>
+            <Value>01606330651</Value>
+        </PhoneEmail>
+        <PhoneEmail>
+            <Type>Email</Type>
+            <Value>jan.davies@srlab.co.uk</Value>
+        </PhoneEmail>
+        <ConsCodes>
+            <Code>DMGen</Code>
+            <DateFrom>2011-04-14</DateFrom>
+        </ConsCodes>
+        <Attributes>
+            <Source>
+                <Category>Source</Category>
+                <Description>Direct Mail</Description>
+                <Date>2011-04-14</Date>
+                <Comment>Obtained via testID</Comment>
+            </Source>
+            <DirectMarketingType>
+                <Category>Direct Marketing Type</Category>
+                <Description>Bankers Order</Description>
+                <Date>2011-04-14</Date>
+                <Comment>Obtained Via testID</Comment>
+            </DirectMarketingType>
+        </Attributes>
+        <ConstituentAppeal>
+            <AppealID>DMW3211BA</AppealID>
+            <PackageID>AB</PackageID>
+            <Date>2011-04-14</Date>
+            <Response>Upgraded</Response>
+            <MarketingSourceCode>143974</MarketingSourceCode>
+        </ConstituentAppeal>
+        <DonationDetails>
+            <DirectDebitDonationCplxType>
+                <Type>Pledge</Type>
+                <SubType>Donations - 1010</SubType>
+                <Date>2011-04-14</Date>
+                <Amount>5.00</Amount>
+                <Fund>2GEN</Fund>
+                <Campaign>DM32</Campaign>
+                <Appeal>DMW3211BA</Appeal>
+                <Package>AB</Package>
+                <PostStatus>Not Posted</PostStatus>
+                <PaymentType>Direct Debit</PaymentType>
+                <LetterCode/>
+                <PDDUpgradeFlag>
+                    <PDDUpgradeFlag>true</PDDUpgradeFlag>
+                    <PreviousPaymentMethod>Direct Debit</PreviousPaymentMethod>
+                    <GiftimportID>00170-545-0003328476</GiftimportID>
+                </PDDUpgradeFlag>
+                <InstallmentFreq>Monthly</InstallmentFreq>
+                <NoOfInstalments>120</NoOfInstalments>
+                <ScheduleMonthlyType>Specific Day</ScheduleMonthlyType>
+                <ScheduleDayOfMonth>15</ScheduleDayOfMonth>
+                <ScheduleSpacing>1</ScheduleSpacing>
+                <ScheduleWeeklyDayOfWeek>0</ScheduleWeeklyDayOfWeek>
+                <Date1stPayment>2011-06-15</Date1stPayment>
+                <ConstituentBankID>74249</ConstituentBankID>
+                <RefNo>40337994/2</RefNo>
+                <GiftStatus>Active</GiftStatus>
+            </DirectDebitDonationCplxType>
+        </DonationDetails>
+    </DonorCplxType>
+</GOSHCC>

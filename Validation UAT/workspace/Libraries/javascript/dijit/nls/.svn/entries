@@ -1,0 +1,649 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Libraries/javascript/dijit/nls
+svn://goshcc-devsvr1
+
+
+
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+ar
+dir
+
+ca
+dir
+
+common.js
+file
+
+
+
+
+2012-01-18T12:23:30.945000Z
+78ae978dfd75a9373c721678b988a599
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+cs
+dir
+
+da
+dir
+
+de
+dir
+
+dijit-all_ROOT.js
+file
+
+
+
+
+2012-01-18T12:23:30.883000Z
+9476179cef67fbef477347880cc65e15
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_ar.js
+file
+
+
+
+
+2012-01-18T12:23:31.101000Z
+46e4c39d3b9200b0a1b44a4eee92bbe7
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_ca.js
+file
+
+
+
+
+2012-01-18T12:23:31.211000Z
+5106c708395f728376b02514dcee23da
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_cs.js
+file
+
+
+
+
+2012-01-18T12:23:30.992000Z
+7c0fb644b07a84a19f7c21aff33860f9
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_da.js
+file
+
+
+
+
+2012-01-18T12:23:31.211000Z
+d4ac7aeec4d3ed0902fec5875a83921a
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_de-de.js
+file
+
+
+
+
+2012-01-18T12:23:30.883000Z
+26e6c4572b800886664ebebd32a49153
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_de.js
+file
+
+
+
+
+2012-01-18T12:23:31.289000Z
+d1638450eaa2a77f0c8bdf9a7517a15f
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_el.js
+file
+
+
+
+
+2012-01-18T12:23:31.430000Z
+32acad68d438cf8b7cb80cd0d5818535
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_en-gb.js
+file
+
+
+
+
+2012-01-18T12:23:30.914000Z
+8e223b4c1a72b26e9ad7f902446eee00
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_en-us.js
+file
+
+
+
+
+2012-01-18T12:23:30.914000Z
+3d32d1349c0f5bbc6fecc150d1cc00c9
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_en.js
+file
+
+
+
+
+2012-01-18T12:23:31.117000Z
+b91de9b71e55fb17d03c054f31a8c87e
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_es-es.js
+file
+
+
+
+
+2012-01-18T12:23:31.195000Z
+c303559e0c4a6dfb4afa84f1d3cf204b
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_es.js
+file
+
+
+
+
+2012-01-18T12:23:31.008000Z
+5d40f9947e86f2f365d0d0d279122919
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_fi-fi.js
+file
+
+
+
+
+2012-01-18T12:23:31.289000Z
+51a5c32455b8d6e00f47c8deec1e832a
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_fi.js
+file
+
+
+
+
+2012-01-18T12:23:31.289000Z
+032b81a25b444e1d2046877d1879fb94
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_fr-fr.js
+file
+
+
+
+
+2012-01-18T12:23:30.867000Z
+9fcb5e5b789f0ba0875839cc28ece9ac
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_fr.js
+file
+
+
+
+
+2012-01-18T12:23:31.148000Z
+86b0dd5418c09321224c9de254076943
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_he-il.js
+file
+
+
+
+
+2012-01-18T12:23:31.070000Z
+16f433de5bf342353d69d52e67ce59cd
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_he.js
+file
+
+
+
+
+2012-01-18T12:23:31.289000Z
+41f75975e3cf7928ea353df2ae145860
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_hu.js
+file
+
+
+
+
+2012-01-18T12:23:31.351000Z
+d56c397aa78336c8e2b9aee8a7a01905
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_it-it.js
+file
+
+
+
+
+2012-01-18T12:23:31.398000Z
+c4c089744d2d2a95064f34b5c3374a38
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_it.js
+file
+
+
+
+
+2012-01-18T12:23:30.883000Z
+1afafb0a0634f2afb11b9f47b5f1c0cc
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_ja-jp.js
+file
+
+
+
+
+2012-01-18T12:23:31.430000Z
+0fda78cfd144c6c7d19ec35b5c1143f8
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_ja.js
+file
+
+
+
+
+2012-01-18T12:23:31.289000Z
+f2fa31db0e7a93811df56a45290b4799
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_ko-kr.js
+file
+
+
+
+
+2012-01-18T12:23:31.070000Z
+894a323ea6fe864191646285f0ef7f9b
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_ko.js
+file
+
+
+
+
+2012-01-18T12:23:31.008000Z
+526bda9da55dc79cc43f6940411592ce
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_nl-nl.js
+file
+
+
+
+
+2012-01-18T12:23:31.195000Z
+205b283aabb5479f8abea9d26077a1a0
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_nl.js
+file
+
+
+
+
+2012-01-18T12:23:31.476000Z
+b8754d8dbbe498e790238b11ec266209
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_no.js
+file
+
+
+
+
+2012-01-18T12:23:31.008000Z
+95acd104a821a62f18f98e840213784c
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_pl.js
+file
+
+
+
+
+2012-01-18T12:23:30.867000Z
+6ce9ce560e2db19bbf6d712cceccfb14
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_pt-br.js
+file
+
+
+
+
+2012-01-18T12:23:31.211000Z
+6f721e238a153315fc9526258ce1c177
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_pt-pt.js
+file
+
+
+
+
+2012-01-18T12:23:30.976000Z
+c7c270b7f05198671519155d2993a1bf
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_pt.js
+file
+
+
+
+
+2012-01-18T12:23:30.883000Z
+3c9c6cac21d176efb1c7125ea82f7af6
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_ru.js
+file
+
+
+
+
+2012-01-18T12:23:31.398000Z
+6502c47aabab6b8ae67ccf07dfa52009
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_sk.js
+file
+
+
+
+
+2012-01-18T12:23:31.008000Z
+f1bd3f4e65f0a415722b7cacc99fea79
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_sl.js
+file
+
+
+
+
+2012-01-18T12:23:30.883000Z
+367c23a5e26c7376ec116dbfac1109fd
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_sv.js
+file
+
+
+
+
+2012-01-18T12:23:31.273000Z
+4643cbc4683ff85111180e714a8bb10c
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_th.js
+file
+
+
+
+
+2012-01-18T12:23:30.867000Z
+cc06941f6e7f23284616ffa087959d3a
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_tr.js
+file
+
+
+
+
+2012-01-18T12:23:31.258000Z
+c9edd839b169cce65bec22ff2b335158
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_xx.js
+file
+
+
+
+
+2012-01-18T12:23:30.945000Z
+11f33e3ab99a1d9373d240be42d128b5
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_zh-cn.js
+file
+
+
+
+
+2012-01-18T12:23:30.883000Z
+ef924c4d3580063719c20b24a14cfee3
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_zh-tw.js
+file
+
+
+
+
+2012-01-18T12:23:31.476000Z
+362cceded62788d8692c6613ae13f0fb
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+dijit-all_zh.js
+file
+
+
+
+
+2012-01-18T12:23:30.883000Z
+9712e32b1779ad5df2bd1a26f58bdd6f
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+el
+dir
+
+es
+dir
+
+fi
+dir
+
+fr
+dir
+
+he
+dir
+
+hu
+dir
+
+it
+dir
+
+ja
+dir
+
+ko
+dir
+
+loading.js
+file
+
+
+
+
+2012-01-18T12:23:31.211000Z
+746b5bd4d98460e0fb3348a365289414
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+nb
+dir
+
+nl
+dir
+
+pl
+dir
+
+pt
+dir
+
+pt-pt
+dir
+
+ru
+dir
+
+sk
+dir
+
+sl
+dir
+
+sv
+dir
+
+th
+dir
+
+tr
+dir
+
+zh
+dir
+
+zh-tw
+dir
+

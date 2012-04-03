@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<project name="Validation" default="Validation" basedir=".">
+	<import file="../AntBuilds/build.xml" />
+	
+	<property file="buildinfo.properties"/>
+
+	<target name="deploy to localhost" depends="Validation without tests">
+		<get src="http://localhost:8080/manager/html/undeploy?path=/Validation" dest="unused" username="tomcat" password="s3cret"/>
+		<delete dir="C:\Program Files\Apache Software Foundation\Apache Tomcat 6.0\webapps\Validation"/>
+		<delete file="C:\Program Files\Apache Software Foundation\Apache Tomcat 6.0\webapps\Validation.war"/>
+		<copy todir="C:\Program Files\Apache Software Foundation\Apache Tomcat 6.0\webapps" file="dist\Validation.war"/>
+
+		<copy todir="C:\Program Files\Apache Software Foundation\Apache Tomcat 6.0\webapps">
+			<fileset dir="dist"/>
+		</copy>
+	</target>
+	
+	<target name="deploy Validation to devsvr1" depends="Validation without tests">
+				<get src="http://goshcc-devsvr1:8080/manager/html/undeploy?path=/Validation" dest="unused" username="tomcat" password="s3cret"/>
+				<delete dir="\\goshcc-devsvr1\deployments\Validation"/>
+				<delete file="\\goshcc-devsvr1\deployments\Validation.war"/>
+				<copy todir="\\goshcc-devsvr1\deployments" file="dist\Validation.war"/>
+	</target>
+	
+	<target name="deploy Validation to devsvr2" depends="Validation without tests">
+			<get src="http://goshcc-devsvr2:8080/manager/html/undeploy?path=/Validation" dest="unused" username="tomcat" password="s3cret"/>
+			<delete dir="\\goshcc-devsvr2\deployments\Validation"/>
+			<delete file="\\goshcc-devsvr2\deployments\Validation.war"/>
+			<copy todir="\\goshcc-devsvr2\deployments" file="dist\Validation.war"/>
+	</target>
+
+	<!-- Deploy on devsvr3, used as soft launch before final launch on tomcat1. 
+	Use this target only after all steps in production procedure are complete. -->
+	<target name="softLaunch" depends="Validation without tests">
+			<get src="http://goshcc-devsvr3:8080/manager/html/undeploy?path=/Validation" dest="unused" username="tomcat" password="s3cret"/>
+			<delete dir="\\goshcc-devsvr3\deployments\Validation"/>
+			<delete file="\\goshcc-devsvr3\deployments\Validation.war"/>
+			<copy todir="\\goshcc-devsvr3\deployments" file="dist\Validation.war"/>
+	</target>
+	
+	<!-- you need to do a few other things before deploying to production -->
+	<target name="deploy Validation to tomcat1" depends="setReleaseTag, Validation without tests">
+		<!--get src="http://goshcc-tomcat1:8080/manager/html/undeploy?path=/Validation" dest="unused" username="tomcat" password="s3cret"/-->
+		<delete dir="\\goshcc-tomcat1\deployments\Validation"/>
+		<delete file="\\goshcc-tomcat1\deployments\Validation.war"/>
+		<copy todir="\\goshcc-tomcat1\deployments" file="dist\Validation.war"/>
+		
+		<tstamp/>
+		<copy todir="L:\ITDEV\Validation_${DSTAMP}_${TSTAMP}" file="dist\Validation.war" />
+	</target>
+
+	<target name="Validation" depends="setUpLocalProps, setProjectVersion, main, javadoc"/>
+
+	<target name="Validation with Functests" depends="setUpLocalProps, setProjectVersion, mainWithFunctests"/>
+
+	<target name="Validation without tests" depends="setUpLocalProps, setProjectVersion, mainWithoutTests"/>
+
+	<target name="setUpLocalProps">
+		<echo message="Properties are being set locally"/>
+		<property name="project" value="Validation" />
+		<property name="distribution" value="validation"/>
+		<property name="dependents" value="SchemaBindings"/>
+		<property name="isFail" value="off"/>
+	</target>
+	
+	<target name="javadoc">
+		<path id="jars">
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+		
+		<javadoc packagenames="org.gosh.validation.*"
+		           sourcepath="src"
+		           destdir="docs"
+		           author="true"
+				   defaultexcludes="true"
+		           windowtitle="${distribution}">
+  	    	<doctitle><![CDATA[<h1>${distribution}</h1>]]></doctitle>
+			<classpath refid="jars"/>
+			<classpath location="dist/${distribution}/WEB-INF/classes"/>
+		</javadoc>	
+	</target>
+	
+	<target name="copyConfFilesDist">
+		<echo message="Calling the copy target"/>
+		<copy todir="dist/${distribution}/WEB-INF/classes" file="buildinfo.properties"/>
+	</target>
+	
+	<target name="setHaltOnFailure">
+		<echo message="Setting haltonfailure to true"/>
+		<property name="isFail" value="on" />
+	</target>
+	
+	<target name="Deploy on UAT env" depends="setHaltOnFailure,setUpLocalProps, mainWithoutTests, runtests">
+	<!-- The following line must be uncommented after all functional tests are fixed -->
+	<!--<target name="Deploy on UAT env" depends="setHaltOnFailure,setUpLocalProps, mainWithoutTests, runtests, runFuncTests">-->
+		<get src="http://goshcc-devsvr2:8080/manager/html/undeploy?path=/Validation" dest="unused" username="tomcat" password="s3cret"/>
+		<delete dir="\\goshcc-devsvr2\deployments\Validation"/>
+		<delete file="\\goshcc-devsvr2\deployments\Validation.war"/>
+		<copy todir="\\goshcc-devsvr2\deployments" file="dist\Validation.war"/>
+		<echo message="Successfully Deployed in UAT environment"/>
+	</target>
+	
+
+	<target name="Deploy on copy of production env" depends="setHaltOnFailure,setUpLocalProps, mainWithoutTests, runtests">
+	<!-- The following line must be uncommented after all functional tests are fixed -->
+	<!--<target name="Deploy on copy of production env" depends="setHaltOnFailure,setUpLocalProps, mainWithoutTests, runtests, runFuncTests">-->
+		<get src="http://goshcc-devsvr3:8080/manager/html/undeploy?path=/Validation" dest="unused" username="tomcat" password="s3cret"/>
+		<delete dir="\\goshcc-devsvr3\deployments\Validation"/>
+		<delete file="\\goshcc-devsvr3\deployments\Validation.war"/>
+		<copy todir="\\goshcc-devsvr3\deployments" file="dist\Validation.war"/>
+		<echo message="Successfully Deployed in UAT environment"/>
+	</target>
+	
+	<target name="buildProjectVersion" depends="getSvnVersion" if="Revision">
+		<echo message="Set"/>
+		<property name="releaseTag" value=" " />
+		<property name="projectVersion" value="${major}.${minor}.${Revision}${releaseTag}" />
+		<echo message="${projectVersion}"/>
+	</target>
+	
+	<target name="setProjectVersion" depends="buildProjectVersion" unless="projectVersion"> 
+		<echo message="Set"/>
+		<property name="releaseTag" value=" " />
+		<property name="projectVersion" value="${major}.${minor}.${build}${releaseTag}" />
+		<echo message="${projectVersion}"/>
+	</target>
+	
+	<target name="setReleaseTag">
+		<property name="releaseTag" value="${release}" />
+	</target>
+
+</project>

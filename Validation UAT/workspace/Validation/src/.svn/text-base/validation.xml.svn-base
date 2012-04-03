@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-autowire="autodetect" xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:integration="http://www.springframework.org/schema/integration"
+	xmlns:file="http://www.springframework.org/schema/integration/file"
+	xmlns:mail="http://www.springframework.org/schema/integration/mail"
+	xmlns:ixml="http://www.springframework.org/schema/integration/xml"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+			http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+			http://www.springframework.org/schema/context
+	        http://www.springframework.org/schema/context/spring-context-2.5.xsd
+			http://www.springframework.org/schema/integration
+			http://www.springframework.org/schema/integration/spring-integration-1.0.xsd
+			http://www.springframework.org/schema/integration/file
+			http://www.springframework.org/schema/integration/file/spring-integration-file-1.0.xsd
+			http://www.springframework.org/schema/integration/xml
+			http://www.springframework.org/schema/integration/xml/spring-integration-xml-1.0.xsd
+            http://www.springframework.org/schema/integration/mail
+            http://www.springframework.org/schema/integration/mail/spring-integration-mail-1.0.xsd">
+	
+	<integration:annotation-config/>
+	<context:component-scan base-package="org.gosh.validation"/>
+
+	<import resource="input.xml"/>
+	<import resource="outputs.xml"/>
+	
+	<!-- do any up front conversion -->
+	<integration:router ref="fileFormatRouter" input-channel="genericMessageIn" default-output-channel="messageIn"/>
+
+	<integration:channel id="webDonations"/>
+	<integration:transformer ref="fixedStringCorrelationSetter" method="transform" input-channel="webDonations" output-channel="correlatedWebDonations"/>	
+	<integration:channel id="correlatedWebDonations"/>
+	<integration:aggregator ref="webDonationsAggregator" method="aggregate" completion-strategy="webDonationsAggregator" completion-strategy-method="checkCompleteness" 
+		input-channel="correlatedWebDonations" output-channel="messageIn" discard-channel="invalidOut" timeout="10000" reaper-interval="20000"/>
+
+	<integration:channel id="webGeneratedDDs"/>
+	<integration:transformer ref="webGeneratedDDsTransformer" method="transform" 
+		input-channel="webGeneratedDDs" output-channel="messageIn"/>
+	
+	<integration:channel id="messageIn"/>
+	
+	<!-- do the validation -->
+	<integration:chain input-channel="messageIn" output-channel="messageOut">
+	<!-- Commenting the schema validation transformer, since it will be done at the end of all transformations -->
+	<!--
+ 		<integration:transformer ref="schemaValidationTransformer" method="transform"/>
+ 	-->
+		<integration:transformer ref="unmarshallingTransformer" method="transform"/>
+		<integration:transformer ref="headerAdditionTransformer" method="transform"/>
+		<integration:transformer ref="dataCleanUpTransformer" method="transform"/>
+		<integration:transformer ref="constituentIdValidationTransformer" method="transform"/>
+		<integration:transformer ref="miscValidationTransformer" method="transform"/>
+		<integration:transformer ref="bolajisAdditionsTransformer" method="transform"/>
+		<integration:transformer ref="blankSurnameTransformer" method="transform"/>
+		<integration:transformer ref="reCodeTableValidationTransformer" method="transform"/>
+		<integration:transformer ref="theFourIdsValidationTransformer" method="transform"/>
+		<integration:transformer ref="phoneEmailValidationTransformer" method="transform"/>
+		<integration:transformer ref="firstPaymentDateTransformer"  method="transform"/>
+		<integration:transformer ref="fuzzyLookupTransformer" method="transform"/>
+		<integration:transformer ref="weightedMatcherTransformer" method="transform"/>
+		<!-- integration:transformer ref="bankValidationTransformer" method="transform" /-->
+		<integration:transformer ref="bankUpgradeTransformer" method="transform" />
+		<integration:transformer ref="ddUpgradeBankValidationTransformer" method="transform"/>
+		<integration:transformer ref="genericBankTransformer" method="transform"/>
+		<integration:transformer ref="existingDDsValidationTransformer" method="transform"/>
+		<integration:transformer ref="tributeValidationTransformer" method="transform"/>
+		<integration:transformer ref="tributeImportIdTransformer" method="transform"/>
+		<integration:transformer ref="giftReferenceNoRecogniserTransformer" method="transform"/>
+		<integration:transformer ref="relationshipReciprocalGuessingTransformer" method="transform"/>
+		<integration:transformer ref="adjustCafFileBatchNumbersTransformer" method="logAndTransform"/>
+		<integration:transformer ref="reBatchNumberValidationTransformer" method="transform"/>
+		<integration:transformer ref="logBatchNumberValidationTransformer" method="transform"/>
+		<integration:transformer ref="webCashFileReprocessingTransformer"  method="transform"/>
+		<integration:transformer ref="schemaValidationTransformer" method="transform"/>
+	</integration:chain>
+</beans>

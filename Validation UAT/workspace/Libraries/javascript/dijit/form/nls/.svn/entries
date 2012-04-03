@@ -1,0 +1,145 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Libraries/javascript/dijit/form/nls
+svn://goshcc-devsvr1
+
+
+
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+ComboBox.js
+file
+
+
+
+
+2012-01-18T12:23:31.726000Z
+27244875a1dc068d7d91bf4e0c0ba7a5
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+Textarea.js
+file
+
+
+
+
+2012-01-18T12:23:31.851000Z
+2be04720a9b5aac542d681b98f426ed6
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+ar
+dir
+
+ca
+dir
+
+cs
+dir
+
+da
+dir
+
+de
+dir
+
+el
+dir
+
+es
+dir
+
+fi
+dir
+
+fr
+dir
+
+he
+dir
+
+hu
+dir
+
+it
+dir
+
+ja
+dir
+
+ko
+dir
+
+nb
+dir
+
+nl
+dir
+
+pl
+dir
+
+pt
+dir
+
+pt-pt
+dir
+
+ru
+dir
+
+sk
+dir
+
+sl
+dir
+
+sv
+dir
+
+th
+dir
+
+tr
+dir
+
+validate.js
+file
+
+
+
+
+2012-01-18T12:23:32.039000Z
+977eda6d6ea60b427ff64dccde01b4af
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+zh
+dir
+
+zh-tw
+dir
+

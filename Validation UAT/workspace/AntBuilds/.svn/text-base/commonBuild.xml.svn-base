@@ -1,0 +1,791 @@
+<?xml version="1.0"?>
+
+<project name="buildCommon" default="main" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
+	<property file="../AntBuilds/build.properties"/>
+	<property name="springSourceDistDir" value="springSourceDistDir" />
+
+	<!-- TOMCAT SERVICE AND DEPLOYMENT STUFF -->
+	<property name="service" value="Tomcat6" />
+	<property name="urllocal" value="http://localhost:8080/manager" />
+	<property name="urldevsvr2" value="http://goshcc-devsvr2:8080/manager" />
+	<property name="username" value="tomcat" />
+	<property name="password" value="s3cret" />
+
+	<target name="setProject" unless="isSetProject">
+		<taskdef uri="antlib:net.sf.antcontrib"
+			resource="net/sf/antcontrib/antlib.xml">
+			<classpath>
+				<pathelement location="..\Libraries\ant-contrib.jar" />
+			</classpath>
+		</taskdef>
+		<tstamp>
+			<format property="start" pattern="dd-MMMM-yyyy HH:mm:ss" locale="en"/>
+		</tstamp>
+		<property name="cxf.home" location="${cxf.dir}" />
+
+		<!-- We can [more or less] safely assume that localbuilds 
+		are not going to run by user SYSTEM -->
+		<property name="automatedBuildUser" value="SYSTEM"/>
+
+		<var name="automatedBuild" unset="true" />
+		<condition property="automatedBuild">
+			<equals arg1="${user.name}" arg2="${automatedBuildUser}" casesensitive="false" trim="true"/>
+		</condition>
+		<echo>Running as ${user.name} [user.name] automatedBuild=${automatedBuild}</echo>
+
+		<dirname property="projectdir" file="${ant.file}" />
+		<dirname property="workspacedir" file="${projectdir}" />
+		<basename property="user.dirname" file="${user.dir}"/>
+		<property name="project" value="${user.dirname}" />
+		<property name="project.name" value="${project}" />
+		<property name="projectName" value="${project.name}"/>
+		<echo>setProject [${workspacedir} / ${projectName} / ${user.dir}]</echo>
+		<property name="isSetProject" value="true"/>
+	</target>
+
+	<taskdef name="deploy" classname="org.apache.catalina.ant.DeployTask">
+		<classpath>
+			<pathelement location="..\Libraries\catalina-ant.jar" />
+		</classpath>
+	</taskdef>
+
+	<taskdef name="undeploy" classname="org.apache.catalina.ant.UndeployTask">
+		<classpath>
+			<pathelement location="..\Libraries\catalina-ant.jar" />
+		</classpath>
+	</taskdef>
+
+	<target name="devsvr2Deploy" depends="undeployfromdevsvr2,deploytodevsvr2,buildSpringSourceDist,deploySpringSourceDist"/>
+	<target name="localDeploy" depends="undeployfromlocal,stoptomcatlocal,clearwebapplocal,copywarlocal,starttomcatlocal,buildSpringSourceDist,deploySpringSourceDist"/>
+	<target name="localDeploy2" depends="undeployfromlocal,deploytolocal,buildSpringSourceDist,deploySpringSourceDist"/>
+	<!-- If you want to run this task from command line, please run a command as shown in below example-->
+		<!-- ant undeployfromdevsvr2 -Dctx=/BacsAuddis-->
+	<target name="undeployfromlocal" description="Remove web application" if="warPresent">
+		<undeploy url="${urllocal}" username="${username}" password="${password}" path="${ctx}" failonerror="false" />
+	</target>
+	
+	<target name="undeployfromdevsvr2" description="Remove web application" if="warPresent">
+		<undeploy url="${urldevsvr2}" username="${username}" password="${password}" path="${ctx}" failonerror="false" />
+	</target>
+	
+	<target name="stoptomcatlocal" description="Stops the ${service}" if="warPresent">
+		<exec executable="cmd.exe">
+			<arg line="/C net stop ${service}" />
+		</exec>
+	</target>
+	
+	<target name="stoptomcatdevsvr2" description="Stops the ${service}" if="warPresent">
+		<exec executable="sc.exe">
+			<arg value="\\goshcc-devsvr2"/>
+			<arg value="stop"/>
+			<arg value="tomcat6"/>
+		</exec>
+	</target>
+	
+	<target name="clearwebappdevsvr2" if="warPresent">
+		<property name="duration" value="120" />
+		<echo message="sleeping for ${duration} seconds now"/>
+		<sleep seconds="${duration}"/>
+		<echo message="deleting the webapp directory now"/>
+		<delete dir="${webapplocationdevsvr2}"/>
+	</target>
+		
+	<target name="clearwebapplocal" if="warPresent">
+		<property name="duration" value="15" />
+		<echo message="sleeping for ${duration} seconds now"/>
+		<sleep seconds="${duration}"/>
+		<echo message="deleting the webapp directory now"/>
+		<delete dir="${webapplocationlocal}"/>
+	</target>
+	
+	<target name="starttomcatdevsvr2" description="Stops the ${service}" if="warPresent">
+		<exec executable="sc.exe">
+			<arg value="\\goshcc-devsvr2"/>
+			<arg value="start"/>
+			<arg value="tomcat6"/>
+		</exec>
+	</target>
+
+	<target name="starttomcatlocal" description="Starts the ${service}" if="warPresent">
+		<exec executable="cmd.exe">
+			<arg line="/C net start ${service}" />
+		</exec>
+	</target>
+		
+	<target name="copywarlocal" if="warPresent">
+		<copy tofile="${warlocationlocal}/${tomcatApplication}.war">
+			<fileset file="${warlocation}" />
+		</copy>
+<!--
+		<antcall target="createContextFragment">
+			<param name="destinationDirectory" value="${warlocationlocal}" />
+		</antcall>
+-->
+	</target>
+
+	<target name="copywardevsvr2" if="warPresent">
+		<copy tofile="${warlocationdevsvr2}/${tomcatApplication}.war">
+			<fileset file="${warlocation}" />
+		</copy>
+<!--
+		<antcall target="createContextFragment">
+			<param name="destinationDirectory" value="${warlocationdevsvr2}" />
+		</antcall>
+-->
+	</target>
+
+	<target name="copyjarlocal">
+		<copy todir="${jarlocationlocal}">
+			<fileset file="dist/${project}.jar" />
+		</copy>
+	</target>
+
+	<target name="buildSpringSourceDist" depends="isSpringSourceUpToDate?" unless="isSpringSourceUpToDate" if="buildSpringSource">
+<!--
+		<antcall target="bndBuild">
+		</antcall>
+-->
+		<taskdef resource="aQute/bnd/ant/taskdef.properties" 
+			classpath="../cnf/repo/biz.aQute.bnd/biz.aQute.bnd-1.44.0.jar"/> 
+		<available file="${springSourceDistDir}" type="dir" property="springSourceDist.dir.present"/>
+		<antcall target="createSpringSourceDistDir">
+		</antcall>
+
+		<bnd 
+			classpath="${destination.classes.dir}"
+			sourcepath="src"
+			eclipse="false"
+			failok="false"
+			exceptions="true"
+			files="${propertiesFileName}"
+			output="${springSourceDistDir}/${distribution}-${springSourceJarVersion}.jar"/>
+
+		<echo>buildSpringSourceDist ${springSourceDistDir}/${distribution}-${springSourceJarVersion}.jar</echo>
+
+		<antcall target="incrementPropertiesBuildNumber">
+			<param name="propertiesFileName" value="${propertiesFileName}" />
+			<param name="propertiesPrefix" value="${propertiesPrefix}" />
+		</antcall>
+	</target>
+
+	<target name="createSpringSourceDistDir" unless="springSourceDist.dir.present">
+		<mkdir dir="${springSourceDistDir}"/>
+	</target>
+
+	<target name="deploySpringSourceDist" if="buildSpringSource">
+		<!--
+		<echo>deploySpringSourceDist ${springSourceDistDir}/${distribution}-${springSourceJarVersion}.jar to ${springSourceJarlocation}/${distribution}-${springSourceJarVersion}.jar</echo>
+		-->
+		<copy file="${springSourceDistDir}/${distribution}-${springSourceJarVersion}.jar"
+			tofile="${springSourceJarlocation}/${distribution}-${springSourceJarVersion}.jar"/>
+	</target>
+
+	<target name="copyjardevsvr2">
+		<copy todir="${jarlocationdevsvr2}">
+			<fileset file="dist/${project}.jar" />
+		</copy>
+	</target>
+
+	<!-- If you want to run this task from command line, please run a command as shown in below example (If it fails than try undeploying first and then deploy again)-->
+	<!-- ant deploytodevsvr2 -Dctx=/BacsAuddis-->
+	<target name="deploytodevsvr2" description="Install web application" if="warPresent">
+		<echo>Installing ${warlocation} to ${urldevsvr2}</echo>
+		<deploy url="${urldevsvr2}" username="${username}" password="${password}" path="${ctx}" war="${warlocation}" update="true" />
+	</target>
+	
+	<target name="deploytolocal" description="Install web application" if="warPresent">
+		<echo>Installing ${warlocation} to ${urllocal}</echo>
+		<deploy url="${urllocal}" username="${username}" password="${password}" path="${ctx}" war="${warlocation}" update="true" failonerror="false" />
+	</target>
+
+	<target name="createContextFragment" if="warPresent">
+		<echo file="${destinationDirectory}/${distribution}.xml" append="false" message=""/>
+		<property name="contextFragment">
+		<!-- Context fragment for deploying ${distribution}.${distribution.Type} -->
+		<Context path="${ctx}" docBase="webapps/${distribution}.${distribution.Type}" debug="0" privileged="true">
+		<Realm className="org.apache.catalina.realm.UserDatabaseRealm" resourceName="UserDatabase"/>
+		</Context>
+		</property>
+		<echo file="${distribution}.xml" append="true" message="${contextFragment}" />
+	</target>
+
+	<target name="setupProject" unless="project">
+		<input addproperty="project" message="What is your project path" />
+	</target>
+
+	<target name="setupDistribution" unless="distribution">
+		<input addproperty="distribution" message="What is your distribution name" />
+	</target>
+
+	<target name="main" depends="setupProject,setupDistribution,setupFolders,isBuildUpToDate?,refreshBuild,compileDependencies,isTestUpToDate?,runtests,setJspsExist,copyJsps,copyJavaScript">
+		<!-- a default log4j setup -->
+		<copy todir="${destination.classes.dir}">
+			<fileset file="log4j.properties" />
+		</copy>
+
+		<antcall target="create${distribution.Type}">
+			<param name="destfile" value="dist/${distribution}.${distribution.Type}" />
+			<param name="inclDir" value="${destination.root.dir}" />
+		</antcall>
+
+		<tstamp>
+			<format property="end" pattern="dd-MMMM-yyyy HH:mm:ss" locale="en"/>
+		</tstamp>
+		<echo>Main ${distribution} build started on ${start}, ended on ${end}.</echo>
+	</target>
+	
+	<target name="main without tests" depends="setupProject,setupDistribution,setupFolders,isBuildUpToDate?,refreshBuild,compileDependencies,isTestUpToDate?,setJspsExist,copyJsps,copyJavaScript">
+			<!-- a default log4j setup -->
+			<copy todir="${destination.classes.dir}">
+				<fileset file="log4j.properties" />
+			</copy>
+
+			<antcall target="create${distribution.Type}">
+				<param name="destfile" value="dist/${distribution}.${distribution.Type}" />
+				<param name="inclDir" value="${destination.root.dir}" />
+			</antcall>
+
+			<tstamp>
+				<format property="end" pattern="dd-MMMM-yyyy HH:mm:ss" locale="en"/>
+			</tstamp>
+			<echo>Main ${distribution} build started on ${start}, ended on ${end}.</echo>
+	</target>
+
+	<target name="setupProperties" unless="isSetupProperties">
+		<!-- This target is here just to be overridden in individual project -->
+	</target>
+
+	<target name="createwar" unless="isBuildUpToDate">
+		<war destfile="${destfile}">
+			<fileset dir="${inclDir}" />
+		</war>
+		<echo>created fresh ${destfile} from ${inclDir}</echo>
+	</target>
+
+	<target name="createjar" unless="isBuildUpToDate">
+		<jar destfile="${destfile}">
+			<fileset dir="${inclDir}" />
+		</jar>
+		<echo>created fresh ${destfile} from ${inclDir}</echo>
+	</target>
+
+	<target name="copyJsps" if="jsp-folder-exists">
+		<copy todir="dist/${distribution}/jsp">
+			<fileset dir="jsp" />
+		</copy>
+	</target>
+
+	<target name="copyJavaScript" if="copyJavascript">
+		<copy todir="dist/${distribution}/javascript">
+			<fileset dir="../Libraries/javascript" />
+		</copy>
+	</target>
+
+	<target name="setJspsExist">
+		<available property="jsp-folder-exists" file="jsp" />
+	</target>
+
+	<target name="isBuildUpToDate?">
+		<property name="srcs" value="src,webinf,ivy" />
+		<property name="isBuildUpToDate.srcDir" value="../${projectName}/src"/>
+		<available property="webroot.exists" file="../${projectName}/WEB-INF" type="dir" />
+		<runtarget target="setWebRootDir" />
+		<available property="jspDir.exists" file="../${projectName}/jsp" type="dir" />
+		<runtarget target="setJSPDir" />
+		<property name="isBuildUpToDate.webrootDir" value="${isBuildUpToDate.srcDir}/META-INF" />
+		<property name="isBuildUpToDate.jspDir" value="${isBuildUpToDate.srcDir}/META-INF" />
+		<property name="isBuildUpToDate.ivyfiles" value="**/ivy*.xml"/>
+		<property name="isBuildUpToDate.buildfile" value="**/build.xml"/>
+
+		<!--
+		<foreach list="${srcs}" target="isUpToDate?" param="srcType" inheritall="true">
+			<param name="targetfile" value="dist/${distribution}.${distribution.Type}" />
+			<param name="srcDir" value="../${projectName}/src" />
+			<param name="srcFiles" value="**" />
+		</foreach>
+		-->
+
+		<uptodate property="_isBuildUpToDate" targetfile="dist/${distribution}.${distribution.Type}">
+			<srcfiles dir="${isBuildUpToDate.srcDir}" includes="**"/>
+			<srcfiles dir="${isBuildUpToDate.webrootDir}" includes="**"/>
+			<srcfiles dir="${isBuildUpToDate.jspDir}" includes="**"/>
+			<srcfiles dir="../${projectName}" includes="${isBuildUpToDate.ivyfiles}"/>
+			<srcfiles dir="../${projectName}" includes="${isBuildUpToDate.buildfile}"/>
+		</uptodate>
+		<echo>Checking dist/${distribution}.${distribution.Type} against 
+			${isBuildUpToDate.srcDir}, 
+			${isBuildUpToDate.webrootDir}, 
+			${isBuildUpToDate.jspDir}, 
+			${isBuildUpToDate.ivyfiles},
+			${isBuildUpToDate.buildfile}
+			-> ${isBuildUpToDate}</echo>
+	</target>
+
+	<target name="isNotUpToDate?" unless="isNotUpToDate">
+		<uptodate property="isNotUpToDate" targetfile="${targetfile}">
+			<srcfiles dir="${srcDir}" includes="${srcFiles}"/>
+		</uptodate>
+		<echo>Checking ${targetfile} against ${srcDir}/${srcFiles} -> ${isNotUpToDate}</echo>
+	</target>
+
+	<target name="isTestUpToDate?">
+		<property name="isTestUpToDate.targetfile" value="dist/${distribution}.${distribution.Type}"/>
+		<property name="isTestUpToDate.srcfiles" value="../${projectName}/test"/>
+		<uptodate property="_isTestUpToDate"
+			targetfile="${isTestUpToDate.targetfile}">
+			<srcfiles dir="${isTestUpToDate.srcfiles}"/>
+		</uptodate>
+	</target>
+
+	<target name="isSpringSourceUpToDate?">
+		<property name="isSpringSourceUpToDate.targetfile" value="${springSourceDistDir}/${distribution}-${springSourceJarVersion}.jar"/>
+		<property name="isSpringSourceUpToDate.bndfiles" value="**/*.bnd"/>
+
+		<uptodate property="_isSpringSourceUpToDate"
+			targetfile="${isSpringSourceUpToDate.targetfile}">
+			<srcfiles dir="../${projectName}" includes="${isSpringSourceUpToDate.bndfiles}"/>
+			<!-- If distribution was rebuilt rebuild springsource too -->
+			<srcfiles dir="dist" includes="${distribution}.${distribution.Type}"/>
+		</uptodate>
+		<!--
+		<echo>${isSpringSourceUpToDate.targetfile} compared to ../${projectName}/${isSpringSourceUpToDate.bndfiles} isSpringSourceUpToDate=${isSpringSourceUpToDate}</echo>
+		-->
+	</target>
+
+	<target name="setWebRootDir" if="webroot.exists">
+		<property name="isBuildUpToDate.webrootDir" value="../${projectName}/WEB-INF" />
+	</target>
+
+	<target name="setJSPDir" if="jspDir.exists">
+		<property name="isBuildUpToDate.jspDir" value="../${projectName}/jsp" />
+	</target>
+
+	<target name="setupFolders" unless="isSetupFolders" depends="setupProperties">
+		<property name="destination.dist.dir" value="dist" />
+		<property name="destination.root.dir" value="${destination.dist.dir}/${distribution}" />
+		<runtarget target="setupFoldersFor_${distribution.Type}" />
+		<property name="destination.lib.dir" value="${destination.webroot.dir}/lib" />
+		<property name="destination.classes.dir" value="${destination.webroot.dir}/classes" />
+		<property name="destination.tests.dir" value="${destination.dist.dir}/test" />
+		<property name="lib.dir" value="${destination.lib.dir}" />
+		<path id="externalJars">
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+		<!--
+		<available property="ivy.file.present" file="../${project}/ivy.xml" />
+		-->
+		<property name="isSetupFolders" value="true" />
+	</target>
+
+	<target name="refreshBuild" unless="isBuildUpToDate">
+		<delete dir="dist" />
+		<mkdir dir="dist" />
+		<mkdir dir="${destination.root.dir}" />
+		<mkdir dir="${destination.classes.dir}" />
+		<mkdir dir="${destination.lib.dir}" />
+
+		<runtarget target="copyWebRootDirectory" />
+		<copy todir="${destination.classes.dir}">
+			<fileset dir="../${project}/src" includes="*.properties,*.xml" />
+		</copy>
+	</target>
+
+	<target name="setupFoldersFor_jar">
+		<property name="destination.webroot.dir" value="${destination.root.dir}" />
+	</target>
+
+	<target name="setupFoldersFor_war">
+		<property name="destination.webroot.dir" value="${destination.root.dir}/WEB-INF" />
+	</target>
+
+	<target name="copyWebRootDirectory" if="webroot.exists">
+		<copy todir="${destination.webroot.dir}" failonerror="false">
+			<fileset dir="../${project}/WEB-INF" />
+		</copy>
+	</target>
+
+	<target name="retriveWithIvyUnconditional">
+		<echo>retriveWithIvyUnconditional in projectName=${projectName}, lib.dir=${lib.dir}, ivy.file.present=${ivy_file_present}</echo>
+		<antcall target="retriveWithIvy">
+			<param name="projectName" value="${projectName}"/>
+			<param name="ivy_file_present" value="${ivy_file_present}"/>
+		</antcall>
+	</target>
+
+	<target name="retriveWithIvy" unless="isBuildUpToDate" if="ivy_file_present">
+		<echo>retriveWithIvy in projectName=${projectName}, lib.dir=${lib.dir}</echo>
+		<available property="ivysettings.file.present" file="../${projectName}/ivysettings.xml" />
+		<runtarget target="configureIvy" />
+		<runtarget target="configureIvyPerProject" />
+		<ivy:configure file="${ivy.configure.fileName}"/>
+		<ivy:resolve file="../${projectName}/ivy.xml"/>
+		<ivy:retrieve pattern="${lib.dir}/[artifact]-[revision].[ext]" />
+	</target>
+
+	<target name="configureIvy" unless="ivysettings.file.present">
+		<var name="ivy.configure.fileName" value="../AntBuilds/ivysettings.xml" />
+		<echo>ivy.configure.fileName=${ivy.configure.fileName}</echo>
+	</target>
+
+	<target name="configureIvyPerProject" if="ivysettings.file.present">
+		<var name="ivy.configure.fileName" value="../${projectName}/ivysettings.xml" />
+		<echo>ivy.configure.fileName=${ivy.configure.fileName}</echo>
+	</target>
+
+	<target name="buildProject" unless="isBuildUpToDate">
+		<echo>building: ${projectName}</echo>
+		<available property="${projectName}.ivy.file.present" file="../${projectName}/ivy.xml" />
+		<var name="buildProject.fullPropertyName" value="${projectName}.ivy.file.present" />
+		<propertycopy name="ivy.file.present" from="${buildProject.fullPropertyName}" silent="true"/>
+		<!--
+		<antcall target="retriveWithIvyUnconditional">
+		-->
+		<antcall target="retriveWithIvy">
+			<param name="projectName" value="${projectName}"/>
+			<param name="ivy_file_present" value="${ivy.file.present}"/>
+		</antcall>
+
+		<path id="externalJars">
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+		<javac srcdir="../${projectName}/src" destdir="${destination.classes.dir}" debug="on" source="1.6">
+			<classpath refid="externalJars" />
+		</javac>
+		<copy todir="${destination.classes.dir}">
+			<fileset file="../${projectName}/src/*.*">
+				<include name="**/*.x*" />
+				<!-- intended for xsd and xml files -->
+				<include name="**/*.groovy" />
+				<!-- intended for groovy scripts files -->
+				<include name="**/*.properties" />
+				<!-- intended for groovy scripts files -->
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="buildTestsForProject" depends="setTestFolderExistsProperty,conditionalBuildTestsForProject" />
+
+	<target name="setTestFolderExistsProperty" unless="isTestUpToDate">
+		<available property="test-folder-exists" file="../${projectName}/test" />
+	</target>
+
+	<target name="conditionalBuildTestsForProject" unless="isTestUpToDate" if="test-folder-exists">
+		<path id="externalJars">
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+		<echo>Building tests for: ${projectName}</echo>
+		<javac srcdir="../${projectName}/test" destdir="dist/test" debug="on" source="1.6">
+			<classpath refid="externalJars" />
+			<classpath location="${destination.classes.dir}" />
+		</javac>
+		<copy todir="${destination.classes.dir}">
+			<fileset file="../${projectName}/test/*.x*" />
+			<!-- intended for xsd and xml files -->
+			<fileset file="../${projectName}/test/*.txt" />
+			<!-- intended for text files -->
+		</copy>
+	</target>
+
+	<target name="buildFunctestsForProject" depends="setFuncTestFolderExistsProperty,conditionalBuildFuncTestsForProject" />
+
+	<target name="setFuncTestFolderExistsProperty">
+		<available property="functest-folder-exists" file="../${projectName}/functionalTest" />
+	</target>
+
+	<target name="conditionalBuildFuncTestsForProject" if="functest-folder-exists">
+		<path id="externalJars">
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+		<echo>building tests for: ${projectName}</echo>
+		<javac srcdir="../${projectName}/functionalTest" destdir="dist/test" debug="on" source="1.6">
+			<classpath refid="externalJars" />
+			<classpath location="${destination.classes.dir}" />
+		</javac>
+		<copy todir="${destination.classes.dir}">
+			<fileset file="../${projectName}/functionalTest/*.x*" />
+			<!-- intended for xsd and xml files -->
+			<fileset file="../${projectName}/functionalTest/*.txt" />
+			<!-- intended for text files -->
+			<fileset file="../${projectName}/functionalTest/*.csv" />
+			<!-- intended for csv files -->
+		</copy>
+	</target>
+
+	<target name="compileDependencies">
+		<foreach list="${dependents},${project}" target="buildProject" param="projectName" inheritall="true" />
+	</target>
+
+	<target name="compileTests" depends="setupFolders">
+		<mkdir dir="dist/test" />
+		<foreach list="${dependents},${project}" target="buildTestsForProject" param="projectName" inheritall="true" />
+	</target>
+
+	<target name="compileFuncTests">
+		<mkdir dir="dist/test" />
+		<foreach list="${dependents},${project}" target="buildFunctestsForProject" param="projectName" inheritall="true" />
+	</target>
+
+	<!-- this allows for loops, etc. You need http://ant-contrib.sourceforge.net/ -->
+	<taskdef name="foreach" classname="net.sf.antcontrib.logic.ForEach">
+		<classpath>
+			<pathelement location="..\Libraries\ant-contrib.jar" />
+		</classpath>
+	</taskdef>
+
+
+	<!-- junit tests with Cobertura -->
+	<target name="runFuncTests" depends="compileFuncTests">
+		<mkdir dir="dist/testresults" />
+		<junit fork="yes" forkmode="once" failureProperty="test.failed">
+			<classpath location="${destination.classes.dir}" />
+			<classpath>
+				<pathelement location="dist/test" />
+				<pathelement path="${destination.classes.dir}" />
+				<fileset dir="${destination.lib.dir}">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+
+			<formatter type="xml" />
+
+			<batchtest fork="no" todir="dist/testresults">
+				<fileset dir="dist/test">
+					<include name="**/*Test.class" />
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+	<!-- junit tests with Cobertura -->
+	<target name="runtests" depends="compileTests">
+		<echo>Running tests for: ${projectName}</echo>
+		<mkdir dir="dist/testresults" />
+		<mkdir dir="cobertura" />
+		<mkdir dir="cobertura/instr" />
+		<mkdir dir="cobertura/report" />
+		<!-- is the custom Cobertura task -->
+		<property name="cobertura.dir" value="${cobertura.home}" />
+
+		<path id="cobertura.classpath">
+			<fileset dir="${cobertura.dir}">
+				<include name="cobertura.jar" />
+				<include name="lib/**/*.jar" />
+			</fileset>
+		</path>
+		<taskdef classpathref="cobertura.classpath" resource="tasks.properties" />
+		<property name="instrumented.dir" value="cobertura/instr" />
+		<cobertura-instrument todir="${instrumented.dir}">
+			<ignore regex="org.gosh.gfu.bindings.*" />
+			<ignore regex="org.gosh.xmas.bindings.*" />
+			<ignore regex="org.gosh.re.dmcash.bindings.*" />
+			<ignore regex="org.gosh.webservices.*" />
+			<ignore regex="org.gosh.bacs.schema.*" />
+
+			<fileset dir="${destination.classes.dir}">
+				<include name="**/*.class" />
+				<exclude name="**/*Test.class" />
+				<exclude name="**/bindings/**" />
+				<exclude name="**/webservices/**" />
+				<exclude name="**/schema/**" />
+			</fileset>
+		</cobertura-instrument>
+		<junit fork="yes" forkmode="once" dir="cobertura" failureProperty="test.failed" printsummary="on">
+			<sysproperty key="net.sourceforge.cobertura.datafile" file="cobertura/cobertura.ser" />
+			<!-- Note the classpath order: instrumented classes are before the
+					original (uninstrumented) classes.  This is important.	-->
+			<classpath location="${instrumented.dir}" />
+			<classpath location="${destination.classes.dir}" />
+
+			<classpath refid="cobertura.classpath" />
+
+			<classpath>
+				<pathelement location="dist/test" />
+				<pathelement path="${destination.classes.dir}" />
+				<fileset dir="${destination.lib.dir}">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+			<formatter type="xml" />
+			<batchtest fork="no" todir="dist/testresults">
+				<fileset dir="dist/test">
+					<include name="**/*Test.class" />
+				</fileset>
+			</batchtest>
+		</junit>
+		<cobertura-report format="xml" destdir="cobertura/report">
+			<fileset dir="src">
+				<include name="**/*.java" />
+				<exclude name="**/*Test.java" />
+				<exclude name="**/bindings/**" />
+				<exclude name="**/webservices/**" />
+				<exclude name="**/schema/**" />
+			</fileset>
+		</cobertura-report>
+		<cobertura-report format="html" destdir="cobertura/report">
+			<fileset dir="src">
+				<include name="**/*.java" />
+				<exclude name="**/*Test.java" />
+				<exclude name="**/bindings/**" />
+				<exclude name="**/webservices/**" />
+				<exclude name="**/schema/**" />
+			</fileset>
+		</cobertura-report>
+		<delete file="cobertura.ser" />
+	</target>
+	<!-- To create schema bindings.	-->
+	<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask">
+		  <classpath>
+		    <fileset dir="../Libraries" includes="jaxb*.jar" excludes="ant.jar"/>
+		  </classpath>
+	</taskdef>
+	<target name="buildSchemaBindings">
+			<xjc 
+				schema="${xsd}" 
+				destdir="${dest}" 
+				package="${package}"
+			/>
+		<echo>finished Bindings Task</echo>
+	</target>
+
+
+
+
+
+	<taskdef name="for" classname="net.sf.antcontrib.logic.For">
+		<classpath>
+			<pathelement location="..\Libraries\ant-contrib.jar" />
+		</classpath>
+	</taskdef>
+	<taskdef name="propertyselector" classname="net.sf.antcontrib.property.PropertySelector">
+		<classpath>
+			<pathelement location="..\Libraries\ant-contrib.jar" />
+		</classpath>
+	</taskdef>
+	<taskdef name="propertycopy" classname="net.sf.antcontrib.property.PropertyCopy">
+		<classpath>
+			<pathelement location="..\Libraries\ant-contrib.jar" />
+		</classpath>
+	</taskdef>
+	<taskdef name="var" classname="net.sf.antcontrib.property.Variable">
+		<classpath>
+			<pathelement location="..\Libraries\ant-contrib.jar" />
+		</classpath>
+	</taskdef>
+	<taskdef name="math" classname="net.sf.antcontrib.math.MathTask">
+		<classpath>
+			<pathelement location="..\Libraries\ant-contrib.jar" />
+		</classpath>
+	</taskdef>
+	<taskdef name="runtarget" classname="net.sf.antcontrib.logic.RunTargetTask">
+		<classpath>
+			<pathelement location="..\Libraries\ant-contrib.jar" />
+		</classpath>
+	</taskdef>
+	<taskdef name="antcallback" classname="net.sf.antcontrib.logic.AntCallBack">
+		<classpath>
+			<pathelement location="..\Libraries\ant-contrib.jar" />
+		</classpath>
+	</taskdef>
+
+	<target name="incrementPropertiesBuildNumber" unless="isBuildUpToDate,isSpringSourceUpToDate" if="incrementBuildNumber">
+<!--
+		<property name="propertiesFileName" value="bnd.bnd" />
+		<property name="propertiesPrefix" value="bndSettings" />
+-->
+		<property file="${propertiesFileName}" prefix="${propertiesPrefix}" />
+		<var name="i" value="1" />
+		<property name="fullPropertyName" value="${propertiesPrefix}.Bundle-Version" />
+		<propertycopy name="fullPropertyValue" from="${fullPropertyName}" silent="true"/>
+		<for list="${fullPropertyValue}" param="vPart" delimiter=".">
+			<sequential>
+			<property name="parts.i${i}" value="@{vPart}" />
+			<math result="i" operand1="${i}" operation="+" operand2="1" datatype="int"/>
+			</sequential>
+		</for>
+		<var name="incrementPropertiesBuildNumber.fullVersion" value="${parts.i1}.${parts.i2}.${parts.i3}" />
+<!--
+		<echo>Original fullVersion: ${incrementPropertiesBuildNumber.fullVersion}</echo>
+-->
+		<property name="version.file" value="version.file" />
+		<antcall target="incrementBuildNumber">
+			<param name="fileName" value="${version.file}"/>
+			<param name="pMajor" value="${parts.i1}"/>
+			<param name="pMinor" value="${parts.i2}"/>
+			<param name="pBuild" value="${parts.i3}"/>
+		</antcall>
+
+		<property file="${version.file}" prefix="versionDetails"/>
+		<delete file="${version.file}" quiet="true" />
+		<var name="incrementPropertiesBuildNumber.fullVersion" value="${versionDetails.major.number}.${versionDetails.minor.number}.${versionDetails.build.number}"/>
+		<var name="${propertiesPrefix}.Bundle-Version" value="${incrementPropertiesBuildNumber.fullVersion}" />
+
+		<propertycopy name="incrementPropertiesBuildNumber.newVersion" from="${fullPropertyName}" silent="true"/>
+
+		<antcall target="overwritePropertiesFile">
+			<param name="propertiesFileName" value="${propertiesFileName}" />
+			<param name="propertiesPrefix" value="${propertiesPrefix}" />
+		</antcall>
+	</target>
+
+	<target name="overwritePropertiesFile" depends="">
+		<property name="overwritePropertiesFile.fullPropertyName" value="${propertiesPrefix}.Bundle-Version" />
+		<propertycopy name="overwritePropertiesFile.fullPropertyValue" from="${overwritePropertiesFile.fullPropertyName}" silent="true"/>
+<!--
+		<echo>overwritePropertiesFile ${propertiesFileName} with ${overwritePropertiesFile.fullPropertyName} = ${overwritePropertiesFile.fullPropertyValue}</echo>
+-->
+		<propertyselector property="propertiesList" match="${propertiesPrefix}\.(.*)" select="\1"/>
+		<echo file="${propertiesFileName}" append="false" message="## ${propertiesFileName} written by ${ant.project.name}${line.separator}" />
+		<foreach list="${propertiesList}" target="updatePropertiesFile" param="thisProperty" inheritall="true">
+			<param name="thisFile" value="${propertiesFileName}" />
+			<param name="thisPrefix" value="${propertiesPrefix}" />
+		</foreach>			
+	</target>
+
+	<target name="updatePropertiesFile" depends="">
+		<property name="updatePropertiesFile.fullPropertyName" value="${thisPrefix}.${thisProperty}" />
+		<propertycopy name="updatePropertiesFile.fullPropertyValue" from="${updatePropertiesFile.fullPropertyName}" silent="true"/>
+<!--
+		<echo>${thisProperty}: ${updatePropertiesFile.fullPropertyValue}</echo>
+-->
+		<echo file="${thisFile}" append="true" message="${thisProperty}: ${updatePropertiesFile.fullPropertyValue}${line.separator}" />
+	</target>
+
+	<target name="incrementBuildNumber" depends="">
+        <propertyfile file="${fileName}">
+            <entry key="major.number" default="${pMajor}" operation="=" pattern="0" type="int"/>
+            <entry key="minor.number" default="${pMinor}" operation="=" pattern="0" type="int"/>
+            <entry key="build.number" default="${pBuild}" operation="+" pattern="0" type="int"/>
+        </propertyfile>
+	</target>
+
+	<target name="buildWSs" if="rebuildWSs">
+		<echo>Running buildWSs on ${webserviceDeploymentServer}</echo>
+		<ant antfile="../AntBuilds/build.xml" target="buildWSonServer">
+		</ant>
+	</target>
+
+	<target name="buildIndividualWebserviceBindings">
+		<property name="webserviceDeploymentDirectory" value="tomcatwebservices" />
+		<property name="webserviceSuffix" value=".asmx" />
+		<property name="wsdlURL" value="http://${webserviceDeploymentServer}/${webserviceDeploymentDirectory}/${WebserviceName}${webserviceSuffix}?WSDL" />
+		
+		<echo>Building webservice ${targetProject}/${WebserviceName} on ${wsdlURL}</echo>
+		<java classname="org.apache.cxf.tools.wsdlto.WSDLToJava" fork="true">
+			<arg value="-p" />
+			<arg value="org.gosh.webservices.${WebserviceName}" />
+			<arg value="-d" />
+			<arg value="../${targetProject}/src" />
+			<arg value="${wsdlURL}" />
+			<classpath>
+				<path refid="cxf.classpath" />
+			</classpath>
+		</java>
+	</target>
+</project>

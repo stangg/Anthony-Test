@@ -1,0 +1,211 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/SchemaBindings
+svn://goshcc-devsvr1
+
+
+
+2011-08-05T11:14:36.554652Z
+5102
+maria
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+.classpath
+file
+
+
+
+
+2012-01-18T12:23:12.336000Z
+6f2a5f08263bea690cca2c22a801c631
+2011-08-05T11:14:36.554652Z
+5102
+maria
+
+.project
+file
+
+
+
+
+2012-01-18T12:23:12.118000Z
+a89077bdd921b8d792be70293957d088
+2008-06-27T10:59:03.813441Z
+133
+kevin
+
+Cash Import Schema.xsd
+file
+
+
+
+
+2012-01-18T12:23:12.321000Z
+843cc9102399448c289298be215edc7f
+2009-09-30T10:51:50.107385Z
+3197
+maria
+
+Cash Import Schema_TestFile_1.xml
+file
+
+
+
+
+2012-01-18T12:23:12.352000Z
+37bd2999b7dfd28a70f736dd742e2b7e
+2009-02-26T17:27:07.656711Z
+1612
+kevin
+
+Challenge Cash Import Schema.xsd
+file
+
+
+
+
+2012-01-18T12:23:12.336000Z
+522e18b486f253e76112819a954f68d0
+2009-09-30T10:51:50.107385Z
+3197
+maria
+
+Direct Debit Import Schema.xsd
+file
+
+
+
+
+2012-01-18T12:23:12.336000Z
+c0139bfc4952caf6557f2e39108bfcc6
+2009-09-29T11:05:27.267706Z
+3194
+maria
+
+Direct Debit Import Schema_TestFile_1.xml
+file
+
+
+
+
+2012-01-18T12:23:12.352000Z
+68c5c77d2674c7ca3fee370376c7cc3b
+2009-02-26T17:27:07.656711Z
+1612
+kevin
+
+Direct Debit Upgrade Schema.xsd
+file
+
+
+
+
+2012-01-18T12:23:12.336000Z
+c01e0820ff263375af15a390da47f30c
+2009-10-01T15:37:12.553142Z
+3210
+maria
+
+Prospects Debit Import Schema.xsd
+file
+
+
+
+
+2012-01-18T12:23:12.336000Z
+8e9d3c2445e852bc5690ed93b2336412
+2009-09-29T11:05:27.267706Z
+3194
+maria
+
+Prospects Debit Import Schema_TestFile_1.xml
+file
+
+
+
+
+2012-01-18T12:23:12.118000Z
+90b1efc4bbaedf86aeea06bb85bce9b3
+2009-02-17T11:06:40.409303Z
+1491
+maria
+
+RaisersEdgeImportSchema_v1.xsd
+file
+
+
+
+
+2012-01-18T12:23:12.352000Z
+0da3a4e22c94da70a1afaa0bcd8e90aa
+2009-09-29T11:05:27.267706Z
+3194
+maria
+
+Tribute Import Schema.xsd
+file
+
+
+
+
+2012-01-18T12:23:12.321000Z
+a82b7e8309109b6e6459d7c96ff6dcc0
+2009-09-29T11:05:27.267706Z
+3194
+maria
+
+Xmas Customer Schema.xsd
+file
+
+
+
+
+2012-01-18T12:23:12.336000Z
+83fcf54c3fd3144b482e35311e089c18
+2009-09-29T11:05:27.267706Z
+3194
+maria
+
+Xmas Supression Schema.xsd
+file
+
+
+
+
+2012-01-18T12:23:12.118000Z
+9977bda41071c2600fc16f13bd2cdef4
+2009-09-29T11:05:27.267706Z
+3194
+maria
+
+ivy.xml
+file
+
+
+
+
+2012-01-18T12:23:12.336000Z
+45408a050f2693241eb9f991462679e6
+2009-01-19T16:23:19.617721Z
+1307
+kevin
+
+src
+dir
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GOSHCC>
+    <BatchNo>99999</BatchNo>
+    <SupplierID>testID</SupplierID>
+    <DonorCplxType>
+        <Constituent_ID/>
+        <InternalConstit_ID/>
+        <SupplierDonorID>658177</SupplierDonorID>
+        <Title1>Mr</Title1>
+        <FirstName>Tina</FirstName>
+        <MiddleName/>
+        <LastName>Girl</LastName>
+        <ChangeOfName>true</ChangeOfName>
+        <Suffix1/>
+        <Suffix2/>
+        <PrimaryAddress>true</PrimaryAddress>
+        <Address>
+            <AddressLine>8 My Town</AddressLine>
+            <AddressLine>Brackla</AddressLine>
+        </Address>
+        <City>Bridgardeer</City>
+        <County>Mid Glamorgan</County>
+        <PostCode>CF31 2HN</PostCode>
+        <Country>United Kingdom</Country>
+        <DateOfBirth>1900-01-01</DateOfBirth>
+        <Gender>Male</Gender>
+        <PhoneEmail>
+            <Type>Home</Type>
+            <Value>01656650557</Value>
+        </PhoneEmail>
+        <ConsCodes>
+            <Code>DMGen</Code>
+            <DateFrom>2009-02-12</DateFrom>
+        </ConsCodes>
+        <Attributes>
+            <SolicitCodes>
+                <Category>Solicit Codes</Category>
+                <Description>General Suppressions</Description>
+                <Date>2009-02-12</Date>
+                <Comment>Obtained via testID</Comment>
+            </SolicitCodes>
+            <Source>
+                <Category>Source</Category>
+                <Description>Online</Description>
+                <Date>2009-02-12</Date>
+                <Comment>Obtained via testID</Comment>
+            </Source>
+            <DirectMarketingType>
+                <Category>Direct Marketing Type</Category>
+                <Description>Individual Donor</Description>
+                <Date>2009-02-12</Date>
+                <Comment>Obtained via testID</Comment>
+            </DirectMarketingType>
+        </Attributes>
+        <ConstituentAppeal>
+            <AppealID>DM0109/J</AppealID>
+            <PackageID>GEN10A</PackageID>
+            <Date>2009-02-12</Date>
+            <Response>Responded</Response>
+            <MarketingSourceCode>658177</MarketingSourceCode>
+        </ConstituentAppeal>
+        <TaxDeclaration>
+            <StartDate>2009-02-12</StartDate>
+            <TaxPayer>false</TaxPayer>
+            <DeclarationDate>2009-02-12</DeclarationDate>
+            <DeclarationIndicator>Oral</DeclarationIndicator>
+            <ConfirmationDate>2009-02-12</ConfirmationDate>
+        </TaxDeclaration>
+        <DonationDetails>
+            <CashDonationCplxType>
+                <Type>Cash</Type>
+                <SubType>Auction Fee - 1300</SubType>
+                <Date>2008-05-06</Date>
+                <Amount>3</Amount>
+                <Fund>1010</Fund>
+                <Campaign>DM01</Campaign>
+                <Appeal>DM0109/J</Appeal>
+                <Package>GEN10A</Package>
+                <RefNo>658177/1</RefNo>
+                <PostStatus>Not Posted</PostStatus>
+                <LetterCode/>
+                <PaymentType>Cash</PaymentType>
+            </CashDonationCplxType>
+        </DonationDetails>
+    </DonorCplxType>
+</GOSHCC>

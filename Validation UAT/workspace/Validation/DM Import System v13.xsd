@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by mark saldanha (GOSHCC) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="GOSHCC">
+		<xs:annotation>
+			<xs:documentation>v13 Derived from complextypesv8.xsd. </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="BatchNo" type="xs:integer"/>
+				<xs:element name="SupplierID" type="MString50"/>
+				<xs:element name="DonorCplxType" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Constituent_ID" type="String8"/>
+							<xs:element name="InternalConstit_ID" type="String50" minOccurs="0"/>
+							<xs:element name="SupplierDonorID" type="String50"/>
+							<xs:element name="Title1" type="MString50"/>
+							<xs:element name="FirstName" type="FirstName"/>
+							<xs:element name="MiddleName" type="MiddleName" minOccurs="0"/>
+							<xs:element name="LastName" type="LastName"/>
+							<xs:element name="ChangeOfName" type="xs:boolean"/>
+							<xs:element name="Suffix1" type="String50" minOccurs="0"/>
+							<xs:element name="Suffix2" type="String50" minOccurs="0"/>
+							<xs:element name="SourceCode" type="String50"/>
+							<xs:element name="PrimaryAddress" type="xs:boolean" default="false"/>
+							<xs:element name="Address" type="Address"/>
+							<xs:element name="City" type="MString50"/>
+							<xs:element name="County" type="String50"/>
+							<xs:element name="PostCode" type="MString8"/>
+							<xs:element name="Country" type="String50"/>
+							<xs:element name="Deceased" type="xs:boolean" default="false"/>
+							<xs:element name="DateOfBirth" type="xs:date" minOccurs="0"/>
+							<xs:element name="Gender" default="Unknown">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="Male"/>
+										<xs:enumeration value="Female"/>
+										<xs:enumeration value="Unknown"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="PhoneEmail" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Type">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:enumeration value="Home"/>
+													<xs:enumeration value="Email"/>
+													<xs:enumeration value="Mobile"/>
+													<xs:enumeration value="Business"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="Value" type="String50"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ConsCodes">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Code" type="String50" default="DMGen" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Attributes" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Category">
+											<xs:simpleType>
+												<xs:restriction base="String50">
+													<xs:enumeration value="Solicit Codes"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="Description">
+											<xs:simpleType>
+												<xs:restriction base="String50">
+													<xs:enumeration value="General Suppressions"/>
+													<xs:enumeration value="Gone Away"/>
+													<xs:enumeration value="Incomplete Address"/>
+													<xs:enumeration value="Data Protection Opt Out"/>
+													<xs:enumeration value="Email Opt-In"/>
+													<xs:enumeration value="Phone Opt-In"/>
+													<xs:enumeration value="SMS Opt-In"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="Date" type="xs:date"/>
+										<xs:element name="Comment" type="String50"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="TaxDeclaration" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="StartDate" type="xs:date"/>
+										<xs:element name="TaxPayer" type="xs:boolean"/>
+										<xs:element name="DeclarationDate" type="xs:date"/>
+										<xs:element name="DeclarationIndicator" default="Oral">
+											<xs:simpleType>
+												<xs:restriction base="String50">
+													<xs:enumeration value="Written"/>
+													<xs:enumeration value="Oral"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="ConfirmationDate" type="xs:date"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="DonationDetails">
+								<xs:complexType>
+									<xs:choice>
+										<xs:element name="CashDonationCplxType" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Type">
+														<xs:simpleType>
+															<xs:restriction base="String50">
+																<xs:enumeration value="Cash"/>
+																<xs:enumeration value="Pledge"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="SubType" type="GiftSubtype"/>
+													<xs:element name="Date" type="xs:date"/>
+													<xs:element name="Amount" type="AmountType"/>
+													<xs:element name="Fund" type="MString50"/>
+													<xs:element name="Campaign" type="MString50"/>
+													<xs:element name="Appeal" type="MString50"/>
+													<xs:element name="Package" type="MString50"/>
+													<xs:element name="RefNo" type="String50"/>
+													<xs:element name="PostStatus" type="MString50" default="Not Posted"/>
+													<xs:element name="LetterCode" type="String50"/>
+													<xs:element name="GiftAttributes" type="GiftAttributes" minOccurs="0" maxOccurs="unbounded"/>
+													<xs:element name="PaymentType">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:enumeration value="Cash"/>
+																<xs:enumeration value="Personal Cheque"/>
+																<xs:enumeration value="Business Cheque"/>
+																<xs:enumeration value="Credit Card"/>
+																<xs:enumeration value="Voucher"/>
+																<xs:enumeration value="Other"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="CardType" minOccurs="0">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:enumeration value="Mastercard"/>
+																<xs:enumeration value="Visa"/>
+																<xs:enumeration value="CAF Charity Card"/>
+																<xs:enumeration value="Amex"/>
+																<xs:enumeration value="Unknown"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="Agency" type="String50" minOccurs="0"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="DirectDebitDonationCplxType">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Type" type="MString50" fixed="Pledge"/>
+													<xs:element name="SubType" type="GiftSubtype"/>
+													<xs:element name="Date" type="xs:date"/>
+													<xs:element name="Amount" type="AmountType"/>
+													<xs:element name="Fund" type="MString50"/>
+													<xs:element name="Campaign" type="MString50"/>
+													<xs:element name="Appeal" type="MString50"/>
+													<xs:element name="Package" type="MString50"/>
+													<xs:element name="PostStatus" type="MString50" default="Not Posted"/>
+													<xs:element name="GiftAttributes" type="GiftAttributes" minOccurs="0" maxOccurs="unbounded"/>
+													<xs:element name="PaymentType" type="MString50" default="Direct Debit"/>
+													<xs:element name="LetterCode" type="String50"/>
+													<!-- Direct Debit Specific Fields -->
+													<xs:element name="PDDUpgradeFlag">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PDDUpgradeFlag" type="xs:boolean"/>
+																<xs:element name="PreviousPaymentMethod">
+																	<xs:simpleType>
+																		<xs:restriction base="xs:string">
+																			<xs:enumeration value="Direct Debit"/>
+																			<xs:enumeration value="Standing Order"/>
+																			<xs:enumeration value="Not Applicable"/>
+																		</xs:restriction>
+																	</xs:simpleType>
+																</xs:element>
+																<xs:element name="GiftimportID" type="String50"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="InstallmentFreq">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:enumeration value="Monthly"/>
+																<xs:enumeration value="Quarterly"/>
+																<xs:enumeration value="Semi-Annually"/>
+																<xs:enumeration value="Annually"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="NoOfInstalments">
+														<xs:simpleType>
+															<xs:restriction base="xs:integer">
+																<xs:enumeration value="120"/>
+																<xs:enumeration value="40"/>
+																<xs:enumeration value="20"/>
+																<xs:enumeration value="10"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="ScheduleMonthlyType" type="String50" fixed="Specific Day"/>
+													<xs:element name="ScheduleDayOfMonth">
+														<xs:simpleType>
+															<xs:restriction base="xs:integer">
+																<xs:minInclusive value="1"/>
+																<xs:maxInclusive value="31"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="ScheduleSpacing" type="xs:integer" fixed="1"/>
+													<xs:element name="ScheduleWeeklyDayOfWeek" type="xs:integer" fixed="0"/>
+													<xs:element name="Date1stPayment" type="xs:date"/>
+													<xs:element name="ConstituentBankID" type="xs:integer"/>
+													<xs:element name="RefNo" type="String50"/>
+													<xs:element name="GiftStatus" type="MString50" default="Active"/>
+													<xs:element name="DonorBankCplxType">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="BankName" type="MString50"/>
+																<xs:element name="BranchName" type="MString50"/>
+																<xs:element name="BankSort" type="SortCode"/>
+																<xs:element name="BankAccName" type="String50"/>
+																<xs:element name="BankAccNo" type="BankAccNo"/>
+																<xs:element name="BankAddress" type="Address"/>
+																<xs:element name="BankCity" type="String50"/>
+																<xs:element name="BankCounty" type="String50"/>
+																<xs:element name="BankPost" type="PostCode"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:choice>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="GiftSubtype">
+		<xs:restriction base="String50">
+			<xs:enumeration value="Donation"/>
+			<xs:enumeration value="Merchandise"/>
+			<xs:enumeration value="Membership"/>
+			<xs:enumeration value="Ticket"/>
+			<xs:enumeration value="Auction"/>
+			<xs:enumeration value="Pin Badges"/>
+			<xs:enumeration value="Collection Boxes"/>
+			<xs:enumeration value="Payroll Giving"/>
+			<xs:enumeration value="Sponsership"/>
+			<xs:enumeration value="Employee Fundraising"/>
+			<xs:enumeration value="Royalties"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="Address">
+		<xs:sequence>
+			<xs:element name="AddressLine" type="xs:string" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GiftAttributes">
+		<xs:sequence>
+			<xs:element name="Category">
+				<xs:simpleType>
+					<xs:restriction base="String50">
+						<xs:enumeration value="Merchandise Product"/>
+						<xs:enumeration value="Product Cost"/>
+						<xs:enumeration value="Membership Type"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Description" type="MString50"/>
+			<xs:element name="Date" type="xs:date"/>
+			<xs:element name="Comment" type="String50"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="AmountType">
+		<xs:restriction base="xs:decimal">
+			<xs:fractionDigits value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SortCode">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d\d-\d\d-\d\d"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="RawSortCode">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="6"/>
+			<xs:pattern value="\d{6,6}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String50">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="50"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String8">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="8"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MString50">
+		<xs:restriction base="String50">
+			<xs:minLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MString8">
+		<xs:restriction base="String8">
+			<xs:minLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="String1">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="FirstName">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[\-\sa-zA-Z']{0,50}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MiddleName">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[\sa-zA-Z]{0,50}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LastName">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[\-\sa-zA-Z']{1,50}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="City">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z]{1,50}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="BankAccNo">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="7"/>
+			<xs:maxLength value="8"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PostCode">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="6"/>
+			<xs:maxLength value="8"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

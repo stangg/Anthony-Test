@@ -1,0 +1,80 @@
+/**
+ * 
+ */
+package org.gosh.validation;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.HashMap;
+import java.util.List;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
+
+import org.gosh.re.dmcash.bindings.GOSHCC;
+import org.gosh.re.dmcash.bindings.GOSHCC.DonorCplxType;
+import org.gosh.validation.general.deduplication.FuzzyLookupTransformer;
+import org.gosh.validation.general.deduplication.PossibleMatchModel;
+import org.gosh.validation.general.deduplication.WeightedMatcherTransformer;
+import org.springframework.integration.core.Message;
+import org.springframework.integration.message.GenericMessage;
+import org.springframework.test.AbstractDependencyInjectionSpringContextTests;
+
+/**
+ * @author gayathri.polavaram
+ *
+ */
+public class DonorDuplicationTest  extends AbstractDependencyInjectionSpringContextTests {
+
+
+	FuzzyLookupTransformer fuzzyLookupTransformer;
+	WeightedMatcherTransformer weightedMatcherTransformer;
+	
+	protected String[] getConfigLocations() {
+        return new String[] { "classpath:validation.xml"};
+    }
+	
+	public void testFuzzyMatchin() throws FileNotFoundException, JAXBException {
+		
+		Message<GOSHCC> file = xml2Message("test/data/donor_duplication.xml");		
+		
+		if(fuzzyLookupTransformer != null && weightedMatcherTransformer != null) {
+			Message<GOSHCC> transformedMessage = fuzzyLookupTransformer.transform(file);
+			
+			@SuppressWarnings("unchecked")
+			HashMap<DonorCplxType, List<PossibleMatchModel>> fuzzyMatches = (HashMap<DonorCplxType, List<PossibleMatchModel>>) 
+																			transformedMessage.getHeaders().get("possibleMatches");
+			
+			Message<GOSHCC> matchingTransformedMsg = weightedMatcherTransformer.transform(transformedMessage);
+			
+			GOSHCC payload = matchingTransformedMsg.getPayload();
+			List<DonorCplxType> list = payload.getDonorCplxType();
+			
+			for (DonorCplxType donor : list) {
+				// Must have added a constituentID and internal from the database
+				assertNotNull(donor.getConstituentID());
+				assertNotNull(donor.getInternalConstitID());
+			}
+		}
+	}
+	
+	public void setFuzzyLookupTransformer(
+			FuzzyLookupTransformer fuzzyLookupTransformer) {
+		this.fuzzyLookupTransformer = fuzzyLookupTransformer;
+	}
+
+	public void setWeightedMatcherTransformer(
+			WeightedMatcherTransformer weightedMatcherTransformer) {
+		this.weightedMatcherTransformer = weightedMatcherTransformer;
+	}
+	
+	/** Helper method to convert an xml file to GOSHCC message.*/
+	public Message<GOSHCC> xml2Message(final String relativeFileName) throws JAXBException, FileNotFoundException {
+		JAXBContext context = JAXBContext.newInstance("org.gosh.re.dmcash.bindings");
+		Unmarshaller unmarshaller = context.createUnmarshaller();
+		GOSHCC goshcc = (GOSHCC)unmarshaller.unmarshal(new FileInputStream( relativeFileName));
+		Message<GOSHCC> message = new GenericMessage<GOSHCC>(goshcc);
+		return message;
+	}
+}

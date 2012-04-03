@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-autowire="autodetect" xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:integration="http://www.springframework.org/schema/integration"
+	xmlns:file="http://www.springframework.org/schema/integration/file"
+	xmlns:mail="http://www.springframework.org/schema/integration/mail"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+			http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+			http://www.springframework.org/schema/integration
+			http://www.springframework.org/schema/integration/spring-integration-1.0.xsd
+			http://www.springframework.org/schema/integration/file
+			http://www.springframework.org/schema/integration/file/spring-integration-file-1.0.xsd
+            http://www.springframework.org/schema/integration/mail
+            http://www.springframework.org/schema/integration/mail/spring-integration-mail-1.0.xsd">
+
+	<import resource="beans.xml"/>
+	<!-- output the message -->
+	
+	<integration:channel id="messageOut"/>
+	<integration:router ref="messageOutRouter" input-channel="messageOut" default-output-channel="fileOutChannel"/>
+	<bean id="messageOutRouter" class="org.springframework.integration.router.RecipientListRouter">
+    	<property name="channels">
+        	<list>
+            	<ref bean="fileOutChannel"/>
+            	<ref bean="mailOutChannel"/>
+            	<ref bean="logEndedChannel"/>
+        	</list>
+    	</property>
+    	<property name="defaultOutputChannel" ref="fileOutChannel"/>
+	</bean>
+	
+	<integration:channel id="fileOutChannel"/>
+	<integration:router ref="errorHeaderRouter" input-channel="fileOutChannel"/>
+	
+	<integration:channel id="logEndedChannel"/>
+	<integration:outbound-channel-adapter ref="logFinishedOutBoundChannelAdapter" method="writeToLog" channel="logEndedChannel"/>
+	<bean id="logFinishedOutBoundChannelAdapter" class="org.gosh.validation.general.LogFinishedOutBoundChannelAdapter"/>
+	
+	<!-- valid out section -->
+	<integration:channel id="validOut"/>
+	<integration:router ref="validOutRouter" input-channel="validOut" default-output-channel="validFileOut"/>
+	<bean id="validOutRouter" class="org.springframework.integration.router.RecipientListRouter">
+    	<property name="channels">
+        	<list>
+            	<ref bean="validFileOut"/>
+            	<ref bean="batchLogWriterOut"/>
+            	<ref bean="fundraiserEmailOut"/>
+        	</list>
+    	</property>
+    	<property name="defaultOutputChannel" ref="validFileOut"/>
+	</bean>
+	
+	<integration:channel id="validFileOut"/>
+	<integration:chain input-channel="validFileOut" output-channel="convertedValidFileOut">
+		<integration:transformer ref="marshallingTransformer" method="transform"/>
+		<integration:transformer ref="messageXmlTransformer" method="transform"/>
+	</integration:chain>
+	<integration:channel id="convertedValidFileOut"/>
+	<file:outbound-channel-adapter channel="convertedValidFileOut" directory="${application.validdir}"/>
+
+	<integration:channel id="batchLogWriterOut"/>
+	<integration:outbound-channel-adapter channel="batchLogWriterOut" ref="batchLogWriterOutboundChannelAdapter" method="writeToDatabase"/>
+	
+	<!-- invalid out section -->
+	<integration:channel id="invalidOut"/>
+	<integration:chain input-channel="invalidOut" output-channel="convertedInvalidFileOut">
+		<integration:transformer ref="marshallingTransformer" method="transform"/>
+		<integration:transformer ref="messageXmlTransformer" method="transform"/>
+	</integration:chain>
+	<integration:channel id="convertedInvalidFileOut"/>
+	<file:outbound-channel-adapter channel="convertedInvalidFileOut" directory="${application.errordir}"/>
+
+	<!-- e-mail channels -->
+	<integration:channel id="fundraiserEmailOut"/>
+	<integration:splitter input-channel="fundraiserEmailOut" output-channel="processedMailOutChannel" ref="fundraiserEmailSplitter" method="split"/>
+	<integration:channel id="mailOutChannel"/>
+	<integration:transformer ref="outboundMailTransformer" method="transform" input-channel="mailOutChannel" output-channel="humanisedMailOutChannel"/>
+	<integration:channel id="humanisedMailOutChannel"/>
+	<mail:header-enricher input-channel="humanisedMailOutChannel" output-channel="processedMailOutChannel"
+					subject="${humanisedMailOutChannel.subject}"
+                    to="${humanisedMailOutChannel.to}"
+                    from="validation@gosh.org"
+                    reply-to="donotreply@gosh.org"
+                    overwrite="false"/>
+	<integration:channel id="processedMailOutChannel"/>
+	<mail:outbound-channel-adapter channel="processedMailOutChannel" host="192.168.98.48"/>
+
+	<!-- application level errors end up here, the routing just tries to make sure we find out about them.-->
+	<integration:channel id="errorChannel"/>
+	<integration:router ref="errorChannelRouter" input-channel="errorChannel" default-output-channel="fileErrorChannel"/>
+	<bean id="errorChannelRouter" class="org.springframework.integration.router.RecipientListRouter">
+    	<property name="channels">
+        	<list>
+            	<ref bean="fileErrorChannel"/>
+            	<ref bean="sysoutErrorChannel"/>
+        	</list>
+    	</property>
+    	<property name="defaultOutputChannel" ref="fileErrorChannel"/>
+	</bean>
+	
+	<integration:channel id="sysoutErrorChannel"/>
+	<integration:outbound-channel-adapter ref="errorSysoutOutBoundChannelAdapter" method="writeToSysout" channel="sysoutErrorChannel"/>
+	<bean id="errorSysoutOutBoundChannelAdapter" class="org.gosh.validation.general.error.ErrorSysoutOutBoundChannelAdapter"/>
+	
+	<integration:channel id="fileErrorChannel"/>
+	<file:outbound-channel-adapter channel="fileErrorChannel" directory="${application.errordir}"/>
+</beans>

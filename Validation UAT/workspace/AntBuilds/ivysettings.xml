@@ -1,0 +1,20 @@
+<ivysettings>
+	<property name="APACHE_CXF_LIB_PATH" value="${cxf.home}\lib" />
+	<property name="ECLIPSE_PROJECT_PATH" value="${workspacedir}" />
+	<settings	
+			defaultResolver="my-repository"
+			defaultConflictManager="all" />		<!-- in order to get all revisions without any eviction -->
+	<resolvers>
+  		<filesystem name="my-repository">
+  			<artifact pattern="I:\hudsonbuilds\jobs\${project}\workspace\Libraries\[artifact]-[revision].[ext]"/>
+  			<artifact pattern="I:\hudsonbuilds\jobs\${project}\workspace\Libraries\[artifact].[ext]"/> 
+			<artifact pattern="C:\Apache\CXF\apache-cxf-2.2.6\lib\[artifact]-[revision].[ext]"/>
+			<artifact pattern="C:\Apache\CXF\apache-cxf-2.2.6\lib\[artifact].[ext]"/>
+			<ivy pattern="I:\hudsonbuilds\jobs\${project}\workspace\[module]\ivy.xml"/>
+			<artifact pattern="${ECLIPSE_PROJECT_PATH}\Libraries\[artifact]-[revision].[ext]"/>
+  			<artifact pattern="${ECLIPSE_PROJECT_PATH}\Libraries\[artifact].[ext]"/> 
+			<artifact pattern="${APACHE_CXF_LIB_PATH}\[artifact]-[revision].[ext]"/>
+			<artifact pattern="${APACHE_CXF_LIB_PATH}\[artifact].[ext]"/>
+  		</filesystem>
+	</resolvers>
+</ivysettings>

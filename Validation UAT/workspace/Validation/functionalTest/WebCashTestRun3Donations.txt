@@ -1,0 +1,5 @@
+"GiftKey"	"DonationKey"	"DonorKey"	"Amount"	"PaidFlag"	"GiftAidFlag"	"Date"	"Reason"	"Sub reason"	"In memory - title"	"memory_forename"	"In memory - surname"	"In memory - relationship"	"Donate description"	"Referring site where knowm"
+"155287"	"Donation"	"355287"	"10"	"1"	"0"	"2009-08-07 19:43:00"	"33"	""	""	""	""	""	""	""
+"155286"	"Donation"	"355313"	"20"	"0"	"1"	"2009-08-07 15:59:00"	"18"	""	""	""	""	""	""	""
+"155285"	"Donation"	"355291"	"2"	"0"	"0"	"2009-08-07 14:45:00"	"32"	"143"	""	""	""	""	""	""
+"155284"	"Donation"	"355318"	"50"	"1"	"1"	"2009-08-07 14:14:00"	"32"	"143"	""	""	""	""	""	""

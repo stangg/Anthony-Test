@@ -1,0 +1,425 @@
+<?xml version="1.0"?>
+
+<project name="Root" default="main" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
+	<import file="../AntBuilds/commonBuild.xml" />
+	<property file="../AntBuilds/build.properties"/>
+
+	<target name="setWarVersion" unless="projectVersion">
+		<property name="projectVersion" value="" />
+	</target>
+	
+	<target name="main" depends="setWarVersion, setupProject,setupDistribution,setupDependents,setupFolders,copyConfFilesDist,retriveWithIvy,retriveAll,compileDependencies,runtests,setJspsExist,copyJsps,copyJavaScript">
+		<!-- a default log4j setup -->
+		<copy todir="dist/${distribution}/WEB-INF/classes">
+			<fileset file="../AntBuilds/log4j.properties" />
+		</copy>
+		<tstamp/>
+		<war destfile="dist/${distribution}.war" needxmlfile="false">
+		  	<fileset dir="dist/${distribution}"/>
+			<manifest>
+			    <section name="GOSHCC Section">
+			      <attribute name="Specification-Vendor" value="Great Ormond Street Hospital Charity"/>
+		    	  <attribute name="Specification-Title" value="${distribution}"/>
+		    	  <attribute name="Specification-Version" value="${projectVersion}"/>
+		    	  <attribute name="Implementation-Version" value="Created ${DSTAMP} ${TSTAMP} by ${user.name}"/>  
+			    </section>
+			</manifest>
+		</war>
+	</target>
+	
+	<target name="copyConfFilesDist">
+		<echo message="Place holder for local-project specific target"/>
+	</target>
+	
+	<target name="deploy to devsvr1" depends="setUpLocalProps,main">
+		<copy todir="\\goshcc-devsvr1\deployments">
+			<fileset dir="dist" />
+		</copy>
+	</target>
+	
+	<!--This target is provided so that the local properties could be setup
+	 local builds by overriding this target. The local properties can then set up
+	 its own project path, delivery directory and dependencies-->
+	<target name="setUpLocalProps">
+		<echo message="Nothing to do here, a target provided such that the local properties could be setup by overriding this"/>
+	</target>
+
+	<target name="setupProject" unless="project.set">
+		<input addproperty="project" message="What is your project path" />
+	</target>
+
+	<target name="setupDistribution" unless="distribution.set">
+		<input addproperty="distribution" message="What is your distribution name" />
+	</target>
+	
+	<target name="setupDependents" unless="dependent.set">
+		<input addproperty="dependents" message="What are your dependents, enter all depenedent projects seperated by (,) " />
+	</target>
+	
+	<target name="mainWithFunctests" depends="setupProject,setupDistribution,setupDependents,setupFolders,copyConfFilesDist,retriveWithIvy,retriveAll,compileDependencies,runFuncTests,setJspsExist,copyJsps,copyJavaScript">
+		<!-- a default log4j setup -->
+		<copy todir="dist/${distribution}/WEB-INF/classes">
+			<fileset file="../AntBuilds/log4j.properties" />
+		</copy>
+	</target>
+	
+	<target name="mainWithoutTests" depends="setWarVersion, setupProject,setupDistribution,setupDependents,setupFolders,copyConfFilesDist,retriveWithIvy,retriveAll,compileDependencies,setJspsExist,copyJsps,copyJavaScript">
+		<!-- a default log4j setup -->
+		<copy todir="dist/${distribution}/WEB-INF/classes">
+			<fileset file="../AntBuilds/log4j.properties" />
+		</copy>
+		<tstamp/>
+		<war destfile="dist/${distribution}.war" needxmlfile="false">
+		  	<fileset dir="dist/${distribution}"/>
+			<manifest>
+			    <section name="GOSHCC Section">
+			      <attribute name="Specification-Vendor" value="Great Ormond Street Hospital Charity"/>
+		    	  <attribute name="Specification-Title" value="${distribution}"/>
+		    	  <attribute name="Specification-Version" value="${projectVersion}"/>
+		    	  <attribute name="Implementation-Version" value="Created ${DSTAMP} ${TSTAMP} by ${user.name}"/>  
+			    </section>
+			</manifest>
+		</war>
+	</target>
+	
+	<target name="copyJsps" if="jsp-folder-exists">
+		<copy todir="dist/${distribution}/jsp"><fileset dir="jsp"/></copy>
+	</target>
+	
+	<target name="copyJavaScript" if="copyJavascript">
+		<copy todir="dist/${distribution}/javascript"><fileset dir="../Libraries/javascript"/></copy>
+	</target>
+	
+	<target name="setJspsExist">
+		<available property="jsp-folder-exists" file="jsp"/> 
+	</target>
+
+	<target name="setupFolders">
+		<delete dir="dist" />
+		<delete dir="docs" />
+		<property name="lib.dir" value="dist/${distribution}/WEB-INF/lib" />
+		<path id="externalJars">
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+		<mkdir dir="dist" />
+		<mkdir dir="dist/${distribution}" />
+		<mkdir dir="dist/${distribution}/conf" />
+		<mkdir dir="dist/${distribution}/WEB-INF" />
+		<mkdir dir="dist/${distribution}/WEB-INF/classes" />
+		<mkdir dir="dist/${distribution}/WEB-INF/lib" />
+		<copy todir="dist/${distribution}/WEB-INF">
+			<fileset dir="../${project}/WEB-INF" />
+		</copy>
+		<available property="ivy.file.present" file="../${project}/ivy.xml"/>
+	</target>
+	
+	<target name="retriveWithIvy" if="ivy.file.present">
+		<ivy:cleancache/>
+		<ivy:retrieve sync="true" pattern="${lib.dir}/[artifact].[revision].[ext]"/>		
+	</target>
+
+	<target name="retriveAll" unless="ivy.file.present">
+		<copy todir="${lib.dir}">
+			<fileset dir="../Libraries" />
+			<fileset dir="${cxf.home}/lib">
+				<exclude name="spring*" />
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="buildProject">
+		<path id="externalJars">
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+		<echo>building: ${projectName}</echo>
+		<javac encoding="8859_1" srcdir="../${projectName}/src" destdir="dist/${distribution}/WEB-INF/classes" debug="on" source="1.6">
+			<classpath refid="externalJars" />
+		</javac>
+		<copy todir="dist/${distribution}/WEB-INF/classes">
+			<fileset file="../${projectName}/src/*.*">
+				<include name="**/*.x*"/><!-- intended for xsd and xml files -->
+				<include name="**/*.groovy"/><!-- intended for groovy scripts files -->
+				<include name="**/*.properties"/><!-- intended for groovy scripts files -->
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="buildTestsForProject" depends="setTestFolderExistsProperty,conditionalBuildTestsForProject"/>
+	<target name="setTestFolderExistsProperty">
+		<available property="test-folder-exists" file="../${projectName}/test"/> 
+	</target>
+	<target name="conditionalBuildTestsForProject" if="test-folder-exists">
+		<path id="externalJars">
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+		<echo>building tests for: ${projectName}</echo>
+		<javac srcdir="../${projectName}/test" destdir="dist/test" debug="on" source="1.6">
+			<classpath refid="externalJars" />
+			<classpath location="dist/${distribution}/WEB-INF/classes"/>
+		</javac>
+		<copy todir="dist/${distribution}/WEB-INF/classes">
+			<fileset file="../${projectName}/test/*.x*" /> <!-- intended for xsd and xml files -->
+			<fileset file="../${projectName}/test/*.txt" /> <!-- intended for text files -->
+		</copy>
+	</target>
+
+	<target name="buildFunctestsForProject" depends="setFuncTestFolderExistsProperty,conditionalBuildFuncTestsForProject"/>
+	<target name="setFuncTestFolderExistsProperty">
+		<available property="functest-folder-exists" file="../${projectName}/functionalTest"/> 
+	</target>
+	<target name="conditionalBuildFuncTestsForProject" if="functest-folder-exists">
+		<path id="externalJars">
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+		<echo>building tests for: ${projectName}</echo>
+		<javac srcdir="../${projectName}/functionalTest" destdir="dist/test" debug="on" source="1.6">
+			<classpath refid="externalJars" />
+			<classpath location="dist/${distribution}/WEB-INF/classes"/>
+		</javac>
+		<copy todir="dist/${distribution}/WEB-INF/classes">
+			<fileset file="../${projectName}/functionalTest/*.x*" /> <!-- intended for xsd and xml files -->
+			<fileset file="../${projectName}/functionalTest/*.txt" /> <!-- intended for text files -->
+			<fileset file="../${projectName}/functionalTest/*.csv" /> <!-- intended for csv files -->
+		</copy>
+	</target>
+
+	
+	<target name="compileDependencies">
+		<foreach list="${dependents},${project}" target="buildProject" param="projectName" inheritall="true"/>
+	</target>
+	
+	<target name="compileTests">
+		<mkdir dir="dist/test"/>
+		<foreach list="${dependents},${project}" target="buildTestsForProject" param="projectName" inheritall="true"/>
+	</target>
+	
+	<target name="compileFuncTests">
+		<mkdir dir="dist/test"/>
+		<foreach list="${dependents},${project}" target="buildFunctestsForProject" param="projectName" inheritall="true"/>
+	</target>
+	
+	<!-- this bit is mainly ripped from http://cwiki.apache.org/CXF20DOC/wsdl-to-java.html -->
+	<property name="cxf.home" location="${cxf.dir}" />
+
+	<path id="cxf.classpath">
+		<fileset dir="${cxf.home}/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<!-- this allows for loops, etc. You need http://ant-contrib.sourceforge.net/ -->
+	<taskdef name="foreach" classname="net.sf.antcontrib.logic.ForEach">
+		<classpath>
+			<pathelement location="..\Libraries\ant-contrib.jar" />
+		</classpath>
+	</taskdef>
+
+	<target name="build web service bindings of IIS">
+		<foreach list="getAccountNumber,addAddressWPhones,addAttribute,addPledge,addPledgeInstallment,cashDonation,constituentAppeal,genericDonor,setGiftAsPosted,addTribute,updateConstituentCodes,updateConstituentDetails,addBank,addTaxDeclaration,adjustInstallment,installmentWriteOff,pledgeWriteOff,deleteTaxDeclaration,genericRelationships,setConstituentDeceased,getBankDetailsForPledge,writeOffInstallmentTailSeq,pledgeAttributes" target="build individual iis web service bindings" param="WebserviceName" />
+	</target>
+
+	<target name="build individual iis web service bindings">
+		<echo>Building goshcc-iis webservice ${WebserviceName}</echo>
+		<java classname="org.apache.cxf.tools.wsdlto.WSDLToJava" fork="true">
+			<arg value="-p" />
+			<arg value="org.gosh.webservices.${WebserviceName}" />
+			<arg value="-d" />
+			<arg value="../WebServiceBindings/src" />
+			<arg value="http://goshcc-iis/tomcatwebservices/${WebserviceName}.asmx?WSDL" />
+			<classpath>
+				<path refid="cxf.classpath" />
+			</classpath>
+		</java>
+	</target>
+
+	<target name="build web service bindings of IISTest">
+		<foreach list="getAccountNumber,addAddressWPhones,addAttribute,addPledge,addPledgeInstallment,cashDonation,constituentAppeal,genericDonor,setGiftAsPosted,addTribute,updateConstituentCodes,updateConstituentDetails,addBank,addTaxDeclaration,adjustInstallment,installmentWriteOff,pledgeWriteOff,deleteTaxDeclaration,genericRelationships,setConstituentDeceased,getBankDetailsForPledge,writeOffInstallmentTailSeq,pledgeAttributes" target="build individual iistest web service bindings" param="WebserviceName" />
+	</target>
+
+	<target name="build individual iistest web service bindings">
+		<echo>Building goshcc-iistest webservice ${WebserviceName}</echo>
+		<java classname="org.apache.cxf.tools.wsdlto.WSDLToJava" fork="true">
+			<arg value="-p" />
+			<arg value="org.gosh.webservices.${WebserviceName}" />
+			<arg value="-d" />
+			<arg value="../WebServiceBindings/src" />
+			<arg value="http://goshcc-iistest/tomcatwebservices/${WebserviceName}.asmx?WSDL" />
+			<classpath>
+				<path refid="cxf.classpath" />
+			</classpath>
+		</java>
+	</target>
+	
+	<target name="build ws IISDev bindings">
+		<property name="webserviceDeploymentServer" value="goshcc-iisdev" />
+		<property name="targetProject" value="WebServiceBindings"/>
+		<antcall target="buildWSonServer" />
+	</target>
+	
+	<target name="build ws IIS2Dev bindings">
+		<property name="webserviceDeploymentServer" value="goshcc-iis2dev" />
+		<property name="webserviceDeploymentDirectory" value="services" />
+		<property name="targetProject" value="WebServiceBindings"/>
+		<antcall target="buildWSonServer" />
+	</target>
+	
+	<target name="build ws IIS2Test bindings">
+			<property name="webserviceDeploymentServer" value="goshcc-iis2test" />
+			<property name="webserviceDeploymentDirectory" value="services" />
+			<property name="targetProject" value="WebServiceBindings"/>
+			<antcall target="buildWSonServer" />
+	</target>
+	
+	<target name="build ws IIS2 bindings">
+			<property name="webserviceDeploymentServer" value="goshcc-iis2" />
+			<property name="webserviceDeploymentDirectory" value="services" />
+			<property name="targetProject" value="WebServiceBindings"/>
+			<antcall target="buildWSonServer" />
+	</target>
+	
+	<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask">
+	  <classpath>
+	    <fileset dir="../Libraries" includes="jaxb*.jar" excludes="ant.jar"/>
+	  </classpath>
+	</taskdef>
+	
+	<target name="buildSchemaBindings">
+		<xjc 
+			schema="../SchemaBindings/RaisersEdgeImportSchema_v1.xsd" 
+			destdir="../SchemaBindings/src" 
+			package="org.gosh.re.dmcash.bindings"
+		/>
+	</target>
+	
+	<!-- junit tests with Cobertura -->
+	<target name="runFuncTests" depends="compileFuncTests">
+		<mkdir dir="dist/testresults" />
+		<junit fork="yes" forkmode="once" failureProperty="test.failed" haltonfailure="${isFail}">
+			<classpath location="dist/${distribution}/WEB-INF/classes" />
+			<classpath>
+				<pathelement location="dist/test" />
+				<pathelement path="dist/${distribution}/WEB-INF/classes" />
+				<fileset dir="dist/${distribution}/WEB-INF/lib">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+
+			<formatter type="xml" />
+
+			<batchtest fork="no" todir="dist/testresults">
+				<fileset dir="dist/test">
+					<include name="**/*Test.class" />
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+	
+	<!-- junit tests with Cobertura -->
+	<target name="runtests" depends="compileTests">
+		<mkdir dir="dist/testresults" />
+		<mkdir dir="cobertura"/>
+		<mkdir dir="cobertura/instr"/>
+		<mkdir dir="cobertura/report"/>
+		
+		<!-- is the custom Cobertura task -->
+			<property name="cobertura.dir" value="${cobertura.home}" />
+
+			<path id="cobertura.classpath">
+			    <fileset dir="${cobertura.dir}">
+			        <include name="cobertura.jar" />
+			        <include name="lib/**/*.jar" />
+			    </fileset>
+			</path>
+
+			<taskdef classpathref="cobertura.classpath" resource="tasks.properties" />
+			<property name="instrumented.dir" value="cobertura/instr" />
+	
+			<cobertura-instrument todir="${instrumented.dir}">
+				<ignore regex="org.gosh.gfu.bindings.*" />
+				<ignore regex="org.gosh.xmas.bindings.*" />
+				<ignore regex="org.gosh.re.dmcash.bindings.*" />
+				<ignore regex="org.gosh.webservices.*" />
+				<ignore regex="org.gosh.bacs.schema.*" />
+
+			    <fileset dir="dist/${distribution}/WEB-INF/classes">
+			    	<include name="**/*.class" />
+			        <exclude name="**/*Test.class" />
+			        <exclude name="**/bindings/**" />
+			        <exclude name="**/webservices/**" />
+			        <exclude name="**/schema/**" />
+			    </fileset>
+			</cobertura-instrument>
+			
+		<junit fork="yes" forkmode="once" dir="cobertura" failureProperty="test.failed" haltonfailure="${isFail}">
+			<sysproperty key="net.sourceforge.cobertura.datafile"
+									file="cobertura/cobertura.ser" />
+				<!-- Note the classpath order: instrumented classes are before the
+					original (uninstrumented) classes.  This is important.	-->
+			<classpath location="${instrumented.dir}" />
+			<classpath location="dist/${distribution}/WEB-INF/classes" />
+
+			<classpath refid="cobertura.classpath" />
+
+			<classpath>
+				<pathelement location="dist/test" />
+				<pathelement path="dist/${distribution}/WEB-INF/classes" />
+				<fileset dir="dist/${distribution}/WEB-INF/lib">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+
+			<formatter type="xml" />
+
+			<batchtest fork="no" todir="dist/testresults">
+				<fileset dir="dist/test">
+					<include name="**/*Test.class" />
+				</fileset>
+			</batchtest>
+			
+		</junit>
+		
+		<cobertura-report format="xml" destdir="cobertura/report" >
+		    <fileset dir="src">
+		        <include name="**/*.java" />
+		        <exclude name="**/*Test.java" />
+		        <exclude name="**/bindings/**" />
+		        <exclude name="**/webservices/**" />
+		        <exclude name="**/schema/**" />
+		    </fileset>
+		</cobertura-report>
+		<cobertura-report format="html" destdir="cobertura/report" >
+		    <fileset dir="src">
+		        <include name="**/*.java" />
+		        <exclude name="**/*Test.java" />
+		        <exclude name="**/bindings/**" />
+		        <exclude name="**/webservices/**" />
+		        <exclude name="**/schema/**" />
+		    </fileset>
+		</cobertura-report>
+		<delete file="cobertura.ser" />
+	</target>
+
+	<target name="buildWSonServer">
+		<echo>Build webservices on ${webserviceDeploymentServer} using ${cxf.home}</echo>
+		<property name="webservicesList" value="getAccountNumber,addAddressWPhones,addAttribute,addPledge,addPledgeInstallment,cashDonation,constituentAppeal,genericDonor,setGiftAsPosted,addTribute,updateConstituentCodes,updateConstituentDetails,addBank,addTaxDeclaration,adjustInstallment,installmentWriteOff,pledgeWriteOff,deleteTaxDeclaration,genericRelationships,setConstituentDeceased,getBankDetailsForPledge,writeOffInstallmentTailSeq,pledgeAttributes" />
+		<foreach list="${webservicesList}" target="buildIndividualWebserviceBindings" param="WebserviceName" inheritall="true" />
+	</target>
+	
+	<target name="checkSvnInstalled">
+		<available file="${svn.home}/svnversion.exe" property="svn.present"/>
+	</target>
+	<target name="getSvnVersion" depends="checkSvnInstalled" if="svn.present">
+		<exec executable="${svn.home}/svnversion" outputproperty="Revision">
+			<arg value="-c" />
+		</exec>  
+		<echo>Svn version of ${distribution}: ${Revision}</echo>
+	</target>
+</project>

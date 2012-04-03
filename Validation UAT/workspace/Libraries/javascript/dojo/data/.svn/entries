@@ -1,0 +1,58 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Libraries/javascript/dojo/data
+svn://goshcc-devsvr1
+
+
+
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+ItemFileReadStore.js
+file
+
+
+
+
+2012-01-18T12:23:43.899000Z
+0075533bea6b4637a8ecf1fd154256b3
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+ItemFileWriteStore.js
+file
+
+
+
+
+2012-01-18T12:23:43.883000Z
+5e4bae0f3d8ec0b1193e391e3973b7af
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+api
+dir
+
+util
+dir
+

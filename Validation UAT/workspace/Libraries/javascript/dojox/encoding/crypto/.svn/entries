@@ -1,0 +1,52 @@
+8
+
+dir
+6107
+svn://goshcc-devsvr1/Libraries/javascript/dojox/encoding/crypto
+svn://goshcc-devsvr1
+
+
+
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f1d564a8-70e1-3d40-b8bf-07ea50bca984
+
+Blowfish.js
+file
+
+
+
+
+2012-01-18T12:23:33.180000Z
+e132a2339caf7cf04648479e8e47ff84
+2008-10-07T14:00:18.863231Z
+821
+maria
+
+_base.js
+file
+
+
+
+
+2012-01-18T12:23:33.180000Z
+37e70a70f3bde1360e96b310e451a878
+2008-10-07T14:00:18.863231Z
+821
+maria
+
